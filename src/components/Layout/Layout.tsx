@@ -4,7 +4,7 @@ import tw, {styled} from 'twin.macro';
 import {Header, Footer} from '..';
 
 interface Props {
-  children: React.ReactElement[];
+  children: React.ReactElement | React.ReactElement[];
 }
 
 const Container = styled.div`
