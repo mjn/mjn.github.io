@@ -13,11 +13,17 @@ export const Header = styled.div`
 `;
 
 export const Title = styled.h2`
-  ${tw`flex-grow font-semibold mb-4`}
+  ${tw`flex flex-row font-semibold`}
+`;
+
+export const Link = styled.a`
+  ${tw`font-semibold text-blue-500 shadow-link`}
 `;
 
 export const Date = styled.div`
-  ${tw`flex-grow-0 text-sm`}
+  ${tw`flex flex-row text-xs`}
 `;
 
-export const Excerpt = styled.p``;
+export const Excerpt = styled.p`
+  ${tw`mt-4 text-sm`}
+`;

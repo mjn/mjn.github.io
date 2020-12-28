@@ -4,18 +4,21 @@ export const Post = styled.div`
   ${tw`w-full`}
 `;
 
-export const Header = styled.div`
-  ${tw`flex flex-row py-4`}
-`;
-
 export const Title = styled.h1`
-  ${tw`flex-grow font-semibold`}
+  ${tw`flex flex-row font-semibold`}
 `;
 
 export const Date = styled.div`
-  ${tw`flex-grow-0 text-sm`}
+  ${tw`flex flex-row text-xs`}
 `;
 
-export const Body = styled.div`
-  ${tw`w-full`}
+export const Entry = styled.div`
+  ${tw`w-full mt-4`}
+
+  p {
+    ${`mb-4`}
+  }
+`;
+
+export const Links = styled.div`
 `;

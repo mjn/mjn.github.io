@@ -1,6 +1,9 @@
 import React from 'react';
 import tw, {styled} from 'twin.macro';
 
+import GlobalStyles from '../../assets/styles/globalStyles';
+import '../../assets/styles/global.css';
+
 import {Header, Footer} from '..';
 
 interface Props {
@@ -8,7 +11,7 @@ interface Props {
 }
 
 const Container = styled.div`
-  ${tw`mx-5`}
+  ${tw`container mx-auto px-4`}
 `;
 
 const Body = styled.div`
@@ -16,11 +19,14 @@ const Body = styled.div`
 `;
 
 const Layout = ({children}: Props) => (
-  <Container>
-    <Header />
-    <Body>{children}</Body>
-    <Footer />
-  </Container>
+  <>
+    <GlobalStyles />
+    <Container>
+      <Header />
+      <Body>{children}</Body>
+      <Footer />
+    </Container>
+  </>
 );
 
 export default Layout;

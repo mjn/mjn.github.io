@@ -1,9 +1,9 @@
 import React from 'react';
-import {graphql, useStaticQuery} from 'gatsby';
+import {graphql, useStaticQuery, Link} from 'gatsby';
 
 import * as Styled from './styles';
 
-interface Post {
+export interface Post {
   node: {
     id: string;
     excerpt: string;
@@ -11,43 +11,30 @@ interface Post {
       title: string;
       date: string;
     }
+    fields: {
+      slug: string;
+    }
   }
 }
 
-const Posts = () => {
-  const {allMarkdownRemark} = useStaticQuery(query);
-  const posts: Post[] = allMarkdownRemark.edges;
+interface Props {
+  posts: Post[];
+}
 
+const Posts = ({posts}: Props) => {
   return (
     <Styled.Posts>
       {posts.map((post) => (
         <Styled.Post key={post.node.id}>
-          <Styled.Header>
-            <Styled.Title>{post.node.frontmatter.title}</Styled.Title>
-            <Styled.Date>{post.node.frontmatter.date}</Styled.Date>
-          </Styled.Header>
+          <Styled.Title>
+            <Styled.Link><Link to={post.node.fields.slug}>{post.node.frontmatter.title}</Link></Styled.Link>
+          </Styled.Title>
+          <Styled.Date>{post.node.frontmatter.date}</Styled.Date>
           <Styled.Excerpt>{post.node.excerpt}</Styled.Excerpt>
         </Styled.Post>
       ))}
     </Styled.Posts>
   );
 };
-
-const query = graphql`
-  query {
-    allMarkdownRemark {
-      edges {
-        node {
-          id
-          frontmatter {
-            title
-            date(formatString: "MMM D, YYYY")
-          }
-          excerpt
-        }
-      }
-    }
-  }
-`;
 
 export default Posts;
