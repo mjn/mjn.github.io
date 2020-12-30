@@ -9,10 +9,7 @@ const Nav = () => (
       <Link to="/about">About</Link>
     </Styled.Link>
     <Styled.Link>
-      <Link to="/">Blog</Link>
-    </Styled.Link>
-    <Styled.Link>
-      <Link to="/canada-bike-trip">Canada Bike Trip</Link>
+      <Link to="/blog">Blog</Link>
     </Styled.Link>
   </Styled.Nav>
 );

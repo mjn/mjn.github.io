@@ -1,6 +1,6 @@
 import React from 'react';
 import {graphql, Link} from 'gatsby';
-import {Layout, FormattedHtml} from '../../components';
+import {Layout, FormattedHtml, Map} from '../../components';
 
 import * as Styled from './styles';
 
@@ -12,6 +12,7 @@ interface Post {
   frontmatter: {
     title: string;
     date: string;
+    mapSrc?: string;
   };
 }
 
@@ -29,24 +30,30 @@ interface Props {
 const BlogPost = ({data, pageContext}: Props) => {
   const post = data.markdownRemark;
   const {next, prev} = pageContext;
+
   return (
     <Layout>
       <Styled.Title>{post.frontmatter.title}</Styled.Title>
       <Styled.Date>{post.frontmatter.date}</Styled.Date>
       <Styled.Entry>
+        {post.frontmatter.mapSrc && (
+          <Styled.Map>
+            <Map src={post.frontmatter.mapSrc} />
+          </Styled.Map>
+        )}
         <FormattedHtml content={post.html} />
       </Styled.Entry>
       <Styled.Links>
-        <span>
+        <Styled.Link>
           {prev && (
             <Link to={prev.fields.slug} rel="previous">← {prev.frontmatter.title}</Link>
           )}
-        </span>
-        <span>
+        </Styled.Link>
+        <Styled.Link>
           {next && (
             <Link to={next.fields.slug} rel="next">{next.frontmatter.title} →</Link>
           )}
-        </span>
+        </Styled.Link>
       </Styled.Links>
     </Layout>
   )
@@ -58,6 +65,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        mapSrc
         date(formatString: "MMM D, YYYY")
       }
     }

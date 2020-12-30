@@ -1,19 +1,27 @@
 import tw, {styled} from 'twin.macro';
 
 export const Post = styled.div`
-  ${tw`w-full`}
+  ${tw`w-full flex-col`}
+`;
+
+export const Heading = styled.div`
+  ${tw`flex flex-col`}
 `;
 
 export const Title = styled.h1`
-  ${tw`flex flex-row font-semibold`}
+  ${tw`font-semibold`}
 `;
 
 export const Date = styled.div`
-  ${tw`flex flex-row text-xs`}
+  ${tw`text-xs`}
+`;
+
+export const Map = styled.div`
+  ${tw`mt-2 mb-4`}
 `;
 
 export const Entry = styled.div`
-  ${tw`w-full mt-4`}
+  ${tw`clear-both w-full mt-4`}
 
   p {
     ${`mb-4`}
@@ -21,4 +29,9 @@ export const Entry = styled.div`
 `;
 
 export const Links = styled.div`
+  ${tw`w-full flex justify-between mt-8`}
+`;
+
+export const Link = styled.span`
+  ${tw`text-blue-500 shadow-link`}
 `;

@@ -5,14 +5,14 @@ export const Posts = styled.div`
 `;
 
 export const Post = styled.div`
-  ${tw`w-full p-4`}
+  ${tw`w-full pb-4`}
 `;
 
 export const Header = styled.div`
   ${tw`flex flex-row`}
 `;
 
-export const Title = styled.h2`
+export const Title = styled.h3`
   ${tw`flex flex-row font-semibold`}
 `;
 
