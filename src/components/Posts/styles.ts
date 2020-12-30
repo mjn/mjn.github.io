@@ -16,7 +16,7 @@ export const Title = styled.h2`
   ${tw`flex flex-row font-semibold`}
 `;
 
-export const Link = styled.a`
+export const Link = styled.span`
   ${tw`font-semibold text-blue-500 shadow-link`}
 `;
 

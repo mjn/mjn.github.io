@@ -1,3 +1,4 @@
+export {default as Experience} from './Experience';
 export {default as Footer} from './Footer';
 export {default as FormattedHtml} from './FormattedHtml';
 export {default as Header} from './Header';
