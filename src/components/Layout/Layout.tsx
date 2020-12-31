@@ -15,9 +15,13 @@ const Layout = ({children}: Props) => (
   <>
     <GlobalStyles />
     <Styled.Container>
-      <Header />
+      <Styled.Header>
+        <Header />
+      </Styled.Header>
       <Styled.Body>{children}</Styled.Body>
-      <Footer />
+      <Styled.Footer>
+        <Footer />
+      </Styled.Footer>
     </Styled.Container>
   </>
 );
