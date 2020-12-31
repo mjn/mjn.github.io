@@ -9,7 +9,7 @@ export const Heading = styled.div`
 `;
 
 export const Title = styled.h1`
-  ${tw`font-semibold`}
+  ${tw`font-semibold text-xl`}
 `;
 
 export const Date = styled.div`
@@ -23,8 +23,16 @@ export const Map = styled.div`
 export const Entry = styled.div`
   ${tw`clear-both w-full mt-4`}
 
+  h2 {
+    ${tw`font-semibold text-lg mt-4 mb-2`}
+  }
+
   p {
     ${`mb-4`}
+  }
+
+  code {
+    ${tw`bg-gray-200 rounded px-1`}
   }
 `;
 
