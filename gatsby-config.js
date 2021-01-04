@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
   siteMetadata: {
     title: `mark.northcott.io`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Random musings and ramblings about technology, sports and other nonsense by a Newfoundlander now residing in Ottawa.`,
     author: `Mark Northcott`,
   },
   plugins: [
