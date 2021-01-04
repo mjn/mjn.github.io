@@ -1,6 +1,6 @@
 import React from 'react';
 import {graphql, Link} from 'gatsby';
-import {Layout, FormattedHtml, Map} from '../../components';
+import {Layout, FormattedHtml, Map, SEO} from '../../components';
 
 import * as Styled from './styles';
 
@@ -12,6 +12,7 @@ interface Post {
   frontmatter: {
     title: string;
     date: string;
+    description: string;
     mapSrc?: string;
   };
 }
@@ -33,6 +34,7 @@ const BlogPost = ({data, pageContext}: Props) => {
 
   return (
     <Layout>
+      <SEO title={post.frontmatter.title} description={post.frontmatter.description} />
       <Styled.Title>{post.frontmatter.title}</Styled.Title>
       <Styled.Date>{post.frontmatter.date}</Styled.Date>
       <Styled.Entry>
@@ -65,6 +67,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        description
         mapSrc
         date(formatString: "MMM D, YYYY")
       }

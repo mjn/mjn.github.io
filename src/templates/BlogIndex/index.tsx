@@ -39,6 +39,7 @@ const BlogIndex = ({data, pageContext}: Props) => {
 
   return (
     <Layout>
+      <SEO title="Blog" />
       <Posts posts={data.allMarkdownRemark.edges} />
       <Styled.Links>
         <Styled.Link>
