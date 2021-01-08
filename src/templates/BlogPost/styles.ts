@@ -28,7 +28,7 @@ export const Entry = styled.div`
   }
 
   p {
-    ${`mb-4`}
+    ${tw`mb-4`}
   }
 
   code {
@@ -41,5 +41,11 @@ export const Links = styled.div`
 `;
 
 export const Link = styled.span`
-  ${tw`text-blue-500 shadow-link`}
+  ${tw`text-blue-500`}
 `;
+
+export const LinkText = styled.span`
+  ${tw`hidden sm:inline shadow-link`}
+`;
+
+export const LinkArrow = styled.span``;

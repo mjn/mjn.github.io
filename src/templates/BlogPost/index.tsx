@@ -48,12 +48,12 @@ const BlogPost = ({data, pageContext}: Props) => {
       <Styled.Links>
         <Styled.Link>
           {prev && (
-            <Link to={prev.fields.slug} rel="previous">← {prev.frontmatter.title}</Link>
+            <Link to={prev.fields.slug} rel="previous"><Styled.LinkArrow>←</Styled.LinkArrow> <Styled.LinkText>{prev.frontmatter.title}</Styled.LinkText></Link>
           )}
         </Styled.Link>
         <Styled.Link>
           {next && (
-            <Link to={next.fields.slug} rel="next">{next.frontmatter.title} →</Link>
+            <Link to={next.fields.slug} rel="next"><Styled.LinkText>{next.frontmatter.title}</Styled.LinkText> <Styled.LinkArrow>→</Styled.LinkArrow></Link>
           )}
         </Styled.Link>
       </Styled.Links>

@@ -1,12 +1,14 @@
 import React from 'react';
-import {useStaticQuery, graphql} from "gatsby"
+import {Link, useStaticQuery, graphql} from "gatsby"
 import Img from "gatsby-image"
 
 const Avatar = () => {
   const data = useStaticQuery(query);
 
   return (
-    <Img className="rounded-full border border-gray-200 shadow-inner" fixed={data.placeholderImage.childImageSharp.fixed} />
+    <Link to="/">
+      <Img className="rounded-full border border-gray-200 shadow-inner" fixed={data.placeholderImage.childImageSharp.fixed} />
+    </Link>
   );
 };
 
