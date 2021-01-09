@@ -12,9 +12,13 @@ Today was a real setback... it started off crappy and proceeded to get worse and
 
 By the time we finally bought the tube, installed it and got on the road, it was close to 11am, and the 130km trip to Brooks was still looming large. As we headed out of Drumheller we were met with a stiff head wind that showed no signs of subsiding. Next, just as we made it past Rosedale, we came upon a hill leading out of the valley that rivaled most of the climbs we encountered throughout the Rocky Mountains. Add to that the continuing head wind and we were in for a heck of a climb.
 
+![](./can_bike_trip_090.jpg)
+
 Once we completed the climb and emerged from the valley, it seemed that the wind intensified since there was no longer anything blocking it at all. This made riding extremely difficult. It was this head wind that posed the biggest challenge to me the entire trip... I was frustrated that the amount of effort I was putting into pedalling was giving me very little in return. As a result, I was getting very ticked off (as Dave can attest!). All I wanted at one point was to be home in bed...
 
 I finally was able to put the negative thoughts behind me and concentrate on the task at hand, but progress was very limited. After a mere 50km covered in almost 4 hours of riding, Dave and I pulled into a small village called Hussar. It was here that we decided to stay... our reasoning behind the decision was that we had access to a campground, and to go any further just didn't make sense since we intended to only go as far as Brooks tomorrow. Therefore, we sucked it up, ate a good meal and then set up camp.
+
+![](./can_bike_trip_091.jpg)
 
 Now, as we have settled into our campsite, we hear the rumbling of thunder in the distance towards Calgary, and we have experienced a spit of rain, but hopefully we are far enough away so as to miss the brunt of the storm... if we were to get caught in a thunderstorm tonight I would be very discouraged. All that I want is to get a string of 3-4 good days of riding in where I can get back some of the confidence that I seemed to have lost over the past day.
 

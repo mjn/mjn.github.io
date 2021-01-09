@@ -10,11 +10,15 @@ mapSrc: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11012.56164854164
 ---
 The day finally came when we had to bid farewell to Dave's parents and get back on the bike to head towards Ottawa. I must admit, it wasn't easy! When I woke up and saw the clock showing 7:30am, I was not ready to crawl out out of my comfy bed... especially not since I knew I would not be returning to it that night. I managed to drag myself out to the kitchen for one last delicious breakfast of bacon and egg sandwiches. Dave and I then finished packing up all the gear and loaded it onto the bikes.
 
+![](./can_bike_trip_218.jpg)
+
 The past week and a half have been very relaxing and enjoyable. Dave's parents made me feel like one of their own, and I was welcomed into their home with open arms. The first few days in Sudbury were spent primarily just relaxing, but we did manage to do some sightseeing as we visited Science North and the Big Nickel. However, I was really looking forward to getting to Ottawa for graduation, mainly because I would get to see my parents along with my older brother and his fiancee. So when Thursday came and we made the trek to Ottawa (by car), I was really excited.
 
 The weekend was great as the convocation went really well, although it was almost a disaster due to rain. After the ceremony my family and I went to Fridays Roast Beef House for what was one of the best meals I have ever had! It could only be classified as gluttony though as I devoured a 24oz piece of roast beef along with an appetizer and dessert, all of which was melt in your mouth delicious. The only complaint I had about the weekend was that it didn't last long enough, but I will get to see my family again soon.
 
 Following a few more days of lounging around in Ottawa, Dave and I returned to Sudbury on Tuesday and began preparing for our Thursday departure. And so today was the day, and I was experiencing mixed emotions as I really enjoyed the break and having access to all facilities that I'm accustomed to, but I was also looking forward to getting back on the bike to continue our journey.
+
+![](./can_bike_trip_225.jpg)
 
 As Dave's dad videotaped us leaving the comfort of our Sudbury residence, we both looked forward to a good day of riding to get back into the groove of things. The morning portion of the trip however was a little difficult as both of us were trying to deal with being back on the road. This was especially tough for Dave, obviously, as leaving your parents is never an easy thing to do. To make matters worse, the road conditions were terrible leaving Sudbury and the wind was blowing hard from the north, which was making riding difficult at times.
 

@@ -14,6 +14,8 @@ When the fog appears to be "burned off" by the sun, it is actually being lifted 
 
 As a result, I was actually begging the sun to stay away, since I figured the longer I was in the fog, the longer we could ride without rain! Sounds crazy, I know! Unfortunately, we were facing a bit of a head wind, and Dave just didn't seem to be into the riding today. As a result, our progress was slower then we had hoped.
 
+![](./can_bike_trip_215.jpg)
+
 We pulled into Blind River around 2pm for lunch, and as we sat eating, I could see the sky start to cloud over again. It was apparent the weather man knew his stuff (this time anyway). I just hoped that we could travel the remaining 50km to Spanish with only the rain showers, and avoid any thunder showers. Shortly after departing Blind River the rain started falling, and for a brief time it rained steadily. The rain then eased up, and as I looked ahead, the sky didn't look too bad. Then it happened... the sky seemed to go black around me, but I could still only see light skies ahead of me. A quick glance back at Dave revealed the threat... right behind (and above) us was one of the darkest clouds you can imagine! I started riding a little faster trying to escape the dark cloud, and reach the lighter skies ahead of me.
 
 By this time, both Dave and I were riding as fast as we could, going much faster than we had during the morning portion of the ride. Unfortunately, we just couldn't get away from the black cloud that loomed above. When I saw the sign advertising Roy's Motel - 1 mile ahead, I picked up the pace even more... all I wanted to do was find shelter. When we reached the motel, we both quickly decided that we had gone far enough for the day, and we wanted to get inside before the storm hit.

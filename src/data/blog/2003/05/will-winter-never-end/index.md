@@ -12,9 +12,13 @@ After spending a frosty night in the tent last night, where the mercury fell as 
 
 We quickly cooked a breakfast consisting of the usual oatmeal and beans. Unfortunately, the beans turned out to be lacking heat, thus we were forced to eat cold beans. By the time we got on the road we were already near freezing, and after riding for a few hours my feet were determined to remain ice cubes. By this time we had covered 50km and reached Whitewood. I suggested to Dave that we go for a hot lunch at the Can-Am Truck Stop Restaurant, since the cold beans just didn't cut it! He agreed, and we were finally able to get out of the cold.
 
+![](./can_bike_trip_124.jpg)
+
 After lunch, we were much warmer and refreshed allowing us to continue on for quite some time without much discomfort, thanks in part again to the seemingly ever present tail winds. Our next stop was for a quick snack and bathroom break in Moosomin, "Saskatchewan's Growingest Community".
 
 We then proceeded to the Manitoba border for the mandatory border pictures. A quick stop at the Manitoba information booth for maps and campground information followed. With all of that out of the way, we decided to find a place to camp for the night.
+
+![](./can_bike_trip_127.jpg)
 
 As it turned out, the closest campground was in Virden, Manitoba, which was 40km away. Thanks to the wind, we were able to cover this ground quickly and reach our final destination for the day.
 

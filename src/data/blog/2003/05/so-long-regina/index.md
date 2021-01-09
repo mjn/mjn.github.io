@@ -12,11 +12,15 @@ Today was the day we bid farewell to Regina and got back on the road with no rea
 
 We were again blessed with a decent tail wind which made riding nice, although at first it seemed as though we were going rather slow. That feeling quickly disappeared when I realized that we had covered about 70km in around 2.5 hours. Thus, we stopped for lunch in Indian Head and then consulted the map to look for a possible destination to spend the night.
 
+![](./can_bike_trip_118.jpg)
+
 A trip to the information booth revealed that the most likely stop was Grenfell, which was only 57km away. Although we would have liked to continue a bit further that that, we didn't want to risk not being able to find a campground.
 
 So after taking a few pictures with the Indian Head statue outside the info booth, we hopped on the bikes and continued on our way. We got maybe 25km before we both needed a bathroom break, so we pulled into a small town called Stinakuta for a pee break. This place turned out to be one of the dumpiest small towns we have encountered on the trip thus far, with buildings looking as though they were about to fall to the ground with even the slightest touch. We ended up having to use the washroom in the local saloon where a group of elderly people were sitting around playing crib.
 
 Following the short stop we continued onto Grenfell, and the ride was rather smooth except that the divided highway ended making road conditions slightly worse. When we arrived in Grenfell, we headed to the Grenfell Regional Park to set up camp. Upon arriving at the campground, we were unable to find anybody, aside from a few fellow campers, and thus it seems we have avoided having to pay for a campsite.
+
+![](./can_bike_trip_121.jpg)
 
 It appears that this will be our last day in Saskatchewan as there is only 120km to the Manitoba border, meaning we will have crossed Saskatchewan in just found and a half days of riding. Not too shabby! As a result, we will probably get to Winnipeg a day earlier than expected, but we will be staying there until Sunday regardless... it will be nice to have the extra day with dad.
 

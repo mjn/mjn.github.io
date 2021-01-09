@@ -16,6 +16,8 @@ It is really interesting to meet other cyclists that are doing similar trips so 
 
 As far as the riding goes, things were great up until lunchtime, aside from a morning shower that soaked us just enough so that my feet would be cold and wet for the entire day. We had a decent tailwind though, and as a result we covered the 70km to the Espanol turnoff in about three hours. We then stopped for lunch at Tim Hortons before setting out again.
 
+![](./can_bike_trip_216.jpg)
+
 The afternoon was not quite as pleasant as the wind seemed to shift and began to hinder more than help us. Also, I was really feeling the effects of the cold feet as the temperature was lower than we have had the past few days. We continued on though and shortly after lunch we saw the 'City of Greater Sudbury' sign... ten feet later we saw the 'Sudbury - 54km' sign! Yes, the city encompasses a large area!
 
 As we exited the Trans Canada Highway onto a regional highway in order to avoid heavy traffic, it became apparent that the residents of Sudbury must not pay their taxes. The roads we travelled were in very rough shape, making the riding difficult. To make things worse, we arrived in the city around rush hour so the traffic was very heavy, and often we were forced to ride in the road due to the lack of a shoulder. We headed straight downtown because Dave said it was the quickest way to his house, and after a while we decided &nbsp;to stick to the sidewalks due to the heavy traffic.

@@ -12,9 +12,13 @@ We're finally here! After one month of riding, we have finally crossed into the 
 
 As a result, we were both a bit reluctant in getting out of bed, leading to a late start to the day. Once we began riding, it was immediately evident that we had left the prairies and entered the Canadian Shield as there were trees and rock everywhere. This of course led to hills... nothing major, but when you haven't seen a hill for over a week, they seem pretty significant! It took a little while to get my body back into gear to handle such obstacles, especially since the tail winds across the prairies had left me with very little work to do in regards to riding.
 
+![](./can_bike_trip_157.jpg)
+
 It was just a short journey to the Ontario border, and we stopped for a mandatory photo op and trip to the tourism booth to pick up maps and campground info. We then set out for Kenora, which was to be our lunch destination. Unfortunately, as our bodies got reacquainted with the hilly terrain, our riding speed was a bit slower than we were used to. Thus, we arrived in Kenora a bit later than expected.
 
 The trek through the city of Kenora was amazing, with gorgeous scenery in every direction. We stopped for numerous pictures, including shots of Husky the Muskie! We then travelled through downtown, making some required stops, and then we went for lunch at Subway.
+
+![](./can_bike_trip_162.jpg)
 
 Following lunch, we tried to decide on where to spend the night. Our original destination, Vermillion Bay, was out of the question, and according to the map, there was nothing between Kenora and Vermillion Bay. A quick stop at the travel information hut pointed us towards a campground just outside of Kenora. This was an ideal location as it leaves us a reasonable distance from Dryden, which is the destination for tomorrow. Also, the campground is located right on the lake and has a small beach, making for a great spot to simply relax and enjoy nature!
 

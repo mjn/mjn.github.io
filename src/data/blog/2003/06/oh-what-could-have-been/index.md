@@ -12,7 +12,9 @@ I woke up this morning to a bright, shining sun, took a deep breath and all was 
 
 Unfortunately, the perfect day lasted for less than one kilometre as I heard a distinctive pop come from behind, and I turned to see Dave's tire as flat as the pancakes we had just consumed! Not to worry, a quick change of the tube and we would be back on the road again... after all, it was only 10am and we still had plenty of time. Wrong again!
 
-As I was checking Dave's tire for sharp, protruding objects my heart sank when I saw that a huge hole had been blown out the side of the tire, and thus it had to be replaced. I headed back to find out where the closest Canadian Tire was, but the answer was not good... we would have to all the way across town to get the tire! Gill offered to drive, but unfortunately her parents had just left with the car. So I returned to Dave to break the news to him...
+As I was checking Dave's tire for sharp, protruding objects my heart sank when I saw that a huge hole had been blown out the side of the tire, and thus it had to be replaced. I headed back to find out where the closest Canadian Tire was, but the answer was not good... we would have to go all the way across town to get the tire! Gill offered to drive, but unfortunately her parents had just left with the car. So I returned to Dave to break the news to him...
+
+![](./can_bike_trip_185.jpg)
 
 The next option was the Zellers which was just down the street, and as I was going to call and inquire about bike tires, a fellow cyclist stopped to see what the trouble was with the bike. I told him our dilemma, and he offered me his spare tire. Unfortunately, as luck would have it, the tire was too small for Dave's bike. I then went to Zellers and found a tire amongst their selection of about six tires that I hoped would fit Dave's rim. I brought it back to the blow out site, and of course it didn't fit. However, Dave mentioned that a couple had stopped and offered to take him wherever he needed to go if we were still there when they returned from church. I returned the tire to Zellers, and then Dave and I were just sitting around waiting when Lloyd and Elsie drove by and offered to drive us to the Canadian Tire.
 
@@ -20,9 +22,13 @@ We loaded all of the gear into their Westvalia and set out to find Canadian Tire
 
 Lloyd drove all the way to a Shell station at the outskirts of the city, only to find that it was closed... so started the great air adventure. We stopped at several gas stations and either found no air compressor at all, a broken compressor, and my favourite - a compressor that charged $4 for 5 minutes of use! Finally, we found a Shell station with a working air compressor and inflated the tube to the required pressure. By this time Lloyd was late for work and we had gone all the way back to the house, whereas Lloyd had planned on dropping us off at the Terry Fox Scenic Lookout.
 
+![](./can_bike_trip_187.jpg)
+
 Once back at the house, we grabbed a quick lunch, repacked the gear and said goodbye for the second time. We then set out again, hopefully with better luck than before. We managed to navigate our way through the city with little difficulty, and finally reached the famous Terry Fox Scenic Lookout. Following a few pictures and a brief moment of reflection, I was ready to go, and thus we hopped on the bikes and set out for... well we hadn't quite figured that part out yet!
 
 Thankfully, Lloyd had warned us about some nasty hills along the TCH and provided us with a alternate route that was much flatter and also contained less traffic, which was much appreciated. When we finally reunited with the TCH we met up with all the weekend campers returning home, and the road conditions were less than ideal. We have very little shoulder to ride on, and what shoulder there was, was very beat up, forcing us to drive on the road from time to time. All in all, it wasn't a pleasant ride.
+
+![](./can_bike_trip_191.jpg)
 
 Finally, we ended up in a little town called Dorion, which was where we had decided to spend the night. We headed to the local restaurant/motel/general store for a hot supper, and then travelled several kilometres down the highway to the campground, which was to be our home for the night.
 
