@@ -14,6 +14,8 @@ Following yesterdays rough day of cycling, I was prepared for a much better day,
 
 Shortly after leaving Spences Bridge we were faced with a rather large climb that seemed to go on forever, but it didn't seem as taxing physically as some of the hills encountered yesterday. Once we finished the climb, the terrain flattened out, and we managed to maintain a decent speed.
 
+![](./can_bike_trip_039.jpg)
+
 As we approached Ashcroft, I saw a rest area up ahead and pulled in as my back teeth were floating! As a I slowly peddled around the lot looking for the washroom, I spotted the outhouse and tried to turn in its direction... unfortunately, in my haste I forgot that my shoes were still clipped in, and as I hit the curb I once again fell flat on my face... chalk up another one on the ol' "cut count"!
 
 We arrived in Cache Creek shortly after the pit stop, and stopped in Subway for a hearty lunch. It had been a successful morning as we rode approximately 85km by 3pm. While eating lunch we discussed going all the way to Kamloops today, which was another 85km away. We figured we would simply ride til it looked like the sun was ready to set and then find a place to pull in, but deep down we both wanted to reach Kamloops.
@@ -22,9 +24,13 @@ A mere five minutes after leaving Cache Creek we encountered our first obstacle.
 
 At first it seemed that this delay would severely hamper our chances of getting to Kamloops as every minute was vital, but it turned out that the riding conditions were perfect allowing us to maintain a steady, brisk pace. This lasted for quite a while, and as we saw the "Kamloops - 64km" sign with the sun still high in the sky, our hopes were replenished! However, our hopes were once again crushed as I heard a pop while riding and then realized my tire was losing pressure quick... the first flat tire of the trip!
 
+![](./can_bike_trip_040.jpg)
+
 So, I stopped the bike, took off the wheel and then removed the tire. As I was replacing the tube I was hurrying in order to get back on the road... big mistake! In my haste I had managed to puncture the new tube and thus had to repeat the process one more time.
 
 By this time it became clear that Dave, now known as "The Claw" has pretty much become useless when it comes to anything requiring had strength. It seems that he either grips the handlebars too tightly and thus cramps his muscles, or he has somehow injured his hand... either was he is having severe problems with his hand!
+
+![](./can_bike_trip_041.jpg)
 
 Thus, he we are in Steelhead Provincial Park, which was our original destination for the day. We have decided to ride to Kamloops tomorrow (approx. 50km) and then find a place to stay and use the rest of the day as a rest day before heading into the next set of mountains. In hindsight, this is probably for the best as we probably would have stayed in a hotel for two nights had we made it to Kamloops today as tomorrow was to be a rest day anyway.
 

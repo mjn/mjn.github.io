@@ -12,11 +12,15 @@ We have finally resisted the urge (well, there wasn't much of an urge) to stay i
 
 Dave and I left Salmon Arm bright and early this morning with the sun trying to break through a mostly overcast sky. We realized that weather conditions would probably turn sour once again, but we didn't let that get in our way from reaching our destination. We hopped on our bikes and headed toward Revelstoke.
 
+![](./can_bike_trip_049.jpg)
+
 At first, we were a bit slow going as Dave was a bit of trouble working out the morning kinks. As a result, our pace was not quick as we had hoped, but we did manage to get to Sicamous, approx. 30km from Salmon Arm, in about an hour and a half. There we stopped for a snack and then, feeling rejuvenated we headed out once again, this time at a much quicker pace. Things were going well for much of the way, but about 40km outside of Revelstoke the rain started. Although it was just a slow drizzle at first, we could tell by the cloud cover that we were about to get soaked again! Sure enough, within an hour the rain began falling at a steady rate and we were quickly drenched from head to toe for the second day in a row.
 
 Once we finally reached Revelstoke, the rain had gotten the better of us and we were freezing cold from the low temperature. We quickly located the hostel and checked in. I was actually so cold that I could barely get my bank card out to pay for the room, and then when my bank card wouldn't go through, I had to struggle to get my credit card out of my wallet... I had developed my own claw symptoms!
 
 Once we finally got settled away in the hostel and cleaned ourselves up, we headed out for a quick tour of downtown Revelstoke. It is a very quiet town where it is evident that outdoor activities are the dominant industry. We had supper at a small pub/restaurant, and the headed to a &nbsp;small cafe with an Internet hookup in order to read email.
+
+![](./can_bike_trip_051.jpg)
 
 As for the hostel, experience, I have nothing but good things to say. The people here are super friendly and everybody has their own interesting story to tell. The place is very clean and everybody is respectful of everyone else's property and space. It is truly unlike anything else I have experienced. I must admit that I was a bit skeptical and hesitant at first, but those feelings have long since subsided.
 

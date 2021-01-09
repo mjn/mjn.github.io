@@ -12,13 +12,19 @@ Well, what started out as a pretty uneventful day for the first 70km, turned int
 
 First, Dave acquired a slow leak in his back tire that we simply re-inflated several times in order to travel the last few kilometres until we reached a gas station in Golden. Once we arrived in Golden we changed the tube and then began to inquire about a place to stay in Field. A few phone calls revealed that there were indeed accommodations available in Field, and thus it became our goal to reach Field before sunset. Although we had left early this morning, we changed timezones along the way resulting in losing an hour.
 
+![](./can_bike_trip_061.jpg)
+
 Following a "lovely" lunch of McDonalds, Dave and I headed out of Golden with our eyes fixed straight ahead to Field. Whatever motivation we had built up during our break was immediately crushed once we turned away from the main stretch of Golden and we were faced with a severe incline. We quickly realized we were headed back into the mountains...
 
 We struggled up the hill, and after Dave stopped for a short breather, we continued on. I looked up and stared straight into a daunting sign that read something along the lines of "dangerous road ahead; obey all signs". It didn't take long for it to sink in that this was the stretch of highway that both Greg and Shannon (brother and sister in-law) had warned me about... for 14 dreadful kilometres we weaved our way up and down hills, and around mountains with a steep drop off into the valley on one side and high mountains looming above on the other side. All I could think about was getting through this stretch of road without incident. It was also along this stretch that we saw several mountain goats off the side of the road. Dave suggested stopping for a picture, but I advised him that stopping was probably not a wise decision... actually it was out of the question!
 
+![](./can_bike_trip_062.jpg)
+
 When we finally made it out of that nerve wrecking stretch of road, the rest of the trip to Field was once again uneventful, aside from a few breath-taking views. Once we reached Field we set out to find a room for the night, and it was during this time that we met up with a couple that had been driving around B.C. for that past few days camping. They were looking for campgrounds in the area but we informed them that all campgrounds were closed.
 
 We ran into the couple again at the Kicking Horse Lodge where we were looking for a place to stay. Following some wheeling and dealing (it was my turn this time) we were given a double room for $65 all inclusive. The other couple, Matt and Heather, also got the bargain and were given a room with a kitchen. They then invited us over for dinner as all stores (well, the one store) were closed and we had no food that didn't require cooking.
+
+![](./can_bike_trip_065.jpg)
 
 So, after we had cleaned ourselves up, Dave and I headed down to visit Matt and Heather and cook some grub. We brought our own food, and sat and chatted with the couple while we were cooking and eating. The had been camping around southern B.C for the past few days and then decided to head to the Rockies to camp and do some hiking. Unfortunately, they ran into the same problem we did with regards to campgrounds still being closed for the season. They intend to continue the camping in other parts of B.C. until May 12th and then they will be doing some tree planting for five weeks before resuming their touring into the Yukon.
 

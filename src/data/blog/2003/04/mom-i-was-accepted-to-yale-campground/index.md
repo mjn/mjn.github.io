@@ -12,12 +12,16 @@ Following the rough opening day, Dave and I awoke in our comfy Best Western hote
 
 We left Mission slightly behind schedule, but nothing drastic, and we were well on our way by the time noon rolled around. With short stops each hour and lunch at 1pm in Kent, Dave and I were feeling really good all morning. Also, the mere presence of mountains in each direction we looked was awe inspiring and relieved some of the burden of riding.
 
+![](./can_bike_trip_022.jpg)
+
 Unfortunately, as a result of those surrounding mountains we were forced to make some steady climbs from time to time, but no matter how steep or high the hill seemed, the downside always made up for it!
 
 The only time I was feeling weak the entire day was following a steep climb just after merging from the highway 7 to the Trans Canada Highway. We were getting close to our expected destination and the day of cycling was starting to take effect. I tried to hold out until reaching Emory Creek Provincial Park, but was unable to do so and had to stop for a quick snack. That gave me more than enough energy for the rest of the way.
 
 As the day was getting on and we still hadn't reached the park, we began to wonder whether it even existed. As a result, we pulled into a small spot called Yale Campground for the night. The place turned out to be a gold mine since there was a general store across the road with a wide variety of food, and the campgrounds themselves are quite nice, especially for only $10 per night.
 
+![](./can_bike_trip_026.jpg)
+
 So now we have set up camp and are ready for the first night in a tent, with many more to come. It is this part of the trip that I am most excited about and thankfully for the great weather it should a good way to ease into the "roughing it" lifestyle.&nbsp;
 
-&nbsp;All in all, this has been a great day, and I hope this is more indicative of the rest of the trip, as opposed to yesterday's fiasco.
+All in all, this has been a great day, and I hope this is more indicative of the rest of the trip, as opposed to yesterday's fiasco.
