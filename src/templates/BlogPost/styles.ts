@@ -34,6 +34,14 @@ export const Entry = styled.div`
   code {
     ${tw`bg-gray-200 rounded px-1`}
   }
+
+  ul {
+    ${tw`mx-8 mb-4`}
+
+    li {
+      ${tw`list-disc`}
+    }
+  }
 `;
 
 export const Links = styled.div`
