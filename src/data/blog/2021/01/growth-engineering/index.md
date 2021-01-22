@@ -10,7 +10,7 @@ I have spent the past 7+ years of my career working as a Growth Engineer* at two
 -  What is a growth engineer?
 -  What do you do?
 
-Admitedly, in the moment, I typically have a hard time explaining exactly what it is that I do - and that's because being a growth engineer typically involves doing a lot of things, and more specifically, it involves doing a lot of *different* things.
+Admitedly, in the moment, I typically have a hard time explaining exactly what it is that I do - and that's because being a growth engineer typically involves doing a lot of things, and more specifically, it involves doing a lot of *different* things. So, I decided to write this post in an attempt to try and articulate exactly what it is that I do on a daily basis, and the next time somebody asks either of these questions, I can simply point them here instead of just spewing out a bunch of buzzwords and watching their eyes glaze over as I speak.
 
 ## What a growth engineer is not
 
