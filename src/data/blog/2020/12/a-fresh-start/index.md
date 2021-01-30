@@ -1,7 +1,7 @@
 ---
 category: 'blog'
 title: 'A Fresh Start'
-description: ''
+description: 'A new year - a fresh start! After 15+ years of working in the tech industry, I figured now was finally the time to launch my own personal blog. Better late than never!'
 date: '2020-12-31'
 tags: ['Life']
 ---
