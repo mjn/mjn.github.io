@@ -36,7 +36,7 @@ const AboutPage = () => {
       <>
         <Heading>About Me</Heading>
         <p>
-        A software developer with a Masters of Computer Science and a strong background in the development of large scale consumer and enterprise web-based systems. Possesses strong system analysis, design, implementation and testing skills, as well as strong communication and interpersonal skills. Committed to hard work and working as a team member to provide top quality software applications.
+        A growth engineer that is constantly asking "why?" and then doing whatever is necessary to answer that question. Especially interested in collecting data and building tools to help dig into the data in order to better understand the customer acquisition funnel. 
         </p>
         <SubHeading>Experience</SubHeading> 
         {experiences.map((item) => {
