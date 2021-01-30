@@ -1,7 +1,7 @@
 ---
 category: 'blog'
 title: 'Growth Engineering'
-description: ''
+description: "Being a growth engineer requires wearing many hats, as well as having a mindset where accepting the status quo is not an option - and that's why I love it!"
 date: '2021-01-29'
 tags: ['Work']
 ---
