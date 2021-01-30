@@ -5,7 +5,7 @@ description: "Being a growth engineer requires wearing many hats, as well as hav
 date: '2021-01-29'
 tags: ['Work']
 ---
-I have spent the past 7+ years of my career working as a Growth Engineer* at two of the largest and most successful companies in their respective industries - first at Tripadvisor, and now at Shopify. Over that time, the questions I get the most frequently are:
+I have spent the past 7+ years of my career working as a Growth Engineer<sup>*</sup> at two of the largest and most successful companies in their respective industries - first at Tripadvisor, and now at Shopify. Over that time, the questions I get the most frequently are:
 
 -  What is a growth engineer?
 -  What do you do?
