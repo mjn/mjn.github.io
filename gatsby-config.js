@@ -44,6 +44,14 @@ module.exports = {
     `gatsby-plugin-postcss`,
     `gatsby-plugin-tailwindcss`,
     {
+      resolve: `gatsby-plugin-gtag`,
+      options: {
+        trackingId: `G-TZXJ867MJL`,
+        head: false,
+        anonymize: true,
+      },
+    },
+    {
       resolve: `gatsby-plugin-purgecss`,
       options: {
         tailwind: true,
