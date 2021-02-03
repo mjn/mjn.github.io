@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://mark.northcott.io/sitemap.xml
+Host: https://mark.northcott.io
