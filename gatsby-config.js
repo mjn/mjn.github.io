@@ -5,6 +5,7 @@ module.exports = {
     title: `mark.northcott.io`,
     description: `Random musings and ramblings about technology, sports and other nonsense by a Newfoundlander now residing in Ottawa.`,
     author: `Mark Northcott`,
+    siteUrl: `https://mark.northcott.io`,
   },
   plugins: [
     `gatsby-plugin-typescript`,
@@ -43,6 +44,7 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-postcss`,
     `gatsby-plugin-tailwindcss`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-gtag`,
       options: {
@@ -50,6 +52,13 @@ module.exports = {
         head: false,
         anonymize: true,
       },
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        sitemap: 'https://mark.northcott.io/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
     },
     {
       resolve: `gatsby-plugin-purgecss`,
