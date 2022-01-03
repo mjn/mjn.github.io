@@ -1,27 +1,27 @@
 import React from 'react';
 import {Link, useStaticQuery, graphql} from "gatsby"
-import Img from "gatsby-image"
+import {GatsbyImage} from "gatsby-plugin-image";
 
 const Avatar = () => {
   const data = useStaticQuery(query);
 
   return (
     <Link to="/">
-      <Img className="rounded-full border border-gray-200 shadow-inner" fixed={data.placeholderImage.childImageSharp.fixed} />
+      <GatsbyImage
+        className="rounded-full border border-gray-200 shadow-inner z-[100]"
+        image={data.placeholderImage.childImageSharp.gatsbyImageData}
+        alt="Mark Northcott" />
     </Link>
   );
 };
 
-const query = graphql`
-  query {
-    placeholderImage: file(relativePath: { eq: "profile.jpg" }) {
-      childImageSharp {
-        fixed(width: 50, height: 50) {
-          ...GatsbyImageSharpFixed
-        }
-      }
+const query = graphql`{
+  placeholderImage: file(relativePath: {eq: "profile.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(width: 50, height: 50, layout: FIXED)
     }
   }
+}
 `;
 
 export default Avatar;
