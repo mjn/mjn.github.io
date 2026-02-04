@@ -11,20 +11,16 @@
       if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
         return localStorage.getItem('theme');
       }
-      if (window.matchMedia('(prefers-color-scheme: light)').matches) {
-        return 'light';
-      }
       return 'terminal'; // Default
     };
 
     const applyTheme = (theme) => {
       const html = document.documentElement;
-      if (theme === 'light') {
-        html.classList.add('light-mode');
-        html.classList.remove('terminal-mode');
-      } else {
-        html.classList.add('terminal-mode');
-        html.classList.remove('light-mode');
+      const themes = ['light-mode', 'everforest-mode', 'catppuccin-mode', 'gruvbox-mode'];
+      themes.forEach(t => html.classList.remove(t));
+      
+      if (theme !== 'terminal') {
+        html.classList.add(`${theme}-mode`);
       }
       localStorage.setItem('theme', theme);
     };
@@ -40,9 +36,17 @@
       <a href="/blog/" class="text-terminal-accent hover:underline ml-4">blog</a>
       <a href="/experience/" class="text-terminal-accent hover:underline ml-4">experience</a>
     </nav>
-    <button id="theme-toggle" class="text-terminal-text hover:text-terminal-accent focus:outline-none">
-      [Toggle Theme]
-    </button>
+    <div class="flex items-center gap-1 text-terminal-text">
+      <span>[theme:</span>
+      <select id="theme-select" class="bg-transparent border-none text-terminal-accent hover:underline focus:outline-none font-mono cursor-pointer appearance-none">
+        <option value="terminal">tokyo-night</option>
+        <option value="light">light</option>
+        <option value="everforest">everforest</option>
+        <option value="catppuccin">catppuccin</option>
+        <option value="gruvbox">gruvbox</option>
+      </select>
+      <span>]</span>
+    </div>
   </header>
   <main>
     {{ content | safe }}
@@ -52,10 +56,10 @@
   </footer>
 
   <script>
-    document.getElementById('theme-toggle').addEventListener('click', () => {
-      const currentTheme = document.documentElement.classList.contains('light-mode') ? 'light' : 'terminal';
-      const newTheme = currentTheme === 'light' ? 'terminal' : 'light';
-      applyTheme(newTheme);
+    const themeSelect = document.getElementById('theme-select');
+    themeSelect.value = getTheme();
+    themeSelect.addEventListener('change', (e) => {
+      applyTheme(e.target.value);
     });
   </script>
 </body>

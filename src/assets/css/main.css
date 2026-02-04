@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -22,27 +22,69 @@
   --cursor-color: #e53e3e;
 }
 
+.everforest-mode {
+  /* Everforest Theme */
+  --bg-color: #2d353b;
+  --text-color: #d3c6aa;
+  --accent-color: #7fbbb3;
+  --prompt-color: #a7c080;
+  --cursor-color: #e67e80;
+}
+
+.catppuccin-mode {
+  /* Catppuccin Theme */
+  --bg-color: #1e1e2e;
+  --text-color: #cdd6f4;
+  --accent-color: #89b4fa;
+  --prompt-color: #a6e3a1;
+  --cursor-color: #f38ba8;
+}
+
+.gruvbox-mode {
+  /* Gruvbox Theme */
+  --bg-color: #282828;
+  --text-color: #ebdbb2;
+  --accent-color: #83a598;
+  --prompt-color: #b8bb26;
+  --cursor-color: #fb4934;
+}
+
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
-  font-family: 'JetBrainsMono Nerd Font', 'JetBrains Mono', 'FiraCode Nerd Font', 'Fira Code', monospace;
+  font-family: "JetBrainsMono Nerd Font", "JetBrains Mono", "FiraCode Nerd Font",
+    "Fira Code", monospace;
 }
 
 /* Utility classes mapping to variables */
-.text-terminal-text { color: var(--text-color); }
-.text-terminal-accent { color: var(--accent-color); }
-.text-terminal-prompt { color: var(--prompt-color); }
-.bg-terminal-bg { background-color: var(--bg-color); }
-.border-terminal-text { border-color: var(--text-color); }
+.text-terminal-text {
+  color: var(--text-color);
+}
+.text-terminal-accent {
+  color: var(--accent-color);
+}
+.text-terminal-prompt {
+  color: var(--prompt-color);
+}
+.bg-terminal-bg {
+  background-color: var(--bg-color);
+}
+.border-terminal-text {
+  border-color: var(--text-color);
+}
 
 /* Prose overrides for Markdown content */
 .prose {
   color: var(--text-color);
   max-width: 65ch;
 }
-.prose h1, .prose h2, .prose h3, .prose h4 {
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4 {
   color: var(--accent-color);
-  font-family: 'JetBrainsMono Nerd Font', 'JetBrains Mono', 'FiraCode Nerd Font', 'Fira Code', monospace;
+  font-family: "JetBrainsMono Nerd Font", "JetBrains Mono", "FiraCode Nerd Font",
+    "Fira Code", monospace;
 }
 .prose a {
   color: var(--accent-color);
@@ -53,7 +95,7 @@ body {
 }
 .prose code {
   color: var(--prompt-color);
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0, 0, 0, 0.2);
   padding: 0.2em 0.4em;
   border-radius: 0.25em;
 }
