@@ -36,16 +36,17 @@
       <a href="/blog/" class="text-terminal-accent hover:underline ml-4">blog</a>
       <a href="/experience/" class="text-terminal-accent hover:underline ml-4">experience</a>
     </nav>
-    <div class="flex items-center gap-1 text-terminal-text">
-      <span>[theme:</span>
-      <select id="theme-select" class="bg-transparent border-none text-terminal-accent hover:underline focus:outline-none font-mono cursor-pointer appearance-none">
-        <option value="terminal">tokyo-night</option>
-        <option value="light">light</option>
-        <option value="everforest">everforest</option>
-        <option value="catppuccin">catppuccin</option>
-        <option value="gruvbox">gruvbox</option>
-      </select>
-      <span>]</span>
+    <div class="relative flex items-center font-mono text-terminal-text">
+      <button id="theme-trigger" class="hover:tui-inverse focus:tui-inverse outline-none px-1 transition-colors duration-200">
+        [theme: <span id="current-theme-name">tokyo-night</span>]
+      </button>
+      <div id="theme-menu" class="hidden tui-dropdown-menu mt-1">
+        <div class="tui-dropdown-item" data-value="terminal">tokyo-night</div>
+        <div class="tui-dropdown-item" data-value="light">light</div>
+        <div class="tui-dropdown-item" data-value="everforest">everforest</div>
+        <div class="tui-dropdown-item" data-value="catppuccin">catppuccin</div>
+        <div class="tui-dropdown-item" data-value="gruvbox">gruvbox</div>
+      </div>
     </div>
   </header>
   <main>
@@ -56,10 +57,51 @@
   </footer>
 
   <script>
-    const themeSelect = document.getElementById('theme-select');
-    themeSelect.value = getTheme();
-    themeSelect.addEventListener('change', (e) => {
-      applyTheme(e.target.value);
+    const themeTrigger = document.getElementById('theme-trigger');
+    const themeMenu = document.getElementById('theme-menu');
+    const themeNameDisplay = document.getElementById('current-theme-name');
+    const themeItems = document.querySelectorAll('.tui-dropdown-item');
+
+    const themeNames = {
+      'terminal': 'tokyo-night',
+      'light': 'light',
+      'everforest': 'everforest',
+      'catppuccin': 'catppuccin',
+      'gruvbox': 'gruvbox'
+    };
+
+    // Initialize display name
+    const currentTheme = getTheme();
+    themeNameDisplay.textContent = themeNames[currentTheme] || currentTheme;
+
+    // Toggle menu
+    themeTrigger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      themeMenu.classList.toggle('hidden');
+    });
+
+    // Handle selection
+    themeItems.forEach(item => {
+      item.addEventListener('click', () => {
+        const theme = item.getAttribute('data-value');
+        applyTheme(theme);
+        themeNameDisplay.textContent = themeNames[theme];
+        themeMenu.classList.add('hidden');
+      });
+    });
+
+    // Close on click outside
+    document.addEventListener('click', (e) => {
+      if (!themeMenu.contains(e.target) && !themeTrigger.contains(e.target)) {
+        themeMenu.classList.add('hidden');
+      }
+    });
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        themeMenu.classList.add('hidden');
+      }
     });
   </script>
 </body>
