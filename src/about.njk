@@ -1,24 +1,27 @@
 ---
 layout: base
-title: About Me
+title: About
 ---
-
 <div class="font-mono">
   <h1 class="text-3xl font-bold mb-6 text-terminal-accent">
-    <span class="text-terminal-prompt">$</span> cat about-me.txt
+    <span class="text-terminal-prompt">$</span> cat about.md
   </h1>
   
-  <p class="mb-8">
-    A growth engineer that is constantly asking "why?" and then doing whatever is necessary to answer that question. Especially interested in collecting data and building tools to help dig into the data in order to better understand the customer acquisition funnel.
-  </p>
+  <div class="prose prose-invert max-w-none mb-12">
+    <p>
+      I am a software engineer with a passion for building products that help people. 
+      I have over 15 years of experience in the tech industry, working on everything from 
+      small startups to large enterprise systems.
+    </p>
+  </div>
 
-  <h2 class="text-2xl font-bold mb-4 text-terminal-accent">
-    <span class="text-terminal-prompt">$</span> ls experience/
+  <h2 class="text-2xl font-bold mb-6 text-terminal-accent">
+    <span class="text-terminal-prompt">$</span> history | grep experience
   </h2>
 
   <div class="space-y-8">
     {% for exp in collections.experience %}
-    <div class="border border-terminal-text p-6 rounded">
+    <div class="border-l-2 border-terminal-prompt pl-4">
       <h3 class="text-xl font-bold text-terminal-accent">{{ exp.data.company }}</h3>
       <h4 class="text-lg text-terminal-prompt">{{ exp.data.title }}</h4>
       <p class="text-sm mt-1 opacity-70">{{ exp.data.startDate | date("MMM yyyy") }} - {% if exp.data.endDate %}{{ exp.data.endDate | date("MMM yyyy") }}{% else %}Present{% endif %}</p>

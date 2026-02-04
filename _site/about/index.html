@@ -1,0 +1,152 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Mark Northcott</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script>
+    // Check for saved theme preference, otherwise use system preference
+    const getTheme = () => {
+      if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+        return localStorage.getItem('theme');
+      }
+      if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+        return 'light';
+      }
+      return 'terminal'; // Default
+    };
+
+    const applyTheme = (theme) => {
+      const html = document.documentElement;
+      if (theme === 'light') {
+        html.classList.add('light-mode');
+        html.classList.remove('terminal-mode');
+      } else {
+        html.classList.add('terminal-mode');
+        html.classList.remove('light-mode');
+      }
+      localStorage.setItem('theme', theme);
+    };
+
+    applyTheme(getTheme());
+  </script>
+</head>
+<body class="min-h-screen p-8 transition-colors duration-300">
+  <header class="mb-8 font-mono flex justify-between items-center">
+    <nav>
+      <span class="text-terminal-prompt">user@portfolio:~$</span>
+      <a href="/" class="text-terminal-accent hover:underline ml-2">home</a>
+      <a href="/blog/" class="text-terminal-accent hover:underline ml-4">blog</a>
+      <a href="/experience/" class="text-terminal-accent hover:underline ml-4">experience</a>
+    </nav>
+    <button id="theme-toggle" class="text-terminal-text hover:text-terminal-accent focus:outline-none">
+      [Toggle Theme]
+    </button>
+  </header>
+  <main>
+    <div class="font-mono">
+  <h1 class="text-3xl font-bold mb-6 text-terminal-accent">
+    <span class="text-terminal-prompt">$</span> cat about.md
+  </h1>
+  
+  <div class="prose prose-invert max-w-none mb-12">
+    <p>
+      I am a software engineer with a passion for building products that help people. 
+      I have over 15 years of experience in the tech industry, working on everything from 
+      small startups to large enterprise systems.
+    </p>
+  </div>
+
+  <h2 class="text-2xl font-bold mb-6 text-terminal-accent">
+    <span class="text-terminal-prompt">$</span> history | grep experience
+  </h2>
+
+  <div class="space-y-8">
+    
+    <div class="border-l-2 border-terminal-prompt pl-4">
+      <h3 class="text-xl font-bold text-terminal-accent">Shopify</h3>
+      <h4 class="text-lg text-terminal-prompt">Staff Developer</h4>
+      <p class="text-sm mt-1 opacity-70">May 2020 - Present</p>
+      <div class="mt-4 prose prose-invert max-w-none">
+        <p>Member of the Growth RnD team and focused on building internal tools to help others in the growth and marketing organization better understand the merchants that visit our site.</p>
+<p>Working on ways to help grow the number of active merchants using the Shopify platform.</p>
+
+      </div>
+    </div>
+    
+    <div class="border-l-2 border-terminal-prompt pl-4">
+      <h3 class="text-xl font-bold text-terminal-accent">Tripadvisor</h3>
+      <h4 class="text-lg text-terminal-prompt">Principal Engineer</h4>
+      <p class="text-sm mt-1 opacity-70">Dec 2013 - May 2020</p>
+      <div class="mt-4 prose prose-invert max-w-none">
+        <p>Member of the SEO team and responsible for building internal tools to help gather insights, manage experiments and analyze results related to increasing traffic to the site.</p>
+<p>Built custom data pipelines and sources to help better understand visitors to the site.</p>
+
+      </div>
+    </div>
+    
+    <div class="border-l-2 border-terminal-prompt pl-4">
+      <h3 class="text-xl font-bold text-terminal-accent">Avaleris</h3>
+      <h4 class="text-lg text-terminal-prompt">Senior Consultant</h4>
+      <p class="text-sm mt-1 opacity-70">May 2012 - Dec 2013</p>
+      <div class="mt-4 prose prose-invert max-w-none">
+        <p>Responsible for managing and deploying Identity and Access Management solutions to clients using Microsoft Forefront Identity Manager.</p>
+<p>Certified in Microsoft Forefront Identity Management configuration and Windows Server 2008 administration.</p>
+
+      </div>
+    </div>
+    
+    <div class="border-l-2 border-terminal-prompt pl-4">
+      <h3 class="text-xl font-bold text-terminal-accent">RareLogic</h3>
+      <h4 class="text-lg text-terminal-prompt">Lead Developer</h4>
+      <p class="text-sm mt-1 opacity-70">Sep 2009 - Mar 2012</p>
+      <div class="mt-4 prose prose-invert max-w-none">
+        <p>Responsible for architecting and developing an in-memory, distributed database for storing customer event data.</p>
+<p>Implemented a distributed query engine within the database to allow for real-time analytics to be run on customer data.</p>
+<p>Developed client libraries for communicating with the database using Ruby, Objective-C, Android and C/C++.</p>
+<p>Deployed and managed production database on Amazon EC2 cloud infrastructure.</p>
+
+      </div>
+    </div>
+    
+    <div class="border-l-2 border-terminal-prompt pl-4">
+      <h3 class="text-xl font-bold text-terminal-accent">Adjoy</h3>
+      <h4 class="text-lg text-terminal-prompt">CTO, Co-Founder</h4>
+      <p class="text-sm mt-1 opacity-70">Feb 2008 - May 2013</p>
+      <div class="mt-4 prose prose-invert max-w-none">
+        <p>Responsible for all development, deployment and management of the Adjoy Platform, which is a video platform that allows for marketers to leverage the power of online video and charitable donations in order to drive customer engagement.</p>
+<p>The server-side portion of the platform was built using the Ruby on Rails framework, and the video player was built using Adobe Flex/Flash.</p>
+<p>The platform was deployed on a Linux based stack that included nginx, Phusion Passenger, and MySql.</p>
+
+      </div>
+    </div>
+    
+    <div class="border-l-2 border-terminal-prompt pl-4">
+      <h3 class="text-xl font-bold text-terminal-accent">non~linear creations</h3>
+      <h4 class="text-lg text-terminal-prompt">Web Developer, Head of R&amp;D</h4>
+      <p class="text-sm mt-1 opacity-70">May 2005 - Feb 2008</p>
+      <div class="mt-4 prose prose-invert max-w-none">
+        <p>Responsible for scoping and developing internal projects to help improve company processes and enhance the services provided to customers.</p>
+<p>Provided architecture and deployment guidance to internal teams working on various client projects.</p>
+<p>Responsible for keeping current on new technologies in the content management system and web development fields in order to ensure that clients were always offered the best solution for their needs.</p>
+
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+  </main>
+  <footer class="mt-16 text-sm text-terminal-text opacity-50 font-mono">
+    © 2025 Mark Northcott
+  </footer>
+
+  <script>
+    document.getElementById('theme-toggle').addEventListener('click', () => {
+      const currentTheme = document.documentElement.classList.contains('light-mode') ? 'light' : 'terminal';
+      const newTheme = currentTheme === 'light' ? 'terminal' : 'light';
+      applyTheme(newTheme);
+    });
+  </script>
+
+
+</body></html>
