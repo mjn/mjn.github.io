@@ -12,7 +12,7 @@ module.exports = {
         }
       },
       fontFamily: {
-        mono: ['"Fira Code"', 'monospace'],
+        mono: ['"JetBrainsMono Nerd Font"', '"JetBrains Mono"', '"FiraCode Nerd Font"', '"Fira Code"', 'monospace'],
       }
     },
   },
