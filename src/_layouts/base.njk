@@ -74,17 +74,13 @@
             <a href="/experience/" class="text-terminal-accent hover:underline">experience</a>
           </nav>
           <div class="border-t border-terminal-accent opacity-30"></div>
-          <div class="relative flex flex-col font-mono text-terminal-text">
-            <button id="theme-trigger-mobile" class="text-left hover:tui-inverse focus:tui-inverse outline-none px-1 transition-colors duration-200">
-              [theme: <span class="current-theme-name">tokyo-night</span>]
-            </button>
-            <div id="theme-menu-mobile" class="hidden tui-dropdown-menu mt-1 left-0 relative w-full border-t-0 border-x-0 border-b-0">
-              <div class="tui-dropdown-item" data-value="terminal">tokyo-night</div>
-              <div class="tui-dropdown-item" data-value="light">light</div>
-              <div class="tui-dropdown-item" data-value="everforest">everforest</div>
-              <div class="tui-dropdown-item" data-value="catppuccin">catppuccin</div>
-              <div class="tui-dropdown-item" data-value="gruvbox">gruvbox</div>
-            </div>
+          <div class="flex flex-col space-y-2 font-mono text-terminal-text">
+            <span class="text-xs opacity-50 px-1">Theme</span>
+            <button class="mobile-theme-item text-left hover:tui-inverse px-1" data-value="terminal">tokyo-night</button>
+            <button class="mobile-theme-item text-left hover:tui-inverse px-1" data-value="light">light</button>
+            <button class="mobile-theme-item text-left hover:tui-inverse px-1" data-value="everforest">everforest</button>
+            <button class="mobile-theme-item text-left hover:tui-inverse px-1" data-value="catppuccin">catppuccin</button>
+            <button class="mobile-theme-item text-left hover:tui-inverse px-1" data-value="gruvbox">gruvbox</button>
           </div>
         </div>
       </div>
@@ -106,8 +102,7 @@
     // Mobile elements
     const mobileMenuTrigger = document.getElementById('mobile-menu-trigger');
     const mobileMenu = document.getElementById('mobile-menu');
-    const themeTriggerMobile = document.getElementById('theme-trigger-mobile');
-    const themeMenuMobile = document.getElementById('theme-menu-mobile');
+    const mobileThemeItems = document.querySelectorAll('.mobile-theme-item');
 
     const themeNames = {
       'terminal': 'tokyo-night',
@@ -117,9 +112,24 @@
       'gruvbox': 'gruvbox'
     };
 
+    const updateMobileThemeUI = (activeTheme) => {
+      mobileThemeItems.forEach(item => {
+        const themeValue = item.getAttribute('data-value');
+        const themeName = themeNames[themeValue];
+        if (themeValue === activeTheme) {
+          item.textContent = `[${themeName}]`;
+          item.classList.add('text-terminal-accent');
+        } else {
+          item.textContent = themeName;
+          item.classList.remove('text-terminal-accent');
+        }
+      });
+    };
+
     // Initialize display name
     const currentTheme = getTheme();
     themeNameDisplays.forEach(el => el.textContent = themeNames[currentTheme] || currentTheme);
+    updateMobileThemeUI(currentTheme);
 
     // Toggle desktop menu
     if(themeTrigger) {
@@ -137,25 +147,30 @@
       });
     }
 
-    // Toggle mobile theme menu
-    if(themeTriggerMobile) {
-      themeTriggerMobile.addEventListener('click', (e) => {
-        e.stopPropagation();
-        themeMenuMobile.classList.toggle('hidden');
-      });
-    }
-
-    // Handle selection
+    // Handle desktop theme selection
     themeItems.forEach(item => {
       item.addEventListener('click', () => {
         const theme = item.getAttribute('data-value');
         applyTheme(theme);
         themeNameDisplays.forEach(el => el.textContent = themeNames[theme]);
+        updateMobileThemeUI(theme);
         
         // Close all menus
         if(themeMenu) themeMenu.classList.add('hidden');
         if(mobileMenu) mobileMenu.classList.add('hidden');
-        if(themeMenuMobile) themeMenuMobile.classList.add('hidden');
+      });
+    });
+
+    // Handle mobile theme selection
+    mobileThemeItems.forEach(item => {
+      item.addEventListener('click', () => {
+        const theme = item.getAttribute('data-value');
+        applyTheme(theme);
+        themeNameDisplays.forEach(el => el.textContent = themeNames[theme]);
+        updateMobileThemeUI(theme);
+        
+        // Close mobile menu
+        if(mobileMenu) mobileMenu.classList.add('hidden');
       });
     });
 
