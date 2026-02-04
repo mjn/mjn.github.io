@@ -22,6 +22,13 @@ module.exports = function (eleventyConfig) {
     return array.slice(0, limit)
   })
 
+  eleventyConfig.addFilter("promptPath", url => {
+    if (!url || url === "/") return "~"
+    // Remove trailing slash and prepend ~
+    let cleanUrl = url.replace(/\/$/, "")
+    return `~${cleanUrl}`
+  })
+
   // Collections
   eleventyConfig.addCollection("post", function (collectionApi) {
     return collectionApi
