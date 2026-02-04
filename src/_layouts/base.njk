@@ -28,33 +28,36 @@
     applyTheme(getTheme());
   </script>
 </head>
-<body class="min-h-screen p-8 transition-colors duration-300" data-input-path="{{ page.inputPath }}">
-  <header class="mb-8 font-mono flex justify-between items-center">
-    <nav>
-      <span class="text-terminal-prompt">mark@northcott.io:~$</span>
-      <a href="/" class="text-terminal-accent hover:underline ml-2">home</a>
-      <a href="/blog/" class="text-terminal-accent hover:underline ml-4">blog</a>
-      <a href="/experience/" class="text-terminal-accent hover:underline ml-4">experience</a>
-    </nav>
-    <div class="relative flex items-center font-mono text-terminal-text">
-      <button id="theme-trigger" class="hover:tui-inverse focus:tui-inverse outline-none px-1 transition-colors duration-200">
-        [theme: <span id="current-theme-name">tokyo-night</span>]
-      </button>
-      <div id="theme-menu" class="hidden tui-dropdown-menu mt-1">
-        <div class="tui-dropdown-item" data-value="terminal">tokyo-night</div>
-        <div class="tui-dropdown-item" data-value="light">light</div>
-        <div class="tui-dropdown-item" data-value="everforest">everforest</div>
-        <div class="tui-dropdown-item" data-value="catppuccin">catppuccin</div>
-        <div class="tui-dropdown-item" data-value="gruvbox">gruvbox</div>
+<body class="flex flex-col items-center justify-center min-h-screen p-4 sm:p-8 transition-colors duration-300" data-input-path="{{ page.inputPath }}">
+  <div class="w-full max-w-5xl mx-auto border-2 border-terminal-accent rounded-lg p-6 sm:p-10 relative">
+    <div class="absolute -top-3 left-6 px-2 bg-terminal-bg text-terminal-accent font-mono font-bold">mark@northcott.io</div>
+    <header class="mb-8 font-mono flex justify-between items-center">
+      <nav>
+        <span class="text-terminal-prompt">mark@northcott.io:~$</span>
+        <a href="/" class="text-terminal-accent hover:underline ml-2">home</a>
+        <a href="/blog/" class="text-terminal-accent hover:underline ml-4">blog</a>
+        <a href="/experience/" class="text-terminal-accent hover:underline ml-4">experience</a>
+      </nav>
+      <div class="relative flex items-center font-mono text-terminal-text">
+        <button id="theme-trigger" class="hover:tui-inverse focus:tui-inverse outline-none px-1 transition-colors duration-200">
+          [theme: <span id="current-theme-name">tokyo-night</span>]
+        </button>
+        <div id="theme-menu" class="hidden tui-dropdown-menu mt-1">
+          <div class="tui-dropdown-item" data-value="terminal">tokyo-night</div>
+          <div class="tui-dropdown-item" data-value="light">light</div>
+          <div class="tui-dropdown-item" data-value="everforest">everforest</div>
+          <div class="tui-dropdown-item" data-value="catppuccin">catppuccin</div>
+          <div class="tui-dropdown-item" data-value="gruvbox">gruvbox</div>
+        </div>
       </div>
-    </div>
-  </header>
-  <main>
-    {{ content | safe }}
-  </main>
-  <footer class="mt-16 text-sm text-terminal-text opacity-50 font-mono">
-    &copy; 2025 Mark Northcott
-  </footer>
+    </header>
+    <main>
+      {{ content | safe }}
+    </main>
+    <footer class="mt-16 text-sm text-terminal-text opacity-50 font-mono">
+      &copy; 2025 Mark Northcott
+    </footer>
+  </div>
 
   <script>
     const themeTrigger = document.getElementById('theme-trigger');
