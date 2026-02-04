@@ -1,0 +1,98 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Mark Northcott</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script>
+    // Check for saved theme preference, otherwise use system preference
+    const getTheme = () => {
+      if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+        return localStorage.getItem('theme');
+      }
+      if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+        return 'light';
+      }
+      return 'terminal'; // Default
+    };
+
+    const applyTheme = (theme) => {
+      const html = document.documentElement;
+      if (theme === 'light') {
+        html.classList.add('light-mode');
+        html.classList.remove('terminal-mode');
+      } else {
+        html.classList.add('terminal-mode');
+        html.classList.remove('light-mode');
+      }
+      localStorage.setItem('theme', theme);
+    };
+
+    applyTheme(getTheme());
+  </script>
+</head>
+<body class="min-h-screen p-8 transition-colors duration-300">
+  <header class="mb-8 font-mono flex justify-between items-center">
+    <nav>
+      <span class="text-terminal-prompt">user@portfolio:~$</span>
+      <a href="/" class="text-terminal-accent hover:underline ml-2">home</a>
+      <a href="/blog/" class="text-terminal-accent hover:underline ml-4">blog</a>
+      <a href="/experience/" class="text-terminal-accent hover:underline ml-4">experience</a>
+    </nav>
+    <button id="theme-toggle" class="text-terminal-text hover:text-terminal-accent focus:outline-none">
+      [Toggle Theme]
+    </button>
+  </header>
+  <main>
+    <div class="font-mono">
+  <h1 class="text-3xl font-bold mb-6 text-terminal-accent">
+    <span class="text-terminal-prompt">$</span> whoami
+  </h1>
+  <p class="mb-8 text-lg">
+    A growth engineer that is constantly asking "why?" and then doing whatever is necessary to answer that question.
+  </p>
+
+  <h2 class="text-2xl font-bold mb-4 text-terminal-accent">
+    <span class="text-terminal-prompt">$</span> ls recent-posts/
+  </h2>
+  <ul class="space-y-4">
+    
+    <li class="border-l-2 border-terminal-prompt pl-4">
+      <a href="/blog/2003/04/last-minute-preparation/" class="text-xl hover:underline">Last Minute Preparation</a>
+      <div class="text-sm opacity-70">Apr 25, 2003</div>
+      <p class="mt-2 text-sm">Bags are packed, bikes are in boxes and flight is booked. We land in Vancouver and prepare to hit the road.</p>
+    </li>
+    
+    <li class="border-l-2 border-terminal-prompt pl-4">
+      <a href="/blog/2003/04/one-down/" class="text-xl hover:underline">One Down...</a>
+      <div class="text-sm opacity-70">Apr 26, 2003</div>
+      <p class="mt-2 text-sm"></p>
+    </li>
+    
+    <li class="border-l-2 border-terminal-prompt pl-4">
+      <a href="/blog/2003/04/mom-i-was-accepted-to-yale-campground/" class="text-xl hover:underline">Mom, I was Accepted to Yale... Campground</a>
+      <div class="text-sm opacity-70">Apr 27, 2003</div>
+      <p class="mt-2 text-sm"></p>
+    </li>
+    
+  </ul>
+  
+  <div class="mt-8">
+    <a href="/blog/" class="text-terminal-prompt hover:underline">View all posts -&gt;</a>
+  </div>
+</div>
+
+  </main>
+  <footer class="mt-16 text-sm text-terminal-text opacity-50 font-mono">
+    © 2025 Mark Northcott
+  </footer>
+
+  <script>
+    document.getElementById('theme-toggle').addEventListener('click', () => {
+      const currentTheme = document.documentElement.classList.contains('light-mode') ? 'light' : 'terminal';
+      const newTheme = currentTheme === 'light' ? 'terminal' : 'light';
+      applyTheme(newTheme);
+    });
+  </script>
+
+
+</body></html>

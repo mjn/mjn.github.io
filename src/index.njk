@@ -1,0 +1,29 @@
+---
+layout: base
+title: Home
+---
+<div class="font-mono">
+  <h1 class="text-3xl font-bold mb-6 text-terminal-accent">
+    <span class="text-terminal-prompt">$</span> whoami
+  </h1>
+  <p class="mb-8 text-lg">
+    A growth engineer that is constantly asking "why?" and then doing whatever is necessary to answer that question.
+  </p>
+
+  <h2 class="text-2xl font-bold mb-4 text-terminal-accent">
+    <span class="text-terminal-prompt">$</span> ls recent-posts/
+  </h2>
+  <ul class="space-y-4">
+    {% for post in collections.post | limit(3) %}
+    <li class="border-l-2 border-terminal-prompt pl-4">
+      <a href="{{ post.url }}" class="text-xl hover:underline">{{ post.data.title }}</a>
+      <div class="text-sm opacity-70">{{ post.date | date("MMM d, yyyy") }}</div>
+      <p class="mt-2 text-sm">{{ post.data.description }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+  
+  <div class="mt-8">
+    <a href="/blog/" class="text-terminal-prompt hover:underline">View all posts -></a>
+  </div>
+</div>
