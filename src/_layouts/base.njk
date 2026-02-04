@@ -37,36 +37,17 @@
     <header class="mb-8 font-mono flex justify-between items-center relative">
       <div class="flex items-center">
         <span class="text-terminal-prompt">{{ page.url | promptPath }}$</span>
-        <nav class="hidden md:flex ml-2">
-          <a href="/" class="text-terminal-accent hover:underline ml-2">home</a>
-          <a href="/blog/" class="text-terminal-accent hover:underline ml-4">blog</a>
-          <a href="/experience/" class="text-terminal-accent hover:underline ml-4">experience</a>
-        </nav>
       </div>
 
       <div class="flex items-center space-x-4">
-        <!-- Desktop Theme Selector -->
-        <div class="hidden md:flex relative items-center font-mono text-terminal-text">
-          <button id="theme-trigger" class="hover:tui-inverse focus:tui-inverse outline-none px-1 transition-colors duration-200">
-            [theme: <span class="current-theme-name">tokyo-night</span>]
-          </button>
-          <div id="theme-menu" class="hidden tui-dropdown-menu mt-1">
-            <div class="tui-dropdown-item" data-value="terminal">tokyo-night</div>
-            <div class="tui-dropdown-item" data-value="light">light</div>
-            <div class="tui-dropdown-item" data-value="everforest">everforest</div>
-            <div class="tui-dropdown-item" data-value="catppuccin">catppuccin</div>
-            <div class="tui-dropdown-item" data-value="gruvbox">gruvbox</div>
-          </div>
-        </div>
-
-        <!-- Mobile Menu Trigger -->
-        <button id="mobile-menu-trigger" class="md:hidden hover:tui-inverse focus:tui-inverse outline-none px-1 transition-colors duration-200">
+        <!-- Menu Trigger -->
+        <button id="menu-trigger" class="hover:tui-inverse focus:tui-inverse outline-none px-1 transition-colors duration-200">
           [menu]
         </button>
       </div>
 
-      <!-- Mobile Dropdown Menu -->
-      <div id="mobile-menu" class="hidden absolute top-full right-0 mt-2 z-50 tui-dropdown-menu min-w-[200px]">
+      <!-- Main Dropdown Menu -->
+      <div id="main-menu" class="hidden absolute top-full right-0 mt-2 z-50 tui-dropdown-menu min-w-[200px]">
         <div class="flex flex-col p-4 space-y-4">
           <nav class="flex flex-col space-y-2">
             <a href="/" class="text-terminal-accent hover:underline">home</a>
@@ -76,11 +57,11 @@
           <div class="border-t border-terminal-accent opacity-30"></div>
           <div class="flex flex-col space-y-2 font-mono text-terminal-text">
             <span class="text-xs opacity-50 px-1">Theme</span>
-            <button class="mobile-theme-item text-left hover:tui-inverse px-1" data-value="terminal">tokyo-night</button>
-            <button class="mobile-theme-item text-left hover:tui-inverse px-1" data-value="light">light</button>
-            <button class="mobile-theme-item text-left hover:tui-inverse px-1" data-value="everforest">everforest</button>
-            <button class="mobile-theme-item text-left hover:tui-inverse px-1" data-value="catppuccin">catppuccin</button>
-            <button class="mobile-theme-item text-left hover:tui-inverse px-1" data-value="gruvbox">gruvbox</button>
+            <button class="theme-item text-left hover:tui-inverse px-1" data-value="terminal">tokyo-night</button>
+            <button class="theme-item text-left hover:tui-inverse px-1" data-value="light">light</button>
+            <button class="theme-item text-left hover:tui-inverse px-1" data-value="everforest">everforest</button>
+            <button class="theme-item text-left hover:tui-inverse px-1" data-value="catppuccin">catppuccin</button>
+            <button class="theme-item text-left hover:tui-inverse px-1" data-value="gruvbox">gruvbox</button>
           </div>
         </div>
       </div>
@@ -94,15 +75,10 @@
   </div>
 
   <script>
-    const themeTrigger = document.getElementById('theme-trigger');
-    const themeMenu = document.getElementById('theme-menu');
+    const menuTrigger = document.getElementById('menu-trigger');
+    const mainMenu = document.getElementById('main-menu');
+    const themeItems = document.querySelectorAll('.theme-item');
     const themeNameDisplays = document.querySelectorAll('.current-theme-name');
-    const themeItems = document.querySelectorAll('.tui-dropdown-item');
-    
-    // Mobile elements
-    const mobileMenuTrigger = document.getElementById('mobile-menu-trigger');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const mobileThemeItems = document.querySelectorAll('.mobile-theme-item');
 
     const themeNames = {
       'terminal': 'tokyo-night',
@@ -112,8 +88,8 @@
       'gruvbox': 'gruvbox'
     };
 
-    const updateMobileThemeUI = (activeTheme) => {
-      mobileThemeItems.forEach(item => {
+    const updateThemeUI = (activeTheme) => {
+      themeItems.forEach(item => {
         const themeValue = item.getAttribute('data-value');
         const themeName = themeNames[themeValue];
         if (themeValue === activeTheme) {
@@ -129,66 +105,40 @@
     // Initialize display name
     const currentTheme = getTheme();
     themeNameDisplays.forEach(el => el.textContent = themeNames[currentTheme] || currentTheme);
-    updateMobileThemeUI(currentTheme);
+    updateThemeUI(currentTheme);
 
-    // Toggle desktop menu
-    if(themeTrigger) {
-      themeTrigger.addEventListener('click', (e) => {
+    // Toggle menu
+    if(menuTrigger) {
+      menuTrigger.addEventListener('click', (e) => {
         e.stopPropagation();
-        themeMenu.classList.toggle('hidden');
+        mainMenu.classList.toggle('hidden');
       });
     }
 
-    // Toggle mobile menu
-    if(mobileMenuTrigger) {
-      mobileMenuTrigger.addEventListener('click', (e) => {
-        e.stopPropagation();
-        mobileMenu.classList.toggle('hidden');
-      });
-    }
-
-    // Handle desktop theme selection
+    // Handle theme selection
     themeItems.forEach(item => {
       item.addEventListener('click', () => {
         const theme = item.getAttribute('data-value');
         applyTheme(theme);
         themeNameDisplays.forEach(el => el.textContent = themeNames[theme]);
-        updateMobileThemeUI(theme);
+        updateThemeUI(theme);
         
-        // Close all menus
-        if(themeMenu) themeMenu.classList.add('hidden');
-        if(mobileMenu) mobileMenu.classList.add('hidden');
-      });
-    });
-
-    // Handle mobile theme selection
-    mobileThemeItems.forEach(item => {
-      item.addEventListener('click', () => {
-        const theme = item.getAttribute('data-value');
-        applyTheme(theme);
-        themeNameDisplays.forEach(el => el.textContent = themeNames[theme]);
-        updateMobileThemeUI(theme);
-        
-        // Close mobile menu
-        if(mobileMenu) mobileMenu.classList.add('hidden');
+        // Close menu
+        if(mainMenu) mainMenu.classList.add('hidden');
       });
     });
 
     // Close on click outside
     document.addEventListener('click', (e) => {
-      if (themeMenu && !themeMenu.contains(e.target) && !themeTrigger.contains(e.target)) {
-        themeMenu.classList.add('hidden');
-      }
-      if (mobileMenu && !mobileMenu.contains(e.target) && !mobileMenuTrigger.contains(e.target)) {
-        mobileMenu.classList.add('hidden');
+      if (mainMenu && !mainMenu.contains(e.target) && !menuTrigger.contains(e.target)) {
+        mainMenu.classList.add('hidden');
       }
     });
 
     // Keyboard navigation
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') {
-        if(themeMenu) themeMenu.classList.add('hidden');
-        if(mobileMenu) mobileMenu.classList.add('hidden');
+        if(mainMenu) mainMenu.classList.add('hidden');
       }
     });
   </script>
