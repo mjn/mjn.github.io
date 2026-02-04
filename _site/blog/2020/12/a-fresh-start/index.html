@@ -1,0 +1,81 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Fresh Start | Mark Northcott</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script>
+    // Check for saved theme preference, otherwise use system preference
+    const getTheme = () => {
+      if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+        return localStorage.getItem('theme');
+      }
+      if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+        return 'light';
+      }
+      return 'terminal'; // Default
+    };
+
+    const applyTheme = (theme) => {
+      const html = document.documentElement;
+      if (theme === 'light') {
+        html.classList.add('light-mode');
+        html.classList.remove('terminal-mode');
+      } else {
+        html.classList.add('terminal-mode');
+        html.classList.remove('light-mode');
+      }
+      localStorage.setItem('theme', theme);
+    };
+
+    applyTheme(getTheme());
+  </script>
+</head>
+<body class="min-h-screen p-8 transition-colors duration-300">
+  <header class="mb-8 font-mono flex justify-between items-center">
+    <nav>
+      <span class="text-terminal-prompt">user@portfolio:~$</span>
+      <a href="/" class="text-terminal-accent hover:underline ml-2">home</a>
+      <a href="/blog/" class="text-terminal-accent hover:underline ml-4">blog</a>
+      <a href="/experience/" class="text-terminal-accent hover:underline ml-4">experience</a>
+    </nav>
+    <button id="theme-toggle" class="text-terminal-text hover:text-terminal-accent focus:outline-none">
+      [Toggle Theme]
+    </button>
+  </header>
+  <main>
+    <article class="prose prose-invert max-w-none font-mono">
+  <h1 class="text-3xl font-bold mb-2 text-terminal-accent">
+    <span class="text-terminal-prompt">$</span> cat a-fresh-start.md
+  </h1>
+  <div class="text-sm text-terminal-text mb-8">
+    Date: 2020-12-31
+  </div>
+  
+  <p>What a year... unexpected, unprecedented - choose whatever word you want - 2020 was unlike any other year I've experienced in my 40 year lifetime. And so, on the last day of this year, I thought it would be as good a time as any to kick off what I hope will be a fresh start with the launch of my personal web site.</p>
+<p>I have worked in the tech industry for over 15 years, and while I have made many (failed) attempts at launching a personal site / blog, this is the first time that I have followed through and actually pushed something live.</p>
+<h2>Why now?</h2>
+<p>In all honesty, I'm not sure why this time is any different. One day out of nowhere I thought that it would be cool to own the domain <code>northcott.com</code> and host a site on <code>mark.northcott.com</code>. While I wasn't able to get the <code>.com</code> domain, I did find that the <code>.io</code> domain was available, so I purchased it on the spot. At that point, I decided that instead of just sitting on the domain and throwing the money away, I would actually build a personal site and publish it at <code>mark.northcott.io</code>.</p>
+<p>Once the decision was made to launch my own site, I started looking around for some free themes that I could use, as I am by no means a designer... as you can probably tell by the look and feel of my site, I did not end up using a theme (or, I have terrible taste when picking themes); however, I did start to poke around at <a href="https://www.gatsbyjs.com/">Gatsby</a> and some of the free starters available, and after a bit of tinkering I decided that I would take the time to learn Gatsby and build my site from scratch.</p>
+<p>I must admit, learning Gatsby has been fun. The documentation is great, and there are plenty of resources available to help out along the way. Having a bit of React experience certainly helped with the learning curve, but Gatsby doesn't really require knowing a lot of the finer points of building React applications, so I would say that even for folks without existing React experience, Gatsby isn't too difficult to pick up. The other benefit of using Gatsby is that makes it extremely easy to publish my site via Github Pages, meaning I don't have to worry about setting a virtual private server, or other managed option, for hosting my site.</p>
+<p>One other reason why I have decided to finally launch my own personal website is that it allows me to finally publish a digital copy of the journal that I kept when I cycled across Canada during the summer of 2003. I had started to type my journal up several years ago, but only ever managed to make it halfway through. Thankfully, I was smart enough to store the work I had completed in Dropbox, and so I was easily able to add it to this site. I plan on typing out the rest of my journal over the winter, so if anybody is interested in reading about my adventure, the full journal should hopefully be available shortly.</p>
+<h2>What next?</h2>
+<p>Now that I have taken the difficult first step and actually gotten this site online, I hope to use this space to discuss whatever random musings come to mind - either in my professional or personal life. I will do my best to make regular contributions that reflect the things that interest me, such as technology, food, sports, and whatever else tickles my fancy.</p>
+<p>So, as a difficult 2020 comes to an end, here's looking to a fresh start in 2021!</p>
+
+</article>
+
+  </main>
+  <footer class="mt-16 text-sm text-terminal-text opacity-50 font-mono">
+    © 2025 Mark Northcott
+  </footer>
+
+  <script>
+    document.getElementById('theme-toggle').addEventListener('click', () => {
+      const currentTheme = document.documentElement.classList.contains('light-mode') ? 'light' : 'terminal';
+      const newTheme = currentTheme === 'light' ? 'terminal' : 'light';
+      applyTheme(newTheme);
+    });
+  </script>
+
+
+</body></html>

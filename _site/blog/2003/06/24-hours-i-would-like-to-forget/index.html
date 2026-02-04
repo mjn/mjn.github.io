@@ -1,0 +1,77 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>24 Hours I Would Like to Forget | Mark Northcott</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script>
+    // Check for saved theme preference, otherwise use system preference
+    const getTheme = () => {
+      if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+        return localStorage.getItem('theme');
+      }
+      if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+        return 'light';
+      }
+      return 'terminal'; // Default
+    };
+
+    const applyTheme = (theme) => {
+      const html = document.documentElement;
+      if (theme === 'light') {
+        html.classList.add('light-mode');
+        html.classList.remove('terminal-mode');
+      } else {
+        html.classList.add('terminal-mode');
+        html.classList.remove('light-mode');
+      }
+      localStorage.setItem('theme', theme);
+    };
+
+    applyTheme(getTheme());
+  </script>
+</head>
+<body class="min-h-screen p-8 transition-colors duration-300">
+  <header class="mb-8 font-mono flex justify-between items-center">
+    <nav>
+      <span class="text-terminal-prompt">user@portfolio:~$</span>
+      <a href="/" class="text-terminal-accent hover:underline ml-2">home</a>
+      <a href="/blog/" class="text-terminal-accent hover:underline ml-4">blog</a>
+      <a href="/experience/" class="text-terminal-accent hover:underline ml-4">experience</a>
+    </nav>
+    <button id="theme-toggle" class="text-terminal-text hover:text-terminal-accent focus:outline-none">
+      [Toggle Theme]
+    </button>
+  </header>
+  <main>
+    <article class="prose prose-invert max-w-none font-mono">
+  <h1 class="text-3xl font-bold mb-2 text-terminal-accent">
+    <span class="text-terminal-prompt">$</span> cat 24-hours-i-would-like-to-forget.md
+  </h1>
+  <div class="text-sm text-terminal-text mb-8">
+    Date: 2003-06-04
+  </div>
+  
+  <p>Last night was by far the worst night I've had on this trip by far. I wasn't fond of the campground when we pulled in, given that it was located relatively close to the Marathon dump, and as a result, I was unable to sleep for most of the night. All I could think about was a bear coming into the tent, which I know sounds preposterous, but the mind can play dirty tricks on you, if you let it. I managed to get maybe two hours of sleep in total, and thus, I was not looking forward to today's ride.</p>
+<p><picture><source type="image/webp" srcset="can_bike_trip_206-400w.webp 400w, can_bike_trip_206-800w.webp 800w" sizes="(max-width: 768px) 100vw, 50vw"><img src="can_bike_trip_206-400w.jpeg" alt="" loading="lazy" decoding="async" width="800" height="533" srcset="can_bike_trip_206-400w.jpeg 400w, can_bike_trip_206-800w.jpeg 800w" sizes="(max-width: 768px) 100vw, 50vw"></picture></p>
+<p>Regardless, we packed the gear and headed out of Marathon with a sunny day in the forecast with temps in the mid-twenties. The journey to White River was to only be about 100km, but early on I could tell that the lack of sleep was going to take its toll on me. I continued to push on through, determined to complete the task at hand.</p>
+<p>Thankfully, we were able to get to White River without any major events, although the pace of the ride was slower than usual and a few more stops than normal. Once we reached White River we inquired about campgrounds, but the closest thing was Obatango Provincial Park, which actually isn't even open yet. We were offered a place to set up our tent next to the Winnie the Pooh statue, but we decided against it since it was only early and the black flies were out with a vengeance. Thus, instead of being forced into the tent by 4pm in the middle of White River with temperatures high in the twenties, we decided to check into a motel room.</p>
+<p><picture><source type="image/webp" srcset="can_bike_trip_207-400w.webp 400w, can_bike_trip_207-800w.webp 800w" sizes="(max-width: 768px) 100vw, 50vw"><img src="can_bike_trip_207-400w.jpeg" alt="" loading="lazy" decoding="async" width="800" height="1200" srcset="can_bike_trip_207-400w.jpeg 400w, can_bike_trip_207-800w.jpeg 800w" sizes="(max-width: 768px) 100vw, 50vw"></picture></p>
+<p>I must admit, I was pushing for the motel room since this morning as I really need a good, peaceful sleep. Also, it is good to just sit back and relax while watching TV. Hopefully this will be what I need to get back into the trip as I have been lacking motivation since we left Kenora. Northern Ontario has not been nice to me, but I am determined to make the best of the last few days we spend in this part of the country.</p>
+
+</article>
+
+  </main>
+  <footer class="mt-16 text-sm text-terminal-text opacity-50 font-mono">
+    © 2025 Mark Northcott
+  </footer>
+
+  <script>
+    document.getElementById('theme-toggle').addEventListener('click', () => {
+      const currentTheme = document.documentElement.classList.contains('light-mode') ? 'light' : 'terminal';
+      const newTheme = currentTheme === 'light' ? 'terminal' : 'light';
+      applyTheme(newTheme);
+    });
+  </script>
+
+
+</body></html>

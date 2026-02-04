@@ -1,0 +1,82 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Winnipeg at Last! | Mark Northcott</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script>
+    // Check for saved theme preference, otherwise use system preference
+    const getTheme = () => {
+      if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+        return localStorage.getItem('theme');
+      }
+      if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+        return 'light';
+      }
+      return 'terminal'; // Default
+    };
+
+    const applyTheme = (theme) => {
+      const html = document.documentElement;
+      if (theme === 'light') {
+        html.classList.add('light-mode');
+        html.classList.remove('terminal-mode');
+      } else {
+        html.classList.add('terminal-mode');
+        html.classList.remove('light-mode');
+      }
+      localStorage.setItem('theme', theme);
+    };
+
+    applyTheme(getTheme());
+  </script>
+</head>
+<body class="min-h-screen p-8 transition-colors duration-300">
+  <header class="mb-8 font-mono flex justify-between items-center">
+    <nav>
+      <span class="text-terminal-prompt">user@portfolio:~$</span>
+      <a href="/" class="text-terminal-accent hover:underline ml-2">home</a>
+      <a href="/blog/" class="text-terminal-accent hover:underline ml-4">blog</a>
+      <a href="/experience/" class="text-terminal-accent hover:underline ml-4">experience</a>
+    </nav>
+    <button id="theme-toggle" class="text-terminal-text hover:text-terminal-accent focus:outline-none">
+      [Toggle Theme]
+    </button>
+  </header>
+  <main>
+    <article class="prose prose-invert max-w-none font-mono">
+  <h1 class="text-3xl font-bold mb-2 text-terminal-accent">
+    <span class="text-terminal-prompt">$</span> cat winnipeg-at-last.md
+  </h1>
+  <div class="text-sm text-terminal-text mb-8">
+    Date: 2003-05-21
+  </div>
+  
+  <p>By now it has become apparent that Manitoba must have spent the bare minimum on its highway infrastructure. With not even enough shoulder to paint the white line at times, we were once again forced to ride in the traffic lane, with our only saving grace being that it was a divided highway with two lanes. This was ok for most of the way, but as we got closer to cities and traffic increased, things became a little more dangerous.</p>
+<p>Regardless, we arrived in Portage la Prairie early this morning and stopped for a quick lunch at Tim Hortons. I then called dad, telling him that we may be in Winnipeg a little early since it was only noon and we had a mere 66km left... or so we thought! We also stopped at the Wal-Mart in Portage la Prairie to find a small set of speakers for our walkman/discman - something we have been talking about for a while.</p>
+<p><picture><source type="image/webp" srcset="can_bike_trip_139-400w.webp 400w, can_bike_trip_139-800w.webp 800w" sizes="(max-width: 768px) 100vw, 50vw"><img src="can_bike_trip_139-400w.jpeg" alt="" loading="lazy" decoding="async" width="800" height="533" srcset="can_bike_trip_139-400w.jpeg 400w, can_bike_trip_139-800w.jpeg 800w" sizes="(max-width: 768px) 100vw, 50vw"></picture></p>
+<p>I came out of Wal-Mart with a deluxe set that included a small set of speakers, a cassette player with AM/FM radio and headphones - all for the low, low price of $15! We immediately opened it to test the speakers, and we discovered that one of the speakers already had the inside dislodged... classic Wal-Mart! All that matters is that sound comes out though! I debated just tossing the headphones in the garbage, since they are useless to either of us and would just take up space, but Dave convinced me to hold onto them for at least the day.</p>
+<p>We then left Portage la Prairie, bound for Winnipeg, and it was during this time that we got a taste of what could have been coming through the prairies. There was a stiff crosswind coming from the south, and it was more than enough to reduce our speed dramatically... especially with the tail winds that we gotten used to in the previous days. As a result, the ride to Winnipeg took longer than expected.</p>
+<p><picture><source type="image/webp" srcset="can_bike_trip_142-400w.webp 400w, can_bike_trip_142-800w.webp 800w" sizes="(max-width: 768px) 100vw, 50vw"><img src="can_bike_trip_142-400w.jpeg" alt="" loading="lazy" decoding="async" width="800" height="533" srcset="can_bike_trip_142-400w.jpeg 400w, can_bike_trip_142-800w.jpeg 800w" sizes="(max-width: 768px) 100vw, 50vw"></picture></p>
+<p>Another factor that led to the increased duration of the trip is that the distance to Winnipeg given on the map was merely to the outskirts of the city, not the city centre, as is usually the case when reading a map. As a result, after riding for 107km, we had just reached the perimeter highway, and with dad living in the northeast part of the city, we still had a lot of riding to do. The first part of the ride along the perimeter highway went quickly as we were headed due north and the wind was directly at our backs.That was short lived though, as we once again headed eastbound.</p>
+<p>After what seemed like forever (both Dave and I figured we would see the Ontario border any second!), we reached the turnoff for dad's place. As we rode down Henderson Highway looking for the apartment building, I had of course read the wrong number from the directions I had been given, thus we ended up passing right by our stop. Once we figured out the correct number, we got ourselves back on track and finally found dad's apartment. He was out on the balcony waving at us as we walked up.</p>
+<p>So we unloaded all the gear and dragged it up the stairs to dad's new apartment. It really is a nice place, but it is still very sparse since he has just moved in. It's kind of strange actually to see your parents living like this, especially since you have grown up in a house all your life. All the same, we cleaned ourselves up, and then we sat down to watch the Sens game. Dad cooked up a feast of homemade hamburgers, which Dave and I devoured in no time, and then we just relaxed for the evening before turning in for the night at around 10:30pm.</p>
+<p><picture><source type="image/webp" srcset="can_bike_trip_146-400w.webp 400w, can_bike_trip_146-800w.webp 800w" sizes="(max-width: 768px) 100vw, 50vw"><img src="can_bike_trip_146-400w.jpeg" alt="" loading="lazy" decoding="async" width="800" height="533" srcset="can_bike_trip_146-400w.jpeg 400w, can_bike_trip_146-800w.jpeg 800w" sizes="(max-width: 768px) 100vw, 50vw"></picture></p>
+<p>Now that we have finally reached Winnipeg, I couldn't be happier! I have been waiting to see dad since the start of the trip, and now that moment has arrived. Also, it pretty much marks the end of the prairies as we have about a day of riding left until we reach the Ontario border. We will then have crossed four provinces in a month, but we won't cross another border for quite some time. However, once we see that Quebec sign, it will be a huge accomplishment!</p>
+
+</article>
+
+  </main>
+  <footer class="mt-16 text-sm text-terminal-text opacity-50 font-mono">
+    © 2025 Mark Northcott
+  </footer>
+
+  <script>
+    document.getElementById('theme-toggle').addEventListener('click', () => {
+      const currentTheme = document.documentElement.classList.contains('light-mode') ? 'light' : 'terminal';
+      const newTheme = currentTheme === 'light' ? 'terminal' : 'light';
+      applyTheme(newTheme);
+    });
+  </script>
+
+
+</body></html>

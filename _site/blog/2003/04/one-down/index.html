@@ -1,0 +1,89 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>One Down... | Mark Northcott</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script>
+    // Check for saved theme preference, otherwise use system preference
+    const getTheme = () => {
+      if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+        return localStorage.getItem('theme');
+      }
+      if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+        return 'light';
+      }
+      return 'terminal'; // Default
+    };
+
+    const applyTheme = (theme) => {
+      const html = document.documentElement;
+      if (theme === 'light') {
+        html.classList.add('light-mode');
+        html.classList.remove('terminal-mode');
+      } else {
+        html.classList.add('terminal-mode');
+        html.classList.remove('light-mode');
+      }
+      localStorage.setItem('theme', theme);
+    };
+
+    applyTheme(getTheme());
+  </script>
+</head>
+<body class="min-h-screen p-8 transition-colors duration-300">
+  <header class="mb-8 font-mono flex justify-between items-center">
+    <nav>
+      <span class="text-terminal-prompt">user@portfolio:~$</span>
+      <a href="/" class="text-terminal-accent hover:underline ml-2">home</a>
+      <a href="/blog/" class="text-terminal-accent hover:underline ml-4">blog</a>
+      <a href="/experience/" class="text-terminal-accent hover:underline ml-4">experience</a>
+    </nav>
+    <button id="theme-toggle" class="text-terminal-text hover:text-terminal-accent focus:outline-none">
+      [Toggle Theme]
+    </button>
+  </header>
+  <main>
+    <article class="prose prose-invert max-w-none font-mono">
+  <h1 class="text-3xl font-bold mb-2 text-terminal-accent">
+    <span class="text-terminal-prompt">$</span> cat one-down.md
+  </h1>
+  <div class="text-sm text-terminal-text mb-8">
+    Date: 2003-04-27
+  </div>
+  
+  <p>Well we have successfully completed the first day of riding, and to say that everything went as planned would be a bold faced lie! First off, we passed out last night without packing our gear, and thus we were left with that task this morning... big mistake! It was my intention to be out of the hotel by 9am, but we didn't check out til approximately 11:30am. It turns out that packing took much longer than expected (almost 5 hrs).</p>
+<p><picture><source type="image/webp" srcset="can_bike_trip_006-400w.webp 400w, can_bike_trip_006-800w.webp 800w" sizes="(max-width: 768px) 100vw, 50vw"><img src="can_bike_trip_006-400w.jpeg" alt="" loading="lazy" decoding="async" width="800" height="533" srcset="can_bike_trip_006-400w.jpeg 400w, can_bike_trip_006-800w.jpeg 800w" sizes="(max-width: 768px) 100vw, 50vw"></picture></p>
+<p>Once we finally got on the road it was drizzling rain for the first few hours, and we struggled to find our way around the Vancouver bike trails. Luckily there were several friendly people that witnessed our confusion and offered their assistance, which was great! With the help of these friendly souls we were able to get through Vancouver and saw many nice places along the way (unlike yesterday). We then peddled our way through Burnaby, following the bike route that continued from the Vancouver trail.</p>
+<p>However, once the bike trails ended, we were lost! We were extremely unequipped for navigating the suburbs of the GVA, and thus we found ourselves stopping constantly to consult the map. Unfortunately, with only a provincial map, there were several instances where it was impossible to determine our exact location, and as a result we ended up making several wrong turns and detours.</p>
+<p><picture><source type="image/webp" srcset="can_bike_trip_006-400w.webp 400w, can_bike_trip_006-800w.webp 800w" sizes="(max-width: 768px) 100vw, 50vw"><img src="can_bike_trip_006-400w.jpeg" alt="" loading="lazy" decoding="async" width="800" height="533" srcset="can_bike_trip_006-400w.jpeg 400w, can_bike_trip_006-800w.jpeg 800w" sizes="(max-width: 768px) 100vw, 50vw"></picture></p>
+<p>Perhaps the worst mistake was missing a turn-off and thus heading up some severe hills towards Simon Fraser University, which appears to be in the middle of nowhere! This cost us valuable time and energy, but it was the last big mistake we made.</p>
+<p>By the time we reached Maple Ridge, we had been riding for approximately 5.5 hrs and it was almost 5pm. Unfortunately we were still almost 40km from Mission, which was our destination for the day. Luckily, we reached the highway and we were able to make good time for the first time all day.</p>
+<p><picture><source type="image/webp" srcset="can_bike_trip_015-400w.webp 400w, can_bike_trip_015-800w.webp 800w" sizes="(max-width: 768px) 100vw, 50vw"><img src="can_bike_trip_015-400w.jpeg" alt="" loading="lazy" decoding="async" width="800" height="533" srcset="can_bike_trip_015-400w.jpeg 400w, can_bike_trip_015-800w.jpeg 800w" sizes="(max-width: 768px) 100vw, 50vw"></picture></p>
+<p>After all the delays and wrong turns, we finally reached Mission at around 9pm, which was much later than anticipated. As a result of all the days hardships we decided to suck it up and book into a hotel for one more night.</p>
+<p>So now I am lying in a comfy (expensive) bed about to settle down for a good night sleep. This is expected to be the last "real" bed I will see for a few days (or weeks) and I intend to enjoy it. Tomorrow will be different... hopefully.</p>
+<p><picture><source type="image/webp" srcset="can_bike_trip_017-400w.webp 400w, can_bike_trip_017-800w.webp 800w" sizes="(max-width: 768px) 100vw, 50vw"><img src="can_bike_trip_017-400w.jpeg" alt="" loading="lazy" decoding="async" width="800" height="533" srcset="can_bike_trip_017-400w.jpeg 400w, can_bike_trip_017-800w.jpeg 800w" sizes="(max-width: 768px) 100vw, 50vw"></picture></p>
+<p>Following the days events, I admit that I was slightly depressed about the progress made, and I certainly hope that things take a turn for the better. Now that we are on the highway and away from the Vancouver metropolitan area, riding should improve... although those mountains are looking rather ominous in the foreground! Oh well, no need for complaining. I am free, and I intend to make the best of it... there is still plenty of riding to do!</p>
+<p><strong>The next day...</strong></p>
+<p>Just a few points I missed regarding yesterdays opening day...</p>
+<ul>
+<li>I added to the "cut count" by falling off my bike as a result of not getting the clips on my shoes undone in time... damn clips!</li>
+<li>Simon Fraser University is on a mountain top... don't go there!</li>
+</ul>
+
+</article>
+
+  </main>
+  <footer class="mt-16 text-sm text-terminal-text opacity-50 font-mono">
+    © 2025 Mark Northcott
+  </footer>
+
+  <script>
+    document.getElementById('theme-toggle').addEventListener('click', () => {
+      const currentTheme = document.documentElement.classList.contains('light-mode') ? 'light' : 'terminal';
+      const newTheme = currentTheme === 'light' ? 'terminal' : 'light';
+      applyTheme(newTheme);
+    });
+  </script>
+
+
+</body></html>

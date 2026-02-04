@@ -1,0 +1,75 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>No, No... Mattawa, Not Ottawa | Mark Northcott</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script>
+    // Check for saved theme preference, otherwise use system preference
+    const getTheme = () => {
+      if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+        return localStorage.getItem('theme');
+      }
+      if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+        return 'light';
+      }
+      return 'terminal'; // Default
+    };
+
+    const applyTheme = (theme) => {
+      const html = document.documentElement;
+      if (theme === 'light') {
+        html.classList.add('light-mode');
+        html.classList.remove('terminal-mode');
+      } else {
+        html.classList.add('terminal-mode');
+        html.classList.remove('light-mode');
+      }
+      localStorage.setItem('theme', theme);
+    };
+
+    applyTheme(getTheme());
+  </script>
+</head>
+<body class="min-h-screen p-8 transition-colors duration-300">
+  <header class="mb-8 font-mono flex justify-between items-center">
+    <nav>
+      <span class="text-terminal-prompt">user@portfolio:~$</span>
+      <a href="/" class="text-terminal-accent hover:underline ml-2">home</a>
+      <a href="/blog/" class="text-terminal-accent hover:underline ml-4">blog</a>
+      <a href="/experience/" class="text-terminal-accent hover:underline ml-4">experience</a>
+    </nav>
+    <button id="theme-toggle" class="text-terminal-text hover:text-terminal-accent focus:outline-none">
+      [Toggle Theme]
+    </button>
+  </header>
+  <main>
+    <article class="prose prose-invert max-w-none font-mono">
+  <h1 class="text-3xl font-bold mb-2 text-terminal-accent">
+    <span class="text-terminal-prompt">$</span> cat no-no-mattawa-not-ottawa.md
+  </h1>
+  <div class="text-sm text-terminal-text mb-8">
+    Date: 2003-06-20
+  </div>
+  
+  <p>Last night I managed to sleep for what seemed to be forever as I crawled into bed around 6pm, and I was fast asleep by 7pm. I then managed to sleep until 7:30am the next morning, although I did wake up several times during the night. When I emerged from the tent, I was immediately attacked by the black flies and mosquitoes, but a quick dose of fly repellent kept them away for the most part. Dave decided to forego the fly dope though, which turned out to be a big mistake! He got three bites on his face that all swelled right up, making him look like some hideous monster from a cheap B-movie. Luckily, the swelling went away after a few hours.</p>
+<p>Our first destination was North Bay, which we reached rather quickly, but we were forced to bike through the centre of the city since bikes were not permitted on the highway. That slowed us down a fair bit, but it did allow us to get to our respective banks as well as stock up on fly repellent and sunscreen.</p>
+<p>When we finally got back onto the highway, I was feeling great and was anxious to make as much progress as possible. I had Ottawa in four days on my mind, and I was determined to make it so. That feeling did not last long though as the hot weather and hills took an effect on me both mentally and physically. It reached a point where I didn't even want to finish the trip to Mattawa, which was only 15km away. We pushed on though and reached Mattawa around 3pm. We first went into the info booth to get information on campgrounds. We were told there was only one spot in Mattawa, which was on the west end of the town, and another in Deux Rivieres. Once again my juices started pumping to keep going, but they died down quickly when Dave mentioned how we would be riding in the hottest part of the day, and the stretch to Deux Rivieres is even more hilly than coming into Mattawa.</p>
+<p>So, we headed back to the campground and got a site overlooking the Mattawa River. The area is very nice and peaceful, and it appears to be a popular spot as there are plenty of other campers here. Therefore, we have all but conceded taking three more days to get to Ottawa, which is fine by me. There is nothing that I have to rush back for, so I should just enjoy what we hope will be nice weather. I must admit though, I really can't wait to ride into Ottawa - I think that will certainly be a highlight of the trip!</p>
+
+</article>
+
+  </main>
+  <footer class="mt-16 text-sm text-terminal-text opacity-50 font-mono">
+    © 2025 Mark Northcott
+  </footer>
+
+  <script>
+    document.getElementById('theme-toggle').addEventListener('click', () => {
+      const currentTheme = document.documentElement.classList.contains('light-mode') ? 'light' : 'terminal';
+      const newTheme = currentTheme === 'light' ? 'terminal' : 'light';
+      applyTheme(newTheme);
+    });
+  </script>
+
+
+</body></html>

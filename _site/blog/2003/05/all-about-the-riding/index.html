@@ -1,0 +1,79 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All About the Riding | Mark Northcott</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script>
+    // Check for saved theme preference, otherwise use system preference
+    const getTheme = () => {
+      if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+        return localStorage.getItem('theme');
+      }
+      if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+        return 'light';
+      }
+      return 'terminal'; // Default
+    };
+
+    const applyTheme = (theme) => {
+      const html = document.documentElement;
+      if (theme === 'light') {
+        html.classList.add('light-mode');
+        html.classList.remove('terminal-mode');
+      } else {
+        html.classList.add('terminal-mode');
+        html.classList.remove('light-mode');
+      }
+      localStorage.setItem('theme', theme);
+    };
+
+    applyTheme(getTheme());
+  </script>
+</head>
+<body class="min-h-screen p-8 transition-colors duration-300">
+  <header class="mb-8 font-mono flex justify-between items-center">
+    <nav>
+      <span class="text-terminal-prompt">user@portfolio:~$</span>
+      <a href="/" class="text-terminal-accent hover:underline ml-2">home</a>
+      <a href="/blog/" class="text-terminal-accent hover:underline ml-4">blog</a>
+      <a href="/experience/" class="text-terminal-accent hover:underline ml-4">experience</a>
+    </nav>
+    <button id="theme-toggle" class="text-terminal-text hover:text-terminal-accent focus:outline-none">
+      [Toggle Theme]
+    </button>
+  </header>
+  <main>
+    <article class="prose prose-invert max-w-none font-mono">
+  <h1 class="text-3xl font-bold mb-2 text-terminal-accent">
+    <span class="text-terminal-prompt">$</span> cat all-about-the-riding.md
+  </h1>
+  <div class="text-sm text-terminal-text mb-8">
+    Date: 2003-05-14
+  </div>
+  
+  <p>Last night certainly was an interesting one, to say the least... not only were we camped out in a playground, but we were also about 100 yards from the railroad tracks. Let me tell you, there is nothing quite like waking up at 3am to the sound of a train that seems like it is going to come straight through the tent you are sleeping in! Well, that went on all night long, and it reached the point where this morning I told Dave we would get up in 15 minutes; then 5 minutes later a train went roaring by and Dave simply said "This is $@!&amp;%*# hopeless" and hopped out of bed.</p>
+<p><picture><source type="image/webp" srcset="can_bike_trip_104-400w.webp 400w, can_bike_trip_104-800w.webp 800w" sizes="(max-width: 768px) 100vw, 50vw"><img src="can_bike_trip_104-400w.jpeg" alt="" loading="lazy" decoding="async" width="800" height="533" srcset="can_bike_trip_104-400w.jpeg 400w, can_bike_trip_104-800w.jpeg 800w" sizes="(max-width: 768px) 100vw, 50vw"></picture></p>
+<p>However, although we didn't get much sleep last night, that certainly didn't impede our progress today! We emerged from the tent and and caught a stiff gust of wind that was coming from the west-southwest direction. As we were headed east-northeast, this bode really well for us. We quickly packed up our gear and stopped at the local cafe for a delicious breakfast of bacon, eggs, toast and hash browns. Following that we got to put our handprints on the wall and sign our names, thus leaving our mark on Irvine, Alberta. We then hopped on our bikes and I told Dave we were getting to Swift Current, which was about 190km away.</p>
+<p><picture><source type="image/webp" srcset="can_bike_trip_105-400w.webp 400w, can_bike_trip_105-800w.webp 800w" sizes="(max-width: 768px) 100vw, 50vw"><img src="can_bike_trip_105-400w.jpeg" alt="" loading="lazy" decoding="async" width="800" height="533" srcset="can_bike_trip_105-400w.jpeg 400w, can_bike_trip_105-800w.jpeg 800w" sizes="(max-width: 768px) 100vw, 50vw"></picture></p>
+<p>So we set out with the wind at our backs and the sun beating down on us. Our first destination was the Alberta-Saskatchewan border, which we reached within an hour. We took a few pictures and then continued on. By the time we ate lunch we had covered 112km and reached the town of Tompins. Following the short break, we continued on with our sights set firmly on Swift Current... even though we still had about 75km to go.</p>
+<p>We finally reached Swift Current around 6:30pm after having been on the road for over 7 hours. We picked up some snacks and then headed to the campground.</p>
+<p><picture><source type="image/webp" srcset="can_bike_trip_107-400w.webp 400w, can_bike_trip_107-800w.webp 800w" sizes="(max-width: 768px) 100vw, 50vw"><img src="can_bike_trip_107-400w.jpeg" alt="" loading="lazy" decoding="async" width="800" height="533" srcset="can_bike_trip_107-400w.jpeg 400w, can_bike_trip_107-800w.jpeg 800w" sizes="(max-width: 768px) 100vw, 50vw"></picture></p>
+<p>Needless to say, today was a perfect day for riding. The weather was amazing and the winds were a great help. I can only hope that we get a few more days like this along the trip, although I realize if the wind ever shifts around we could make about only a quarter of the distance we covered today!</p>
+
+</article>
+
+  </main>
+  <footer class="mt-16 text-sm text-terminal-text opacity-50 font-mono">
+    © 2025 Mark Northcott
+  </footer>
+
+  <script>
+    document.getElementById('theme-toggle').addEventListener('click', () => {
+      const currentTheme = document.documentElement.classList.contains('light-mode') ? 'light' : 'terminal';
+      const newTheme = currentTheme === 'light' ? 'terminal' : 'light';
+      applyTheme(newTheme);
+    });
+  </script>
+
+
+</body></html>

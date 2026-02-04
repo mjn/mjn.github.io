@@ -1,0 +1,13 @@
+---
+layout: base
+---
+<article class="prose prose-invert max-w-none font-mono">
+  <h1 class="text-3xl font-bold mb-2 text-terminal-accent">
+    <span class="text-terminal-prompt">$</span> cat {{ title | slugify }}.md
+  </h1>
+  <div class="text-sm text-terminal-text mb-8">
+    Date: {{ date }}
+  </div>
+  
+  {{ content | safe }}
+</article>

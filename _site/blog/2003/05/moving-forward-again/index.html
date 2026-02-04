@@ -1,0 +1,79 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moving Forward... Again! | Mark Northcott</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script>
+    // Check for saved theme preference, otherwise use system preference
+    const getTheme = () => {
+      if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+        return localStorage.getItem('theme');
+      }
+      if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+        return 'light';
+      }
+      return 'terminal'; // Default
+    };
+
+    const applyTheme = (theme) => {
+      const html = document.documentElement;
+      if (theme === 'light') {
+        html.classList.add('light-mode');
+        html.classList.remove('terminal-mode');
+      } else {
+        html.classList.add('terminal-mode');
+        html.classList.remove('light-mode');
+      }
+      localStorage.setItem('theme', theme);
+    };
+
+    applyTheme(getTheme());
+  </script>
+</head>
+<body class="min-h-screen p-8 transition-colors duration-300">
+  <header class="mb-8 font-mono flex justify-between items-center">
+    <nav>
+      <span class="text-terminal-prompt">user@portfolio:~$</span>
+      <a href="/" class="text-terminal-accent hover:underline ml-2">home</a>
+      <a href="/blog/" class="text-terminal-accent hover:underline ml-4">blog</a>
+      <a href="/experience/" class="text-terminal-accent hover:underline ml-4">experience</a>
+    </nav>
+    <button id="theme-toggle" class="text-terminal-text hover:text-terminal-accent focus:outline-none">
+      [Toggle Theme]
+    </button>
+  </header>
+  <main>
+    <article class="prose prose-invert max-w-none font-mono">
+  <h1 class="text-3xl font-bold mb-2 text-terminal-accent">
+    <span class="text-terminal-prompt">$</span> cat moving-forward-again.md
+  </h1>
+  <div class="text-sm text-terminal-text mb-8">
+    Date: 2003-05-12
+  </div>
+  
+  <p>I am happy to report that today was much more successful than yesterday! Dave and I woke up around 7:30am (only 1 hour after our alarm went off), cooked breakfast and packed up all the gear in time to get on the road by 9am. Our suspicion that we could avoid some of the wind by leaving earlier certainly paid off as we had a much easier time heading south than yesterday.</p>
+<p>As a result, we reached the Trans Canada Highway relatively early and then started to head east for the first time in a few days. We stopped in Bassano for a quick lunch, and by that time we had covered almost as much ground as we had all of yesterday by about the same time that we had left yesterday!</p>
+<p><picture><source type="image/webp" srcset="can_bike_trip_093-400w.webp 400w, can_bike_trip_093-800w.webp 800w" sizes="(max-width: 768px) 100vw, 50vw"><img src="can_bike_trip_093-400w.jpeg" alt="" loading="lazy" decoding="async" width="800" height="533" srcset="can_bike_trip_093-400w.jpeg 400w, can_bike_trip_093-800w.jpeg 800w" sizes="(max-width: 768px) 100vw, 50vw"></picture></p>
+<p>Following lunch, we set out for Brooks. The biking along the TCH was great as there is a huge shoulder, and it is a divided highway, thus there was little fear of traffic. Aside from a cross wind, the riding today was fairly routine... no flat tires, perfect weather, and great road - not much more we could ask for!</p>
+<p>When we reached Brooks we sought out the library to check email and surf the web for a bit. We then picked up a bit of food for the next few days and then got back on the highway to find a place to stay for the night.</p>
+<p><picture><source type="image/webp" srcset="can_bike_trip_094-400w.webp 400w, can_bike_trip_094-800w.webp 800w" sizes="(max-width: 768px) 100vw, 50vw"><img src="can_bike_trip_094-400w.jpeg" alt="" loading="lazy" decoding="async" width="800" height="533" srcset="can_bike_trip_094-400w.jpeg 400w, can_bike_trip_094-800w.jpeg 800w" sizes="(max-width: 768px) 100vw, 50vw"></picture></p>
+<p>We really lucked into the fact that there is a campground just a few kilometres outside Brooks along the highway in the direction of Medicine Hat. The campground is beautiful and very well kept. Also, there are shower and bathroom facilities allowing us to clean up properly for the first time in a couple of days.</p>
+<p>All in all, today has been perhaps the first ideal bike trip day - we haven't eaten fast food, the riding was great, and we are camping out for the night. I look forward to many more days like this!</p>
+
+</article>
+
+  </main>
+  <footer class="mt-16 text-sm text-terminal-text opacity-50 font-mono">
+    © 2025 Mark Northcott
+  </footer>
+
+  <script>
+    document.getElementById('theme-toggle').addEventListener('click', () => {
+      const currentTheme = document.documentElement.classList.contains('light-mode') ? 'light' : 'terminal';
+      const newTheme = currentTheme === 'light' ? 'terminal' : 'light';
+      applyTheme(newTheme);
+    });
+  </script>
+
+
+</body></html>

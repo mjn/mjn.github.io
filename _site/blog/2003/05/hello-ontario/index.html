@@ -1,0 +1,79 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello Ontario! | Mark Northcott</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script>
+    // Check for saved theme preference, otherwise use system preference
+    const getTheme = () => {
+      if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+        return localStorage.getItem('theme');
+      }
+      if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+        return 'light';
+      }
+      return 'terminal'; // Default
+    };
+
+    const applyTheme = (theme) => {
+      const html = document.documentElement;
+      if (theme === 'light') {
+        html.classList.add('light-mode');
+        html.classList.remove('terminal-mode');
+      } else {
+        html.classList.add('terminal-mode');
+        html.classList.remove('light-mode');
+      }
+      localStorage.setItem('theme', theme);
+    };
+
+    applyTheme(getTheme());
+  </script>
+</head>
+<body class="min-h-screen p-8 transition-colors duration-300">
+  <header class="mb-8 font-mono flex justify-between items-center">
+    <nav>
+      <span class="text-terminal-prompt">user@portfolio:~$</span>
+      <a href="/" class="text-terminal-accent hover:underline ml-2">home</a>
+      <a href="/blog/" class="text-terminal-accent hover:underline ml-4">blog</a>
+      <a href="/experience/" class="text-terminal-accent hover:underline ml-4">experience</a>
+    </nav>
+    <button id="theme-toggle" class="text-terminal-text hover:text-terminal-accent focus:outline-none">
+      [Toggle Theme]
+    </button>
+  </header>
+  <main>
+    <article class="prose prose-invert max-w-none font-mono">
+  <h1 class="text-3xl font-bold mb-2 text-terminal-accent">
+    <span class="text-terminal-prompt">$</span> cat hello-ontario.md
+  </h1>
+  <div class="text-sm text-terminal-text mb-8">
+    Date: 2003-05-26
+  </div>
+  
+  <p>We're finally here! After one month of riding, we have finally crossed into the province of Ontario. We had a great night last night at Falcon Lake, which will just add to the fond memories I have of passing through Manitoba. The only problem was that Dave once again fell asleep without writing his daily journal entry, and thus he woke up at 4am to do his writing. Inevitably, I woke up as well, which led to a fitful night of sleeping.</p>
+<p>As a result, we were both a bit reluctant in getting out of bed, leading to a late start to the day. Once we began riding, it was immediately evident that we had left the prairies and entered the Canadian Shield as there were trees and rock everywhere. This of course led to hills... nothing major, but when you haven't seen a hill for over a week, they seem pretty significant! It took a little while to get my body back into gear to handle such obstacles, especially since the tail winds across the prairies had left me with very little work to do in regards to riding.</p>
+<p><picture><source type="image/webp" srcset="can_bike_trip_157-400w.webp 400w, can_bike_trip_157-800w.webp 800w" sizes="(max-width: 768px) 100vw, 50vw"><img src="can_bike_trip_157-400w.jpeg" alt="" loading="lazy" decoding="async" width="800" height="533" srcset="can_bike_trip_157-400w.jpeg 400w, can_bike_trip_157-800w.jpeg 800w" sizes="(max-width: 768px) 100vw, 50vw"></picture></p>
+<p>It was just a short journey to the Ontario border, and we stopped for a mandatory photo op and trip to the tourism booth to pick up maps and campground info. We then set out for Kenora, which was to be our lunch destination. Unfortunately, as our bodies got reacquainted with the hilly terrain, our riding speed was a bit slower than we were used to. Thus, we arrived in Kenora a bit later than expected.</p>
+<p>The trek through the city of Kenora was amazing, with gorgeous scenery in every direction. We stopped for numerous pictures, including shots of Husky the Muskie! We then travelled through downtown, making some required stops, and then we went for lunch at Subway.</p>
+<p><picture><source type="image/webp" srcset="can_bike_trip_162-400w.webp 400w, can_bike_trip_162-800w.webp 800w" sizes="(max-width: 768px) 100vw, 50vw"><img src="can_bike_trip_162-400w.jpeg" alt="" loading="lazy" decoding="async" width="800" height="1200" srcset="can_bike_trip_162-400w.jpeg 400w, can_bike_trip_162-800w.jpeg 800w" sizes="(max-width: 768px) 100vw, 50vw"></picture></p>
+<p>Following lunch, we tried to decide on where to spend the night. Our original destination, Vermillion Bay, was out of the question, and according to the map, there was nothing between Kenora and Vermillion Bay. A quick stop at the travel information hut pointed us towards a campground just outside of Kenora. This was an ideal location as it leaves us a reasonable distance from Dryden, which is the destination for tomorrow. Also, the campground is located right on the lake and has a small beach, making for a great spot to simply relax and enjoy nature!</p>
+<p>It is cool to actually see Thunder Bay listed on the distance signs. It appears we are about four days from reaching Thunder Bay, depending on weather of course. After that, Sudbury is the next major destination. It will be interesting to track our progress across Ontario, seeing as how it is bigger than a lot of countries. Getting to Ottawa is going to be great feeling! I'm really looking forward to seeing everybody back home again.</p>
+
+</article>
+
+  </main>
+  <footer class="mt-16 text-sm text-terminal-text opacity-50 font-mono">
+    © 2025 Mark Northcott
+  </footer>
+
+  <script>
+    document.getElementById('theme-toggle').addEventListener('click', () => {
+      const currentTheme = document.documentElement.classList.contains('light-mode') ? 'light' : 'terminal';
+      const newTheme = currentTheme === 'light' ? 'terminal' : 'light';
+      applyTheme(newTheme);
+    });
+  </script>
+
+
+</body></html>

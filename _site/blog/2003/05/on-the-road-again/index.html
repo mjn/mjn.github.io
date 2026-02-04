@@ -1,0 +1,81 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>On the Road Again | Mark Northcott</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script>
+    // Check for saved theme preference, otherwise use system preference
+    const getTheme = () => {
+      if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+        return localStorage.getItem('theme');
+      }
+      if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+        return 'light';
+      }
+      return 'terminal'; // Default
+    };
+
+    const applyTheme = (theme) => {
+      const html = document.documentElement;
+      if (theme === 'light') {
+        html.classList.add('light-mode');
+        html.classList.remove('terminal-mode');
+      } else {
+        html.classList.add('terminal-mode');
+        html.classList.remove('light-mode');
+      }
+      localStorage.setItem('theme', theme);
+    };
+
+    applyTheme(getTheme());
+  </script>
+</head>
+<body class="min-h-screen p-8 transition-colors duration-300">
+  <header class="mb-8 font-mono flex justify-between items-center">
+    <nav>
+      <span class="text-terminal-prompt">user@portfolio:~$</span>
+      <a href="/" class="text-terminal-accent hover:underline ml-2">home</a>
+      <a href="/blog/" class="text-terminal-accent hover:underline ml-4">blog</a>
+      <a href="/experience/" class="text-terminal-accent hover:underline ml-4">experience</a>
+    </nav>
+    <button id="theme-toggle" class="text-terminal-text hover:text-terminal-accent focus:outline-none">
+      [Toggle Theme]
+    </button>
+  </header>
+  <main>
+    <article class="prose prose-invert max-w-none font-mono">
+  <h1 class="text-3xl font-bold mb-2 text-terminal-accent">
+    <span class="text-terminal-prompt">$</span> cat on-the-road-again.md
+  </h1>
+  <div class="text-sm text-terminal-text mb-8">
+    Date: 2003-05-10
+  </div>
+  
+  <p>I didn't think it would ever happen but Calgary got some sunshine this morning allowing Dave and I to pack up our stuff and hit the road after a two day hiatus. First off though, we had to make a final trip to Canadian Tire to buy tubes that we could actually use instead of those crazy presta valve tubes our good buddy Corey pawned off on us. However, as fate would have it, Canadian Tire was sold out of the size of tubes we needed, and thus we ended up buying a new pump that was capable of inflating the presta valve tubes.</p>
+<p>Once we returned home and opened the pump, a quick glance at the instructions showed us how to convert the pump so that it could inflate the presta valve tubes. It was then that we realized that Dave's old pump was also capable of the same thing... we just never knew how it worked! So, we came to the conclusion that we are morons and probably should know a bit more about bikes if we intend to complete this trip!</p>
+<p><picture><source type="image/webp" srcset="can_bike_trip_080-400w.webp 400w, can_bike_trip_080-800w.webp 800w" sizes="(max-width: 768px) 100vw, 50vw"><img src="can_bike_trip_080-400w.jpeg" alt="" loading="lazy" decoding="async" width="800" height="533" srcset="can_bike_trip_080-400w.jpeg 400w, can_bike_trip_080-800w.jpeg 800w" sizes="(max-width: 768px) 100vw, 50vw"></picture></p>
+<p>Following another fantastic breakfast prepared by our gracious hosts, Dave and I bid farewell and hit the road. The first portion of the journey consisted of a ride through a busy highway along northern Calgary. Once that was over with, we were faced with nothing but flat road and farmland all around us... we had reached the Prairies!</p>
+<p>Most of the morning was rather uneventful, but once again we could not get through the day without encountering bike troubles. This time it was my back tire that went flat. We quickly replaced the tube and continued on; however, I would have more problems with the tire before the day was done. It seems as though it has a slow leak (again!) and thus had to be re-inflated several hours after it had been installed. This back tire is really starting to get on my nerves!</p>
+<p><picture><source type="image/webp" srcset="can_bike_trip_084-400w.webp 400w, can_bike_trip_084-800w.webp 800w" sizes="(max-width: 768px) 100vw, 50vw"><img src="can_bike_trip_084-400w.jpeg" alt="" loading="lazy" decoding="async" width="800" height="533" srcset="can_bike_trip_084-400w.jpeg 400w, can_bike_trip_084-800w.jpeg 800w" sizes="(max-width: 768px) 100vw, 50vw"></picture></p>
+<p>After we stopped for a quick lunch in Beiseker, we continued towards Drumheller, but it became apparent we would not arrive in time to visit the dinosaur museum, as was the plan. We did however stop at the viewpoint to Horseshoe Canyon for a few pictures, which was pretty cool.</p>
+<p>When we finally arrived in Drumheller, we found what looked to be the cheapest motel we could find and then checked in for the night. We decided to walk around Drumheller for a bit before dark (and after the Sens game of course!) to try and at least see some of the sites. After getting lots of dinosaur pictures, we returned to our room to retire for the evening.</p>
+<p><picture><source type="image/webp" srcset="can_bike_trip_087-400w.webp 400w, can_bike_trip_087-800w.webp 800w" sizes="(max-width: 768px) 100vw, 50vw"><img src="can_bike_trip_087-400w.jpeg" alt="" loading="lazy" decoding="async" width="800" height="1200" srcset="can_bike_trip_087-400w.jpeg 400w, can_bike_trip_087-800w.jpeg 800w" sizes="(max-width: 768px) 100vw, 50vw"></picture></p>
+<p>It really feels good to be on the road again; however, we are kind of frustrated with having to stay in motels all the time. We both really want to get back to camping, and we hope to have that opportunity tomorrow night. Aside from that, everything is going great and it feels great to be making progress again!</p>
+
+</article>
+
+  </main>
+  <footer class="mt-16 text-sm text-terminal-text opacity-50 font-mono">
+    © 2025 Mark Northcott
+  </footer>
+
+  <script>
+    document.getElementById('theme-toggle').addEventListener('click', () => {
+      const currentTheme = document.documentElement.classList.contains('light-mode') ? 'light' : 'terminal';
+      const newTheme = currentTheme === 'light' ? 'terminal' : 'light';
+      applyTheme(newTheme);
+    });
+  </script>
+
+
+</body></html>
