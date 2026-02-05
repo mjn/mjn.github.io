@@ -36,7 +36,8 @@
     <div class="absolute -top-3 left-6 px-2 bg-terminal-bg text-terminal-accent font-mono font-bold"><a href="/" text="home">mark@northcott.io</a></div>
     <header class="mb-8 font-mono flex justify-between items-center relative">
       <div class="flex items-center">
-        <span class="text-terminal-prompt">{{ page.url | promptPath }}$</span>
+        <span class="text-terminal-prompt sm:hidden">{{ page.url | promptPathShort }}$</span>
+        <span class="text-terminal-prompt hidden sm:inline">{{ page.url | promptPath }}$</span>
       </div>
 
       <div class="flex items-center space-x-4">

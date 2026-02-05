@@ -29,6 +29,14 @@ module.exports = function (eleventyConfig) {
     return `~${cleanUrl}`
   })
 
+  eleventyConfig.addFilter("promptPathShort", url => {
+    if (!url || url === "/") return "~"
+    // Get first path segment only for mobile
+    let cleanUrl = url.replace(/\/$/, "")
+    let segments = cleanUrl.split("/").filter(Boolean)
+    return segments.length > 0 ? `~/${segments[0]}` : "~"
+  })
+
   // Collections
   eleventyConfig.addCollection("post", function (collectionApi) {
     return collectionApi
