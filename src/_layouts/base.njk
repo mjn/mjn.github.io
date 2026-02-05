@@ -31,9 +31,9 @@
     applyTheme(getTheme());
   </script>
 </head>
-<body class="flex flex-col items-center justify-center min-h-screen p-4 sm:p-8 transition-colors duration-300" data-input-path="{{ page.inputPath }}">
-  <div class="w-full max-w-5xl mx-auto border-2 border-terminal-accent rounded-lg p-6 sm:p-10 relative">
-    <div class="absolute -top-3 left-6 px-2 bg-terminal-bg text-terminal-accent font-mono font-bold">mark@northcott.io</div>
+<body class="flex flex-col items-center min-h-screen p-4 sm:p-8 transition-colors duration-300" data-input-path="{{ page.inputPath }}">
+  <div class="w-full max-w-5xl mx-auto border-2 border-terminal-accent p-6 sm:p-10 relative">
+    <div class="absolute -top-3 left-6 px-2 bg-terminal-bg text-terminal-accent font-mono font-bold"><a href="/" text="home">mark@northcott.io</a></div>
     <header class="mb-8 font-mono flex justify-between items-center relative">
       <div class="flex items-center">
         <span class="text-terminal-prompt">{{ page.url | promptPath }}$</span>
@@ -69,9 +69,6 @@
     <main>
       {{ content | safe }}
     </main>
-    <footer class="mt-16 text-sm text-terminal-text opacity-50 font-mono">
-      &copy; 2025 Mark Northcott
-    </footer>
   </div>
 
   <script>
