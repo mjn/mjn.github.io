@@ -1,0 +1,76 @@
+---
+layout: base
+---
+<article class="prose prose-invert max-w-none font-mono">
+  <div class="mb-2 text-terminal-accent">
+    <span class="text-terminal-prompt">$</span> cat {{ title | slugify }}.md
+  </div>
+  <h1 class="font-bold mb-2 text-terminal-text">{{ title }}</h1>
+  <div class="text-terminal-text opacity-70 mb-4 flex flex-col sm:flex-row sm:gap-4">
+    <span>Date: {{ date }}</span>
+    {% if location %}<span class="hidden sm:inline">|</span><span>Location: {{ location }}</span>{% endif %}
+    {% if distance %}<span class="hidden sm:inline">|</span><span>Distance: {{ distance }}</span>{% endif %}
+  </div>
+
+  {% if mapSrc %}
+  <div class="mb-8">
+    <iframe
+      src="{{ mapSrc }}"
+      width="100%"
+      height="300"
+      style="border: 1px solid var(--text-color); box-shadow: 4px 4px 0 var(--accent-color);"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+  {% endif %}
+
+  {{ content | safe }}
+</article>
+
+{%- set posts = collections.post -%}
+{%- set currentIndex = -1 -%}
+{%- for post in posts -%}
+  {%- if post.url == page.url -%}
+    {%- set currentIndex = loop.index0 -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{# Posts are sorted newest-first, so next (newer) = lower index, prev (older) = higher index #}
+{%- set newerPost = posts[currentIndex - 1] if currentIndex > 0 else null -%}
+{%- set olderPost = posts[currentIndex + 1] if currentIndex < posts.length - 1 else null -%}
+
+{% if olderPost or newerPost %}
+<nav class="mt-12 pt-6 border-t border-terminal-accent border-opacity-30 font-mono flex flex-col sm:flex-row sm:justify-between gap-2">
+  {% if olderPost %}
+    <a id="prev-post" href="{{ olderPost.url }}" class="text-terminal-accent hover:tui-inverse px-1 transition-colors duration-200 flex max-w-full sm:max-w-[45%]">
+      <span class="shrink-0">[←&nbsp;</span><span class="truncate">{{ olderPost.data.title }}</span><span class="shrink-0">]</span>
+    </a>
+  {% else %}
+    <span class="hidden sm:block"></span>
+  {% endif %}
+
+  {% if newerPost %}
+    <a id="next-post" href="{{ newerPost.url }}" class="text-terminal-accent hover:tui-inverse px-1 transition-colors duration-200 flex max-w-full sm:max-w-[45%] sm:justify-end">
+      <span class="shrink-0">[</span><span class="truncate">{{ newerPost.data.title }}</span><span class="shrink-0">&nbsp;→]</span>
+    </a>
+  {% endif %}
+</nav>
+{% endif %}
+
+<script>
+  document.addEventListener('keydown', (e) => {
+    // Don't trigger if user is typing in an input/textarea
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+
+    const prevLink = document.getElementById('prev-post');
+    const nextLink = document.getElementById('next-post');
+
+    if (e.key === 'h' && prevLink) {
+      prevLink.click();
+    } else if (e.key === 'l' && nextLink) {
+      nextLink.click();
+    }
+  });
+</script>

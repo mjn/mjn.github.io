@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Terminal Theme (Tokyo Night) - Default */
+  --bg-color: #1a1b26;
+  --text-color: #a9b1d6;
+  --accent-color: #7aa2f7;
+  --prompt-color: #9ece6a;
+  --cursor-color: #f7768e;
+}
+
+.light-mode {
+  /* Light Theme */
+  --bg-color: #f0f0f0;
+  --text-color: #2d3748;
+  --accent-color: #3182ce;
+  --prompt-color: #38a169;
+  --cursor-color: #e53e3e;
+}
+
+.everforest-mode {
+  /* Everforest Theme */
+  --bg-color: #2d353b;
+  --text-color: #d3c6aa;
+  --accent-color: #7fbbb3;
+  --prompt-color: #a7c080;
+  --cursor-color: #e67e80;
+}
+
+.catppuccin-mode {
+  /* Catppuccin Theme */
+  --bg-color: #1e1e2e;
+  --text-color: #cdd6f4;
+  --accent-color: #89b4fa;
+  --prompt-color: #a6e3a1;
+  --cursor-color: #f38ba8;
+}
+
+.gruvbox-mode {
+  /* Gruvbox Theme */
+  --bg-color: #282828;
+  --text-color: #ebdbb2;
+  --accent-color: #83a598;
+  --prompt-color: #b8bb26;
+  --cursor-color: #fb4934;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: "JetBrainsMono Nerd Font", "JetBrains Mono", "FiraCode Nerd Font",
+    "Fira Code", monospace;
+}
+
+/* Uniform font size - remove this block to restore size variations */
+* {
+  font-size: 1rem !important;
+}
+
+/* Utility classes mapping to variables */
+.text-terminal-text {
+  color: var(--text-color);
+}
+.text-terminal-accent {
+  color: var(--accent-color);
+}
+.text-terminal-prompt {
+  color: var(--prompt-color);
+}
+.bg-terminal-bg {
+  background-color: var(--bg-color);
+}
+.border-terminal-text {
+  border-color: var(--text-color);
+}
+
+/* TUI Styles */
+.tui-inverse {
+  background-color: var(--text-color) !important;
+  color: var(--bg-color) !important;
+}
+
+.tui-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: var(--bg-color);
+  border: 1px solid var(--text-color);
+  z-index: 50;
+  min-width: 140px;
+}
+
+.tui-dropdown-item {
+  padding: 0.25rem 0.75rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.tui-dropdown-item:hover,
+.tui-dropdown-item:focus {
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  outline: none;
+}
+
+/* Prose overrides for Markdown content */
+.prose {
+  color: var(--text-color);
+}
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4 {
+  color: var(--accent-color);
+  font-family: "JetBrainsMono Nerd Font", "JetBrains Mono", "FiraCode Nerd Font",
+    "Fira Code", monospace;
+}
+.prose a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+.prose a:hover {
+  text-decoration: underline;
+}
+.prose code {
+  color: var(--prompt-color);
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 0.2em 0.4em;
+  border-radius: 0.25em;
+}
+.prose pre {
+  background-color: #16161e; /* Darker shade for code blocks */
+  border: 1px solid var(--text-color);
+}
+.light-mode .prose pre {
+  background-color: #e2e8f0;
+  border-color: #cbd5e0;
+}
+
+/* Blog post images */
+.prose img,
+.prose picture {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.prose img {
+  border: 1px solid var(--text-color);
+  box-shadow: 4px 4px 0 var(--accent-color);
+}

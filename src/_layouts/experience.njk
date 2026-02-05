@@ -1,0 +1,11 @@
+---
+layout: base
+---
+<div class="border border-terminal-text p-6 rounded font-mono">
+  <h1 class="text-2xl font-bold text-terminal-accent">{{ company }}</h1>
+  <h2 class="text-xl text-terminal-prompt">{{ title }}</h2>
+  <p class="text-sm mt-2">{{ startDate }}</p>
+  <div class="mt-4 prose prose-invert">
+    {{ content | safe }}
+  </div>
+</div>

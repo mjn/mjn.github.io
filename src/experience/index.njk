@@ -1,0 +1,26 @@
+---
+layout: base
+title: Experience
+---
+<div class="font-mono">
+  <h1 class="text-3xl font-bold mb-6 text-terminal-accent">
+    <span class="text-terminal-prompt">$</span> ls experience/
+  </h1>
+
+  <div class="space-y-8">
+    {% for exp in collections.experience %}
+    <div class="border-l-2 border-terminal-prompt pl-4">
+      <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-2">
+        <h2 class="text-xl font-bold text-terminal-accent">{{ exp.data.company }}</h2>
+        <div class="text-sm opacity-70">
+          {{ exp.data.startDate | date("MMM yyyy") }} - {% if exp.data.endDate %}{{ exp.data.endDate | date("MMM yyyy") }}{% else %}Present{% endif %}
+        </div>
+      </div>
+      <h3 class="text-lg text-terminal-prompt mb-3">{{ exp.data.title }}</h3>
+      <div class="prose prose-invert max-w-none text-sm">
+        {{ exp.content | safe }}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

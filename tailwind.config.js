@@ -1,15 +1,22 @@
 module.exports = {
-  content: ['./src/**/*.{js,jsx,ts,tsx}'],
-  darkMode: 'media',
+  content: ["./src/**/*.{html,js,njk,md}"],
   theme: {
     extend: {
-      boxShadow: {
-        link: '0 -6px 0 0 rgba(186, 230, 253, 0.75) inset',
+      colors: {
+        terminal: {
+          bg: 'var(--bg-color)',
+          text: 'var(--text-color)',
+          accent: 'var(--accent-color)',
+          prompt: 'var(--prompt-color)',
+          cursor: 'var(--cursor-color)',
+        }
       },
+      fontFamily: {
+        mono: ['"JetBrainsMono Nerd Font"', '"JetBrains Mono"', '"FiraCode Nerd Font"', '"Fira Code"', 'monospace'],
+      }
     },
   },
-  variants: {
-    extend: {},
-  },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }

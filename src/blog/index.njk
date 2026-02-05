@@ -1,0 +1,19 @@
+---
+layout: base
+title: Blog
+---
+<div class="font-mono">
+  <h1 class="text-3xl font-bold mb-6 text-terminal-accent">
+    <span class="text-terminal-prompt">$</span> ls blog/
+  </h1>
+
+  <ul class="space-y-6">
+    {% for post in collections.post %}
+    <li class="border-l-2 border-terminal-prompt pl-4">
+      <a href="{{ post.url }}" class="text-2xl hover:underline font-bold">{{ post.data.title }}</a>
+      <div class="text-sm opacity-70 mb-2">{{ post.date | date("MMMM d, yyyy") }}</div>
+      <p class="text-base">{{ post.data.description }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
