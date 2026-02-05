@@ -8,6 +8,7 @@ const fs = require("fs")
 module.exports = function (eleventyConfig) {
   // Passthrough copy for static assets (excluding css which is handled by Tailwind)
   eleventyConfig.addPassthroughCopy("src/assets/images")
+  eleventyConfig.addPassthroughCopy({ "static": "/" })
 
   // Date filter
   eleventyConfig.addFilter("date", (dateObj, format = "yyyy-MM-dd") => {
