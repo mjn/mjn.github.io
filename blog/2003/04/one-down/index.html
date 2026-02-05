@@ -1,0 +1,211 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>One Down... | Mark Northcott</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script>
+    // Check for saved theme preference, otherwise use system preference
+    const getTheme = () => {
+      if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+        return localStorage.getItem('theme');
+      }
+      if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+        return 'light';
+      }
+      return 'terminal'; // Default
+    };
+
+    const applyTheme = (theme) => {
+      const html = document.documentElement;
+      const themes = ['light-mode', 'everforest-mode', 'catppuccin-mode', 'gruvbox-mode'];
+      themes.forEach(t => html.classList.remove(t));
+      
+      if (theme !== 'terminal') {
+        html.classList.add(`${theme}-mode`);
+      }
+      localStorage.setItem('theme', theme);
+    };
+
+    applyTheme(getTheme());
+  </script>
+</head>
+<body class="flex flex-col items-center min-h-screen p-4 sm:p-8 transition-colors duration-300">
+  <div class="w-full max-w-5xl mx-auto border-2 border-terminal-accent p-6 sm:p-10 relative">
+    <div class="absolute -top-3 left-6 px-2 bg-terminal-bg text-terminal-accent font-mono font-bold"><a href="/" text="home">mark@northcott.io</a></div>
+    <header class="mb-8 font-mono flex justify-between items-center relative">
+      <div class="flex items-center">
+        <span class="text-terminal-prompt sm:hidden">~/blog$</span>
+        <span class="text-terminal-prompt hidden sm:inline">~/blog/2003/04/one-down$</span>
+      </div>
+
+      <div class="flex items-center space-x-4">
+        <!-- Menu Trigger -->
+        <button id="menu-trigger" class="hover:tui-inverse focus:tui-inverse outline-none px-1 transition-colors duration-200">
+          [menu]
+        </button>
+      </div>
+
+      <!-- Main Dropdown Menu -->
+      <div id="main-menu" class="hidden absolute top-full right-0 mt-2 z-50 tui-dropdown-menu min-w-[200px]">
+        <div class="flex flex-col p-4 space-y-4">
+          <nav class="flex flex-col space-y-2">
+            <a href="/" class="text-terminal-accent hover:underline">home</a>
+            <a href="/blog/" class="text-terminal-accent hover:underline">blog</a>
+            <a href="/experience/" class="text-terminal-accent hover:underline">experience</a>
+          </nav>
+          <div class="border-t border-terminal-accent opacity-30"></div>
+          <div class="flex flex-col space-y-2 font-mono text-terminal-text">
+            <span class="text-xs opacity-50 px-1">Theme</span>
+            <button class="theme-item text-left hover:tui-inverse px-1" data-value="terminal">tokyo-night</button>
+            <button class="theme-item text-left hover:tui-inverse px-1" data-value="light">light</button>
+            <button class="theme-item text-left hover:tui-inverse px-1" data-value="everforest">everforest</button>
+            <button class="theme-item text-left hover:tui-inverse px-1" data-value="catppuccin">catppuccin</button>
+            <button class="theme-item text-left hover:tui-inverse px-1" data-value="gruvbox">gruvbox</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <article class="prose prose-invert max-w-none font-mono">
+  <div class="mb-2 text-terminal-accent">
+    <span class="text-terminal-prompt">$</span> cat one-down.md
+  </div>
+  <h1 class="font-bold mb-2 text-terminal-text">One Down...</h1>
+  <div class="text-terminal-text opacity-70 mb-4 flex flex-col sm:flex-row sm:gap-4">
+    <span>Date: 2003-04-27</span>
+    <span class="hidden sm:inline">|</span><span>Location: Mission, BC</span>
+    <span class="hidden sm:inline">|</span><span>Distance: 89km</span>
+  </div>
+
+  
+  <div class="mb-8">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d166744.83465942062!2d-122.46525649402437!3d49.23113176015192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548433f150884859%3A0x4483763e1e96e3!2sMission%2C%20BC!5e0!3m2!1sen!2sca!4v1609168376634!5m2!1sen!2sca" width="100%" height="300" style="border: 1px solid var(--text-color); box-shadow: 4px 4px 0 var(--accent-color);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+  
+
+  <p>Well we have successfully completed the first day of riding, and to say that everything went as planned would be a bold faced lie! First off, we passed out last night without packing our gear, and thus we were left with that task this morning... big mistake! It was my intention to be out of the hotel by 9am, but we didn't check out til approximately 11:30am. It turns out that packing took much longer than expected (almost 5 hrs).</p>
+<p><picture><source type="image/webp" srcset="can_bike_trip_006-400w.webp 400w, can_bike_trip_006-800w.webp 800w" sizes="(max-width: 768px) 100vw, 50vw"><img src="can_bike_trip_006-400w.jpeg" alt="" loading="lazy" decoding="async" width="800" height="533" srcset="can_bike_trip_006-400w.jpeg 400w, can_bike_trip_006-800w.jpeg 800w" sizes="(max-width: 768px) 100vw, 50vw"></picture></p>
+<p>Once we finally got on the road it was drizzling rain for the first few hours, and we struggled to find our way around the Vancouver bike trails. Luckily there were several friendly people that witnessed our confusion and offered their assistance, which was great! With the help of these friendly souls we were able to get through Vancouver and saw many nice places along the way (unlike yesterday). We then peddled our way through Burnaby, following the bike route that continued from the Vancouver trail.</p>
+<p>However, once the bike trails ended, we were lost! We were extremely unequipped for navigating the suburbs of the GVA, and thus we found ourselves stopping constantly to consult the map. Unfortunately, with only a provincial map, there were several instances where it was impossible to determine our exact location, and as a result we ended up making several wrong turns and detours.</p>
+<p><picture><source type="image/webp" srcset="can_bike_trip_006-400w.webp 400w, can_bike_trip_006-800w.webp 800w" sizes="(max-width: 768px) 100vw, 50vw"><img src="can_bike_trip_006-400w.jpeg" alt="" loading="lazy" decoding="async" width="800" height="533" srcset="can_bike_trip_006-400w.jpeg 400w, can_bike_trip_006-800w.jpeg 800w" sizes="(max-width: 768px) 100vw, 50vw"></picture></p>
+<p>Perhaps the worst mistake was missing a turn-off and thus heading up some severe hills towards Simon Fraser University, which appears to be in the middle of nowhere! This cost us valuable time and energy, but it was the last big mistake we made.</p>
+<p>By the time we reached Maple Ridge, we had been riding for approximately 5.5 hrs and it was almost 5pm. Unfortunately we were still almost 40km from Mission, which was our destination for the day. Luckily, we reached the highway and we were able to make good time for the first time all day.</p>
+<p><picture><source type="image/webp" srcset="can_bike_trip_015-400w.webp 400w, can_bike_trip_015-800w.webp 800w" sizes="(max-width: 768px) 100vw, 50vw"><img src="can_bike_trip_015-400w.jpeg" alt="" loading="lazy" decoding="async" width="800" height="533" srcset="can_bike_trip_015-400w.jpeg 400w, can_bike_trip_015-800w.jpeg 800w" sizes="(max-width: 768px) 100vw, 50vw"></picture></p>
+<p>After all the delays and wrong turns, we finally reached Mission at around 9pm, which was much later than anticipated. As a result of all the days hardships we decided to suck it up and book into a hotel for one more night.</p>
+<p>So now I am lying in a comfy (expensive) bed about to settle down for a good night sleep. This is expected to be the last "real" bed I will see for a few days (or weeks) and I intend to enjoy it. Tomorrow will be different... hopefully.</p>
+<p><picture><source type="image/webp" srcset="can_bike_trip_017-400w.webp 400w, can_bike_trip_017-800w.webp 800w" sizes="(max-width: 768px) 100vw, 50vw"><img src="can_bike_trip_017-400w.jpeg" alt="" loading="lazy" decoding="async" width="800" height="533" srcset="can_bike_trip_017-400w.jpeg 400w, can_bike_trip_017-800w.jpeg 800w" sizes="(max-width: 768px) 100vw, 50vw"></picture></p>
+<p>Following the days events, I admit that I was slightly depressed about the progress made, and I certainly hope that things take a turn for the better. Now that we are on the highway and away from the Vancouver metropolitan area, riding should improve... although those mountains are looking rather ominous in the foreground! Oh well, no need for complaining. I am free, and I intend to make the best of it... there is still plenty of riding to do!</p>
+<p><strong>The next day...</strong></p>
+<p>Just a few points I missed regarding yesterdays opening day...</p>
+<ul>
+<li>I added to the "cut count" by falling off my bike as a result of not getting the clips on my shoes undone in time... damn clips!</li>
+<li>Simon Fraser University is on a mountain top... don't go there!</li>
+</ul>
+
+</article>
+<nav class="mt-12 pt-6 border-t border-terminal-accent border-opacity-30 font-mono flex flex-col sm:flex-row sm:justify-between gap-2">
+  
+    <a id="prev-post" href="/blog/2003/04/last-minute-preparation/" class="text-terminal-accent hover:tui-inverse px-1 transition-colors duration-200 flex max-w-full sm:max-w-[45%]">
+      <span class="shrink-0">[←&nbsp;</span><span class="truncate">Last Minute Preparation</span><span class="shrink-0">]</span>
+    </a>
+  
+
+  
+    <a id="next-post" href="/blog/2003/04/mom-i-was-accepted-to-yale-campground/" class="text-terminal-accent hover:tui-inverse px-1 transition-colors duration-200 flex max-w-full sm:max-w-[45%] sm:justify-end">
+      <span class="shrink-0">[</span><span class="truncate">Mom, I was Accepted to Yale... Campground</span><span class="shrink-0">&nbsp;→]</span>
+    </a>
+  
+</nav>
+
+
+<script>
+  document.addEventListener('keydown', (e) => {
+    // Don't trigger if user is typing in an input/textarea
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+
+    const prevLink = document.getElementById('prev-post');
+    const nextLink = document.getElementById('next-post');
+
+    if (e.key === 'h' && prevLink) {
+      prevLink.click();
+    } else if (e.key === 'l' && nextLink) {
+      nextLink.click();
+    }
+  });
+</script>
+
+    </main>
+  </div>
+
+  <script>
+    const menuTrigger = document.getElementById('menu-trigger');
+    const mainMenu = document.getElementById('main-menu');
+    const themeItems = document.querySelectorAll('.theme-item');
+    const themeNameDisplays = document.querySelectorAll('.current-theme-name');
+
+    const themeNames = {
+      'terminal': 'tokyo-night',
+      'light': 'light',
+      'everforest': 'everforest',
+      'catppuccin': 'catppuccin',
+      'gruvbox': 'gruvbox'
+    };
+
+    const updateThemeUI = (activeTheme) => {
+      themeItems.forEach(item => {
+        const themeValue = item.getAttribute('data-value');
+        const themeName = themeNames[themeValue];
+        if (themeValue === activeTheme) {
+          item.textContent = `[${themeName}]`;
+          item.classList.add('text-terminal-accent');
+        } else {
+          item.textContent = themeName;
+          item.classList.remove('text-terminal-accent');
+        }
+      });
+    };
+
+    // Initialize display name
+    const currentTheme = getTheme();
+    themeNameDisplays.forEach(el => el.textContent = themeNames[currentTheme] || currentTheme);
+    updateThemeUI(currentTheme);
+
+    // Toggle menu
+    if(menuTrigger) {
+      menuTrigger.addEventListener('click', (e) => {
+        e.stopPropagation();
+        mainMenu.classList.toggle('hidden');
+      });
+    }
+
+    // Handle theme selection
+    themeItems.forEach(item => {
+      item.addEventListener('click', () => {
+        const theme = item.getAttribute('data-value');
+        applyTheme(theme);
+        themeNameDisplays.forEach(el => el.textContent = themeNames[theme]);
+        updateThemeUI(theme);
+        
+        // Close menu
+        if(mainMenu) mainMenu.classList.add('hidden');
+      });
+    });
+
+    // Close on click outside
+    document.addEventListener('click', (e) => {
+      if (mainMenu && !mainMenu.contains(e.target) && !menuTrigger.contains(e.target)) {
+        mainMenu.classList.add('hidden');
+      }
+    });
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        if(mainMenu) mainMenu.classList.add('hidden');
+      }
+    });
+  </script>
+
+
+</body></html>

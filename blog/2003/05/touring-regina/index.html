@@ -1,0 +1,200 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Touring Regina | Mark Northcott</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script>
+    // Check for saved theme preference, otherwise use system preference
+    const getTheme = () => {
+      if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+        return localStorage.getItem('theme');
+      }
+      if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+        return 'light';
+      }
+      return 'terminal'; // Default
+    };
+
+    const applyTheme = (theme) => {
+      const html = document.documentElement;
+      const themes = ['light-mode', 'everforest-mode', 'catppuccin-mode', 'gruvbox-mode'];
+      themes.forEach(t => html.classList.remove(t));
+      
+      if (theme !== 'terminal') {
+        html.classList.add(`${theme}-mode`);
+      }
+      localStorage.setItem('theme', theme);
+    };
+
+    applyTheme(getTheme());
+  </script>
+</head>
+<body class="flex flex-col items-center min-h-screen p-4 sm:p-8 transition-colors duration-300">
+  <div class="w-full max-w-5xl mx-auto border-2 border-terminal-accent p-6 sm:p-10 relative">
+    <div class="absolute -top-3 left-6 px-2 bg-terminal-bg text-terminal-accent font-mono font-bold"><a href="/" text="home">mark@northcott.io</a></div>
+    <header class="mb-8 font-mono flex justify-between items-center relative">
+      <div class="flex items-center">
+        <span class="text-terminal-prompt sm:hidden">~/blog$</span>
+        <span class="text-terminal-prompt hidden sm:inline">~/blog/2003/05/touring-regina$</span>
+      </div>
+
+      <div class="flex items-center space-x-4">
+        <!-- Menu Trigger -->
+        <button id="menu-trigger" class="hover:tui-inverse focus:tui-inverse outline-none px-1 transition-colors duration-200">
+          [menu]
+        </button>
+      </div>
+
+      <!-- Main Dropdown Menu -->
+      <div id="main-menu" class="hidden absolute top-full right-0 mt-2 z-50 tui-dropdown-menu min-w-[200px]">
+        <div class="flex flex-col p-4 space-y-4">
+          <nav class="flex flex-col space-y-2">
+            <a href="/" class="text-terminal-accent hover:underline">home</a>
+            <a href="/blog/" class="text-terminal-accent hover:underline">blog</a>
+            <a href="/experience/" class="text-terminal-accent hover:underline">experience</a>
+          </nav>
+          <div class="border-t border-terminal-accent opacity-30"></div>
+          <div class="flex flex-col space-y-2 font-mono text-terminal-text">
+            <span class="text-xs opacity-50 px-1">Theme</span>
+            <button class="theme-item text-left hover:tui-inverse px-1" data-value="terminal">tokyo-night</button>
+            <button class="theme-item text-left hover:tui-inverse px-1" data-value="light">light</button>
+            <button class="theme-item text-left hover:tui-inverse px-1" data-value="everforest">everforest</button>
+            <button class="theme-item text-left hover:tui-inverse px-1" data-value="catppuccin">catppuccin</button>
+            <button class="theme-item text-left hover:tui-inverse px-1" data-value="gruvbox">gruvbox</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <article class="prose prose-invert max-w-none font-mono">
+  <div class="mb-2 text-terminal-accent">
+    <span class="text-terminal-prompt">$</span> cat touring-regina.md
+  </div>
+  <h1 class="font-bold mb-2 text-terminal-text">Touring Regina</h1>
+  <div class="text-terminal-text opacity-70 mb-4 flex flex-col sm:flex-row sm:gap-4">
+    <span>Date: 2003-05-17</span>
+    <span class="hidden sm:inline">|</span><span>Location: Regina, SK</span>
+    
+  </div>
+
+  
+  <div class="mb-8">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d81281.97868981776!2d-104.70544861246896!3d50.45857323294494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x531c1e40fba53deb%3A0x354a3296b77b54b1!2sRegina%2C%20SK!5e0!3m2!1sen!2sca!4v1609171671255!5m2!1sen!2sca" width="100%" height="300" style="border: 1px solid var(--text-color); box-shadow: 4px 4px 0 var(--accent-color);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+  
+
+  <p>This morning we slowly rolled out of our beds and forced ourselves to go do laundry... mainly because otherwise we would have nothing to wear! We walked for what seemed to be forever to reach the laundromat, and then shelled out $6 to wash two loads of clothes. Once the clothes were all washed and dry, we grabbed a sub and headed back to the room to watch game 4 of the Sens-Devils series.</p>
+<p>Following a disheartening loss by the Senators, we headed out to tour the city and run a few errands. The first stop was an an Internet cafe for a double espresso while checking email, sending a few messages and just general net surfing, which I have started to miss.</p>
+<p><picture><source type="image/webp" srcset="can_bike_trip_116-400w.webp 400w, can_bike_trip_116-800w.webp 800w" sizes="(max-width: 768px) 100vw, 50vw"><img src="can_bike_trip_116-400w.jpeg" alt="" loading="lazy" decoding="async" width="800" height="533" srcset="can_bike_trip_116-400w.jpeg 400w, can_bike_trip_116-800w.jpeg 800w" sizes="(max-width: 768px) 100vw, 50vw"></picture></p>
+<p>We then headed to the downtown core for a few pictures and to get cash from our respective banks. We then headed to a local pub for a feast of wings and beer.</p>
+<p>Finally, we returned to our room to relax and enjoy the remainder of our rest day. Thus, we are now procrastinating from repacking all of our gear in order to get back on the road tomorrow.</p>
+<p><picture><source type="image/webp" srcset="can_bike_trip_117-400w.webp 400w, can_bike_trip_117-800w.webp 800w" sizes="(max-width: 768px) 100vw, 50vw"><img src="can_bike_trip_117-400w.jpeg" alt="" loading="lazy" decoding="async" width="800" height="533" srcset="can_bike_trip_117-400w.jpeg 400w, can_bike_trip_117-800w.jpeg 800w" sizes="(max-width: 768px) 100vw, 50vw"></picture></p>
+<p>Our next major destination will be Brandon, Manitoba, which is about three days away, and then it's off to Winnipeg where my dad will be waiting with steak and beer! I can't wait!!! I'm really looking forward to seeing dad again, as well as my cousin Paul, and I'm sure that we will have a great time.</p>
+
+</article>
+<nav class="mt-12 pt-6 border-t border-terminal-accent border-opacity-30 font-mono flex flex-col sm:flex-row sm:justify-between gap-2">
+  
+    <a id="prev-post" href="/blog/2003/05/the-morning-after/" class="text-terminal-accent hover:tui-inverse px-1 transition-colors duration-200 flex max-w-full sm:max-w-[45%]">
+      <span class="shrink-0">[←&nbsp;</span><span class="truncate">The Morning After</span><span class="shrink-0">]</span>
+    </a>
+  
+
+  
+    <a id="next-post" href="/blog/2003/05/so-long-regina/" class="text-terminal-accent hover:tui-inverse px-1 transition-colors duration-200 flex max-w-full sm:max-w-[45%] sm:justify-end">
+      <span class="shrink-0">[</span><span class="truncate">So Long Regina</span><span class="shrink-0">&nbsp;→]</span>
+    </a>
+  
+</nav>
+
+
+<script>
+  document.addEventListener('keydown', (e) => {
+    // Don't trigger if user is typing in an input/textarea
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+
+    const prevLink = document.getElementById('prev-post');
+    const nextLink = document.getElementById('next-post');
+
+    if (e.key === 'h' && prevLink) {
+      prevLink.click();
+    } else if (e.key === 'l' && nextLink) {
+      nextLink.click();
+    }
+  });
+</script>
+
+    </main>
+  </div>
+
+  <script>
+    const menuTrigger = document.getElementById('menu-trigger');
+    const mainMenu = document.getElementById('main-menu');
+    const themeItems = document.querySelectorAll('.theme-item');
+    const themeNameDisplays = document.querySelectorAll('.current-theme-name');
+
+    const themeNames = {
+      'terminal': 'tokyo-night',
+      'light': 'light',
+      'everforest': 'everforest',
+      'catppuccin': 'catppuccin',
+      'gruvbox': 'gruvbox'
+    };
+
+    const updateThemeUI = (activeTheme) => {
+      themeItems.forEach(item => {
+        const themeValue = item.getAttribute('data-value');
+        const themeName = themeNames[themeValue];
+        if (themeValue === activeTheme) {
+          item.textContent = `[${themeName}]`;
+          item.classList.add('text-terminal-accent');
+        } else {
+          item.textContent = themeName;
+          item.classList.remove('text-terminal-accent');
+        }
+      });
+    };
+
+    // Initialize display name
+    const currentTheme = getTheme();
+    themeNameDisplays.forEach(el => el.textContent = themeNames[currentTheme] || currentTheme);
+    updateThemeUI(currentTheme);
+
+    // Toggle menu
+    if(menuTrigger) {
+      menuTrigger.addEventListener('click', (e) => {
+        e.stopPropagation();
+        mainMenu.classList.toggle('hidden');
+      });
+    }
+
+    // Handle theme selection
+    themeItems.forEach(item => {
+      item.addEventListener('click', () => {
+        const theme = item.getAttribute('data-value');
+        applyTheme(theme);
+        themeNameDisplays.forEach(el => el.textContent = themeNames[theme]);
+        updateThemeUI(theme);
+        
+        // Close menu
+        if(mainMenu) mainMenu.classList.add('hidden');
+      });
+    });
+
+    // Close on click outside
+    document.addEventListener('click', (e) => {
+      if (mainMenu && !mainMenu.contains(e.target) && !menuTrigger.contains(e.target)) {
+        mainMenu.classList.add('hidden');
+      }
+    });
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        if(mainMenu) mainMenu.classList.add('hidden');
+      }
+    });
+  </script>
+
+
+</body></html>

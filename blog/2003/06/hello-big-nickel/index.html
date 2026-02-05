@@ -1,0 +1,203 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello Big Nickel! | Mark Northcott</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script>
+    // Check for saved theme preference, otherwise use system preference
+    const getTheme = () => {
+      if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+        return localStorage.getItem('theme');
+      }
+      if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+        return 'light';
+      }
+      return 'terminal'; // Default
+    };
+
+    const applyTheme = (theme) => {
+      const html = document.documentElement;
+      const themes = ['light-mode', 'everforest-mode', 'catppuccin-mode', 'gruvbox-mode'];
+      themes.forEach(t => html.classList.remove(t));
+      
+      if (theme !== 'terminal') {
+        html.classList.add(`${theme}-mode`);
+      }
+      localStorage.setItem('theme', theme);
+    };
+
+    applyTheme(getTheme());
+  </script>
+</head>
+<body class="flex flex-col items-center min-h-screen p-4 sm:p-8 transition-colors duration-300">
+  <div class="w-full max-w-5xl mx-auto border-2 border-terminal-accent p-6 sm:p-10 relative">
+    <div class="absolute -top-3 left-6 px-2 bg-terminal-bg text-terminal-accent font-mono font-bold"><a href="/" text="home">mark@northcott.io</a></div>
+    <header class="mb-8 font-mono flex justify-between items-center relative">
+      <div class="flex items-center">
+        <span class="text-terminal-prompt sm:hidden">~/blog$</span>
+        <span class="text-terminal-prompt hidden sm:inline">~/blog/2003/06/hello-big-nickel$</span>
+      </div>
+
+      <div class="flex items-center space-x-4">
+        <!-- Menu Trigger -->
+        <button id="menu-trigger" class="hover:tui-inverse focus:tui-inverse outline-none px-1 transition-colors duration-200">
+          [menu]
+        </button>
+      </div>
+
+      <!-- Main Dropdown Menu -->
+      <div id="main-menu" class="hidden absolute top-full right-0 mt-2 z-50 tui-dropdown-menu min-w-[200px]">
+        <div class="flex flex-col p-4 space-y-4">
+          <nav class="flex flex-col space-y-2">
+            <a href="/" class="text-terminal-accent hover:underline">home</a>
+            <a href="/blog/" class="text-terminal-accent hover:underline">blog</a>
+            <a href="/experience/" class="text-terminal-accent hover:underline">experience</a>
+          </nav>
+          <div class="border-t border-terminal-accent opacity-30"></div>
+          <div class="flex flex-col space-y-2 font-mono text-terminal-text">
+            <span class="text-xs opacity-50 px-1">Theme</span>
+            <button class="theme-item text-left hover:tui-inverse px-1" data-value="terminal">tokyo-night</button>
+            <button class="theme-item text-left hover:tui-inverse px-1" data-value="light">light</button>
+            <button class="theme-item text-left hover:tui-inverse px-1" data-value="everforest">everforest</button>
+            <button class="theme-item text-left hover:tui-inverse px-1" data-value="catppuccin">catppuccin</button>
+            <button class="theme-item text-left hover:tui-inverse px-1" data-value="gruvbox">gruvbox</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <article class="prose prose-invert max-w-none font-mono">
+  <div class="mb-2 text-terminal-accent">
+    <span class="text-terminal-prompt">$</span> cat hello-big-nickel.md
+  </div>
+  <h1 class="font-bold mb-2 text-terminal-text">Hello Big Nickel!</h1>
+  <div class="text-terminal-text opacity-70 mb-4 flex flex-col sm:flex-row sm:gap-4">
+    <span>Date: 2003-06-09</span>
+    <span class="hidden sm:inline">|</span><span>Location: Sudbury, ON</span>
+    <span class="hidden sm:inline">|</span><span>Distance: 142km</span>
+  </div>
+
+  
+  <div class="mb-8">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d702006.3694945183!2d-81.63953999433144!3d46.583038709862635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4d2eff36c6f132ed%3A0x668dd5b8879c8cf8!2sGreater%20Sudbury%2C%20ON!5e0!3m2!1sen!2sca!4v1609176662259!5m2!1sen!2sca" width="100%" height="300" style="border: 1px solid var(--text-color); box-shadow: 4px 4px 0 var(--accent-color);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+  
+
+  <p>Today was the day! We were finally going to complete the first half or the trip by riding into Sudbury and heading to the home where Dave grew up. We had decided to try and get on the road as early as possible because we did have a relatively long day ahead of us thanks to pulling in early yesterday due to weather. Therefore, we were out of bed, dressed and all packed up and ready to go by 8am. We then headed down the road for breakfast.</p>
+<p>As we were eating breakfast, two other cyclists came into the restaurant. It turns out they were on their way from Sault Ste. Marie to Toronto, and had left Blind River this morning. We sat and talked with them for awhile, and then they left to continue their trip. We were still finishing breakfast, so we continued to talk to the woman that was accompanying the two cyclists. She told us that the three of them will be participating in a fundraiser in which they will ride from Toronto to Montreal. After talking to the woman about our cross country experience thus far for about a half hour, the woman wished us luck on the rest of our journey and bid us farewell.</p>
+<p>It is really interesting to meet other cyclists that are doing similar trips so that we can compare stories and even pick up some tidbits along the way. In the past two weeks, we have met up with many others that are either doing the cross country trip or just a portion of the route. Hopefully as we continue we get to see many more cyclists.</p>
+<p>As far as the riding goes, things were great up until lunchtime, aside from a morning shower that soaked us just enough so that my feet would be cold and wet for the entire day. We had a decent tailwind though, and as a result we covered the 70km to the Espanol turnoff in about three hours. We then stopped for lunch at Tim Hortons before setting out again.</p>
+<p><picture><source type="image/webp" srcset="can_bike_trip_216-400w.webp 400w, can_bike_trip_216-800w.webp 800w" sizes="(max-width: 768px) 100vw, 50vw"><img src="can_bike_trip_216-400w.jpeg" alt="" loading="lazy" decoding="async" width="800" height="533" srcset="can_bike_trip_216-400w.jpeg 400w, can_bike_trip_216-800w.jpeg 800w" sizes="(max-width: 768px) 100vw, 50vw"></picture></p>
+<p>The afternoon was not quite as pleasant as the wind seemed to shift and began to hinder more than help us. Also, I was really feeling the effects of the cold feet as the temperature was lower than we have had the past few days. We continued on though and shortly after lunch we saw the 'City of Greater Sudbury' sign... ten feet later we saw the 'Sudbury - 54km' sign! Yes, the city encompasses a large area!</p>
+<p>As we exited the Trans Canada Highway onto a regional highway in order to avoid heavy traffic, it became apparent that the residents of Sudbury must not pay their taxes. The roads we travelled were in very rough shape, making the riding difficult. To make things worse, we arrived in the city around rush hour so the traffic was very heavy, and often we were forced to ride in the road due to the lack of a shoulder. We headed straight downtown because Dave said it was the quickest way to his house, and after a while we decided &nbsp;to stick to the sidewalks due to the heavy traffic.</p>
+<p>It turns out that Dave lives an awful long ways away from the part of the city we entered, and it seemed like an eternity before we finally arrived at his house. As we were riding towards his house, one of his sisters happened to drive by and she pulled into a parking lot to wave Dave down as we rode by. When we finally reached Dave's house, it was empty, but Dave's mom, his older sister and her daughter came home shortly afterwards.</p>
+<p>When Dave's father got home, we all sat down to a huge dinner of steak, salad, potatoes and mushrooms. Then came the dessert of brownies and cookies, which was absolutely amazing! After supper, we all headed to the TV room to watch game seven of the Stanley Cup Finals between the Ducks and Devils. By the time the dust had settled in the game, New Jersey had won 3-0 which was both good and bad... bad because it would have been nice to see a different team win, but good because the shutout by Brodeur should been enough to put me in the money in my hockey pool!</p>
+<p>After all that, I was ready for bed. It will be a good feeling to sleep in, and I am looking forward to the week off from cycling. I wonder if I will miss it...</p>
+
+</article>
+<nav class="mt-12 pt-6 border-t border-terminal-accent border-opacity-30 font-mono flex flex-col sm:flex-row sm:justify-between gap-2">
+  
+    <a id="prev-post" href="/blog/2003/06/racing-the-storm/" class="text-terminal-accent hover:tui-inverse px-1 transition-colors duration-200 flex max-w-full sm:max-w-[45%]">
+      <span class="shrink-0">[←&nbsp;</span><span class="truncate">Racing the Storm</span><span class="shrink-0">]</span>
+    </a>
+  
+
+  
+    <a id="next-post" href="/blog/2003/06/so-long-sudbury/" class="text-terminal-accent hover:tui-inverse px-1 transition-colors duration-200 flex max-w-full sm:max-w-[45%] sm:justify-end">
+      <span class="shrink-0">[</span><span class="truncate">So Long Sudbury</span><span class="shrink-0">&nbsp;→]</span>
+    </a>
+  
+</nav>
+
+
+<script>
+  document.addEventListener('keydown', (e) => {
+    // Don't trigger if user is typing in an input/textarea
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+
+    const prevLink = document.getElementById('prev-post');
+    const nextLink = document.getElementById('next-post');
+
+    if (e.key === 'h' && prevLink) {
+      prevLink.click();
+    } else if (e.key === 'l' && nextLink) {
+      nextLink.click();
+    }
+  });
+</script>
+
+    </main>
+  </div>
+
+  <script>
+    const menuTrigger = document.getElementById('menu-trigger');
+    const mainMenu = document.getElementById('main-menu');
+    const themeItems = document.querySelectorAll('.theme-item');
+    const themeNameDisplays = document.querySelectorAll('.current-theme-name');
+
+    const themeNames = {
+      'terminal': 'tokyo-night',
+      'light': 'light',
+      'everforest': 'everforest',
+      'catppuccin': 'catppuccin',
+      'gruvbox': 'gruvbox'
+    };
+
+    const updateThemeUI = (activeTheme) => {
+      themeItems.forEach(item => {
+        const themeValue = item.getAttribute('data-value');
+        const themeName = themeNames[themeValue];
+        if (themeValue === activeTheme) {
+          item.textContent = `[${themeName}]`;
+          item.classList.add('text-terminal-accent');
+        } else {
+          item.textContent = themeName;
+          item.classList.remove('text-terminal-accent');
+        }
+      });
+    };
+
+    // Initialize display name
+    const currentTheme = getTheme();
+    themeNameDisplays.forEach(el => el.textContent = themeNames[currentTheme] || currentTheme);
+    updateThemeUI(currentTheme);
+
+    // Toggle menu
+    if(menuTrigger) {
+      menuTrigger.addEventListener('click', (e) => {
+        e.stopPropagation();
+        mainMenu.classList.toggle('hidden');
+      });
+    }
+
+    // Handle theme selection
+    themeItems.forEach(item => {
+      item.addEventListener('click', () => {
+        const theme = item.getAttribute('data-value');
+        applyTheme(theme);
+        themeNameDisplays.forEach(el => el.textContent = themeNames[theme]);
+        updateThemeUI(theme);
+        
+        // Close menu
+        if(mainMenu) mainMenu.classList.add('hidden');
+      });
+    });
+
+    // Close on click outside
+    document.addEventListener('click', (e) => {
+      if (mainMenu && !mainMenu.contains(e.target) && !menuTrigger.contains(e.target)) {
+        mainMenu.classList.add('hidden');
+      }
+    });
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        if(mainMenu) mainMenu.classList.add('hidden');
+      }
+    });
+  </script>
+
+
+</body></html>

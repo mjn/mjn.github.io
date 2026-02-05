@@ -1,0 +1,202 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mom, I was Accepted to Yale... Campground | Mark Northcott</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script>
+    // Check for saved theme preference, otherwise use system preference
+    const getTheme = () => {
+      if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+        return localStorage.getItem('theme');
+      }
+      if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+        return 'light';
+      }
+      return 'terminal'; // Default
+    };
+
+    const applyTheme = (theme) => {
+      const html = document.documentElement;
+      const themes = ['light-mode', 'everforest-mode', 'catppuccin-mode', 'gruvbox-mode'];
+      themes.forEach(t => html.classList.remove(t));
+      
+      if (theme !== 'terminal') {
+        html.classList.add(`${theme}-mode`);
+      }
+      localStorage.setItem('theme', theme);
+    };
+
+    applyTheme(getTheme());
+  </script>
+</head>
+<body class="flex flex-col items-center min-h-screen p-4 sm:p-8 transition-colors duration-300">
+  <div class="w-full max-w-5xl mx-auto border-2 border-terminal-accent p-6 sm:p-10 relative">
+    <div class="absolute -top-3 left-6 px-2 bg-terminal-bg text-terminal-accent font-mono font-bold"><a href="/" text="home">mark@northcott.io</a></div>
+    <header class="mb-8 font-mono flex justify-between items-center relative">
+      <div class="flex items-center">
+        <span class="text-terminal-prompt sm:hidden">~/blog$</span>
+        <span class="text-terminal-prompt hidden sm:inline">~/blog/2003/04/mom-i-was-accepted-to-yale-campground$</span>
+      </div>
+
+      <div class="flex items-center space-x-4">
+        <!-- Menu Trigger -->
+        <button id="menu-trigger" class="hover:tui-inverse focus:tui-inverse outline-none px-1 transition-colors duration-200">
+          [menu]
+        </button>
+      </div>
+
+      <!-- Main Dropdown Menu -->
+      <div id="main-menu" class="hidden absolute top-full right-0 mt-2 z-50 tui-dropdown-menu min-w-[200px]">
+        <div class="flex flex-col p-4 space-y-4">
+          <nav class="flex flex-col space-y-2">
+            <a href="/" class="text-terminal-accent hover:underline">home</a>
+            <a href="/blog/" class="text-terminal-accent hover:underline">blog</a>
+            <a href="/experience/" class="text-terminal-accent hover:underline">experience</a>
+          </nav>
+          <div class="border-t border-terminal-accent opacity-30"></div>
+          <div class="flex flex-col space-y-2 font-mono text-terminal-text">
+            <span class="text-xs opacity-50 px-1">Theme</span>
+            <button class="theme-item text-left hover:tui-inverse px-1" data-value="terminal">tokyo-night</button>
+            <button class="theme-item text-left hover:tui-inverse px-1" data-value="light">light</button>
+            <button class="theme-item text-left hover:tui-inverse px-1" data-value="everforest">everforest</button>
+            <button class="theme-item text-left hover:tui-inverse px-1" data-value="catppuccin">catppuccin</button>
+            <button class="theme-item text-left hover:tui-inverse px-1" data-value="gruvbox">gruvbox</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <article class="prose prose-invert max-w-none font-mono">
+  <div class="mb-2 text-terminal-accent">
+    <span class="text-terminal-prompt">$</span> cat mom-i-was-accepted-to-yale-campground.md
+  </div>
+  <h1 class="font-bold mb-2 text-terminal-text">Mom, I was Accepted to Yale... Campground</h1>
+  <div class="text-terminal-text opacity-70 mb-4 flex flex-col sm:flex-row sm:gap-4">
+    <span>Date: 2003-04-28</span>
+    <span class="hidden sm:inline">|</span><span>Location: Hope, BC</span>
+    <span class="hidden sm:inline">|</span><span>Distance: 98.6km</span>
+  </div>
+
+  
+  <div class="mb-8">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83105.57763294628!2d-121.53645210122244!3d49.38905939626134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5483f5ca1983c7d7%3A0x7797106dac92bc3!2sHope%2C%20BC!5e0!3m2!1sen!2sca!4v1609169564508!5m2!1sen!2sca" width="100%" height="300" style="border: 1px solid var(--text-color); box-shadow: 4px 4px 0 var(--accent-color);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+  
+
+  <p>Following the rough opening day, Dave and I awoke in our comfy Best Western hotel beds all ready for a long day of riding... and we couldn't have asked for a better day. The weather was great all day, with the sun shining down and keeping us warm all day long. The only negative thing was the presence of a nasty headwind for a large portion of the trip, but that would hardly spoil the day.</p>
+<p>We left Mission slightly behind schedule, but nothing drastic, and we were well on our way by the time noon rolled around. With short stops each hour and lunch at 1pm in Kent, Dave and I were feeling really good all morning. Also, the mere presence of mountains in each direction we looked was awe inspiring and relieved some of the burden of riding.</p>
+<p><picture><source type="image/webp" srcset="can_bike_trip_022-400w.webp 400w, can_bike_trip_022-800w.webp 800w" sizes="(max-width: 768px) 100vw, 50vw"><img src="can_bike_trip_022-400w.jpeg" alt="" loading="lazy" decoding="async" width="800" height="533" srcset="can_bike_trip_022-400w.jpeg 400w, can_bike_trip_022-800w.jpeg 800w" sizes="(max-width: 768px) 100vw, 50vw"></picture></p>
+<p>Unfortunately, as a result of those surrounding mountains we were forced to make some steady climbs from time to time, but no matter how steep or high the hill seemed, the downside always made up for it!</p>
+<p>The only time I was feeling weak the entire day was following a steep climb just after merging from the highway 7 to the Trans Canada Highway. We were getting close to our expected destination and the day of cycling was starting to take effect. I tried to hold out until reaching Emory Creek Provincial Park, but was unable to do so and had to stop for a quick snack. That gave me more than enough energy for the rest of the way.</p>
+<p>As the day was getting on and we still hadn't reached the park, we began to wonder whether it even existed. As a result, we pulled into a small spot called Yale Campground for the night. The place turned out to be a gold mine since there was a general store across the road with a wide variety of food, and the campgrounds themselves are quite nice, especially for only $10 per night.</p>
+<p><picture><source type="image/webp" srcset="can_bike_trip_026-400w.webp 400w, can_bike_trip_026-800w.webp 800w" sizes="(max-width: 768px) 100vw, 50vw"><img src="can_bike_trip_026-400w.jpeg" alt="" loading="lazy" decoding="async" width="800" height="533" srcset="can_bike_trip_026-400w.jpeg 400w, can_bike_trip_026-800w.jpeg 800w" sizes="(max-width: 768px) 100vw, 50vw"></picture></p>
+<p>So now we have set up camp and are ready for the first night in a tent, with many more to come. It is this part of the trip that I am most excited about and thankfully for the great weather it should a good way to ease into the "roughing it" lifestyle.&nbsp;</p>
+<p>All in all, this has been a great day, and I hope this is more indicative of the rest of the trip, as opposed to yesterday's fiasco.</p>
+
+</article>
+<nav class="mt-12 pt-6 border-t border-terminal-accent border-opacity-30 font-mono flex flex-col sm:flex-row sm:justify-between gap-2">
+  
+    <a id="prev-post" href="/blog/2003/04/one-down/" class="text-terminal-accent hover:tui-inverse px-1 transition-colors duration-200 flex max-w-full sm:max-w-[45%]">
+      <span class="shrink-0">[←&nbsp;</span><span class="truncate">One Down...</span><span class="shrink-0">]</span>
+    </a>
+  
+
+  
+    <a id="next-post" href="/blog/2003/04/mountains-mountains-and-more-mountains/" class="text-terminal-accent hover:tui-inverse px-1 transition-colors duration-200 flex max-w-full sm:max-w-[45%] sm:justify-end">
+      <span class="shrink-0">[</span><span class="truncate">Mountains, Mountains and More Mountains</span><span class="shrink-0">&nbsp;→]</span>
+    </a>
+  
+</nav>
+
+
+<script>
+  document.addEventListener('keydown', (e) => {
+    // Don't trigger if user is typing in an input/textarea
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+
+    const prevLink = document.getElementById('prev-post');
+    const nextLink = document.getElementById('next-post');
+
+    if (e.key === 'h' && prevLink) {
+      prevLink.click();
+    } else if (e.key === 'l' && nextLink) {
+      nextLink.click();
+    }
+  });
+</script>
+
+    </main>
+  </div>
+
+  <script>
+    const menuTrigger = document.getElementById('menu-trigger');
+    const mainMenu = document.getElementById('main-menu');
+    const themeItems = document.querySelectorAll('.theme-item');
+    const themeNameDisplays = document.querySelectorAll('.current-theme-name');
+
+    const themeNames = {
+      'terminal': 'tokyo-night',
+      'light': 'light',
+      'everforest': 'everforest',
+      'catppuccin': 'catppuccin',
+      'gruvbox': 'gruvbox'
+    };
+
+    const updateThemeUI = (activeTheme) => {
+      themeItems.forEach(item => {
+        const themeValue = item.getAttribute('data-value');
+        const themeName = themeNames[themeValue];
+        if (themeValue === activeTheme) {
+          item.textContent = `[${themeName}]`;
+          item.classList.add('text-terminal-accent');
+        } else {
+          item.textContent = themeName;
+          item.classList.remove('text-terminal-accent');
+        }
+      });
+    };
+
+    // Initialize display name
+    const currentTheme = getTheme();
+    themeNameDisplays.forEach(el => el.textContent = themeNames[currentTheme] || currentTheme);
+    updateThemeUI(currentTheme);
+
+    // Toggle menu
+    if(menuTrigger) {
+      menuTrigger.addEventListener('click', (e) => {
+        e.stopPropagation();
+        mainMenu.classList.toggle('hidden');
+      });
+    }
+
+    // Handle theme selection
+    themeItems.forEach(item => {
+      item.addEventListener('click', () => {
+        const theme = item.getAttribute('data-value');
+        applyTheme(theme);
+        themeNameDisplays.forEach(el => el.textContent = themeNames[theme]);
+        updateThemeUI(theme);
+        
+        // Close menu
+        if(mainMenu) mainMenu.classList.add('hidden');
+      });
+    });
+
+    // Close on click outside
+    document.addEventListener('click', (e) => {
+      if (mainMenu && !mainMenu.contains(e.target) && !menuTrigger.contains(e.target)) {
+        mainMenu.classList.add('hidden');
+      }
+    });
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        if(mainMenu) mainMenu.classList.add('hidden');
+      }
+    });
+  </script>
+
+
+</body></html>

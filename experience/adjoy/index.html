@@ -1,0 +1,154 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CTO, Co-Founder | Mark Northcott</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script>
+    // Check for saved theme preference, otherwise use system preference
+    const getTheme = () => {
+      if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+        return localStorage.getItem('theme');
+      }
+      if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+        return 'light';
+      }
+      return 'terminal'; // Default
+    };
+
+    const applyTheme = (theme) => {
+      const html = document.documentElement;
+      const themes = ['light-mode', 'everforest-mode', 'catppuccin-mode', 'gruvbox-mode'];
+      themes.forEach(t => html.classList.remove(t));
+      
+      if (theme !== 'terminal') {
+        html.classList.add(`${theme}-mode`);
+      }
+      localStorage.setItem('theme', theme);
+    };
+
+    applyTheme(getTheme());
+  </script>
+</head>
+<body class="flex flex-col items-center min-h-screen p-4 sm:p-8 transition-colors duration-300">
+  <div class="w-full max-w-5xl mx-auto border-2 border-terminal-accent p-6 sm:p-10 relative">
+    <div class="absolute -top-3 left-6 px-2 bg-terminal-bg text-terminal-accent font-mono font-bold"><a href="/" text="home">mark@northcott.io</a></div>
+    <header class="mb-8 font-mono flex justify-between items-center relative">
+      <div class="flex items-center">
+        <span class="text-terminal-prompt sm:hidden">~/experience$</span>
+        <span class="text-terminal-prompt hidden sm:inline">~/experience/adjoy$</span>
+      </div>
+
+      <div class="flex items-center space-x-4">
+        <!-- Menu Trigger -->
+        <button id="menu-trigger" class="hover:tui-inverse focus:tui-inverse outline-none px-1 transition-colors duration-200">
+          [menu]
+        </button>
+      </div>
+
+      <!-- Main Dropdown Menu -->
+      <div id="main-menu" class="hidden absolute top-full right-0 mt-2 z-50 tui-dropdown-menu min-w-[200px]">
+        <div class="flex flex-col p-4 space-y-4">
+          <nav class="flex flex-col space-y-2">
+            <a href="/" class="text-terminal-accent hover:underline">home</a>
+            <a href="/blog/" class="text-terminal-accent hover:underline">blog</a>
+            <a href="/experience/" class="text-terminal-accent hover:underline">experience</a>
+          </nav>
+          <div class="border-t border-terminal-accent opacity-30"></div>
+          <div class="flex flex-col space-y-2 font-mono text-terminal-text">
+            <span class="text-xs opacity-50 px-1">Theme</span>
+            <button class="theme-item text-left hover:tui-inverse px-1" data-value="terminal">tokyo-night</button>
+            <button class="theme-item text-left hover:tui-inverse px-1" data-value="light">light</button>
+            <button class="theme-item text-left hover:tui-inverse px-1" data-value="everforest">everforest</button>
+            <button class="theme-item text-left hover:tui-inverse px-1" data-value="catppuccin">catppuccin</button>
+            <button class="theme-item text-left hover:tui-inverse px-1" data-value="gruvbox">gruvbox</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="border border-terminal-text p-6 rounded font-mono">
+  <h1 class="text-2xl font-bold text-terminal-accent">Adjoy</h1>
+  <h2 class="text-xl text-terminal-prompt">CTO, Co-Founder</h2>
+  <p class="text-sm mt-2">2008-02</p>
+  <div class="mt-4 prose prose-invert">
+    <p>Responsible for all development, deployment and management of the Adjoy Platform, which is a video platform that allows for marketers to leverage the power of online video and charitable donations in order to drive customer engagement.</p>
+<p>The server-side portion of the platform was built using the Ruby on Rails framework, and the video player was built using Adobe Flex/Flash.</p>
+<p>The platform was deployed on a Linux based stack that included nginx, Phusion Passenger, and MySql.</p>
+
+  </div>
+</div>
+
+    </main>
+  </div>
+
+  <script>
+    const menuTrigger = document.getElementById('menu-trigger');
+    const mainMenu = document.getElementById('main-menu');
+    const themeItems = document.querySelectorAll('.theme-item');
+    const themeNameDisplays = document.querySelectorAll('.current-theme-name');
+
+    const themeNames = {
+      'terminal': 'tokyo-night',
+      'light': 'light',
+      'everforest': 'everforest',
+      'catppuccin': 'catppuccin',
+      'gruvbox': 'gruvbox'
+    };
+
+    const updateThemeUI = (activeTheme) => {
+      themeItems.forEach(item => {
+        const themeValue = item.getAttribute('data-value');
+        const themeName = themeNames[themeValue];
+        if (themeValue === activeTheme) {
+          item.textContent = `[${themeName}]`;
+          item.classList.add('text-terminal-accent');
+        } else {
+          item.textContent = themeName;
+          item.classList.remove('text-terminal-accent');
+        }
+      });
+    };
+
+    // Initialize display name
+    const currentTheme = getTheme();
+    themeNameDisplays.forEach(el => el.textContent = themeNames[currentTheme] || currentTheme);
+    updateThemeUI(currentTheme);
+
+    // Toggle menu
+    if(menuTrigger) {
+      menuTrigger.addEventListener('click', (e) => {
+        e.stopPropagation();
+        mainMenu.classList.toggle('hidden');
+      });
+    }
+
+    // Handle theme selection
+    themeItems.forEach(item => {
+      item.addEventListener('click', () => {
+        const theme = item.getAttribute('data-value');
+        applyTheme(theme);
+        themeNameDisplays.forEach(el => el.textContent = themeNames[theme]);
+        updateThemeUI(theme);
+        
+        // Close menu
+        if(mainMenu) mainMenu.classList.add('hidden');
+      });
+    });
+
+    // Close on click outside
+    document.addEventListener('click', (e) => {
+      if (mainMenu && !mainMenu.contains(e.target) && !menuTrigger.contains(e.target)) {
+        mainMenu.classList.add('hidden');
+      }
+    });
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        if(mainMenu) mainMenu.classList.add('hidden');
+      }
+    });
+  </script>
+
+
+</body></html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Will Winter Never End?!? | Mark Northcott</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script>
+    // Check for saved theme preference, otherwise use system preference
+    const getTheme = () => {
+      if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+        return localStorage.getItem('theme');
+      }
+      if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+        return 'light';
+      }
+      return 'terminal'; // Default
+    };
+
+    const applyTheme = (theme) => {
+      const html = document.documentElement;
+      const themes = ['light-mode', 'everforest-mode', 'catppuccin-mode', 'gruvbox-mode'];
+      themes.forEach(t => html.classList.remove(t));
+      
+      if (theme !== 'terminal') {
+        html.classList.add(`${theme}-mode`);
+      }
+      localStorage.setItem('theme', theme);
+    };
+
+    applyTheme(getTheme());
+  </script>
+</head>
+<body class="flex flex-col items-center min-h-screen p-4 sm:p-8 transition-colors duration-300">
+  <div class="w-full max-w-5xl mx-auto border-2 border-terminal-accent p-6 sm:p-10 relative">
+    <div class="absolute -top-3 left-6 px-2 bg-terminal-bg text-terminal-accent font-mono font-bold"><a href="/" text="home">mark@northcott.io</a></div>
+    <header class="mb-8 font-mono flex justify-between items-center relative">
+      <div class="flex items-center">
+        <span class="text-terminal-prompt sm:hidden">~/blog$</span>
+        <span class="text-terminal-prompt hidden sm:inline">~/blog/2003/05/will-winter-never-end$</span>
+      </div>
+
+      <div class="flex items-center space-x-4">
+        <!-- Menu Trigger -->
+        <button id="menu-trigger" class="hover:tui-inverse focus:tui-inverse outline-none px-1 transition-colors duration-200">
+          [menu]
+        </button>
+      </div>
+
+      <!-- Main Dropdown Menu -->
+      <div id="main-menu" class="hidden absolute top-full right-0 mt-2 z-50 tui-dropdown-menu min-w-[200px]">
+        <div class="flex flex-col p-4 space-y-4">
+          <nav class="flex flex-col space-y-2">
+            <a href="/" class="text-terminal-accent hover:underline">home</a>
+            <a href="/blog/" class="text-terminal-accent hover:underline">blog</a>
+            <a href="/experience/" class="text-terminal-accent hover:underline">experience</a>
+          </nav>
+          <div class="border-t border-terminal-accent opacity-30"></div>
+          <div class="flex flex-col space-y-2 font-mono text-terminal-text">
+            <span class="text-xs opacity-50 px-1">Theme</span>
+            <button class="theme-item text-left hover:tui-inverse px-1" data-value="terminal">tokyo-night</button>
+            <button class="theme-item text-left hover:tui-inverse px-1" data-value="light">light</button>
+            <button class="theme-item text-left hover:tui-inverse px-1" data-value="everforest">everforest</button>
+            <button class="theme-item text-left hover:tui-inverse px-1" data-value="catppuccin">catppuccin</button>
+            <button class="theme-item text-left hover:tui-inverse px-1" data-value="gruvbox">gruvbox</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <article class="prose prose-invert max-w-none font-mono">
+  <div class="mb-2 text-terminal-accent">
+    <span class="text-terminal-prompt">$</span> cat will-winter-never-end.md
+  </div>
+  <h1 class="font-bold mb-2 text-terminal-text">Will Winter Never End?!?</h1>
+  <div class="text-terminal-text opacity-70 mb-4 flex flex-col sm:flex-row sm:gap-4">
+    <span>Date: 2003-05-19</span>
+    <span class="hidden sm:inline">|</span><span>Location: Virden, MB</span>
+    <span class="hidden sm:inline">|</span><span>Distance: 171.4km</span>
+  </div>
+
+  
+  <div class="mb-8">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20576.64393303681!2d-100.95308956683898!3d49.85973263147241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52e7361203b3f6fb%3A0x81ad0cd705d54216!2sVirden%2C%20MB%20R0M%202C0!5e0!3m2!1sen!2sca!4v1609172056660!5m2!1sen!2sca" width="100%" height="300" style="border: 1px solid var(--text-color); box-shadow: 4px 4px 0 var(--accent-color);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+  
+
+  <p>After spending a frosty night in the tent last night, where the mercury fell as low as -2C, Dave and I slowly poked our heads out of our sleeping bags and emerged from the tent. To our amazement, there were little white flakes falling from the sky... SNOW!!! I couldn't believe it!</p>
+<p>We quickly cooked a breakfast consisting of the usual oatmeal and beans. Unfortunately, the beans turned out to be lacking heat, thus we were forced to eat cold beans. By the time we got on the road we were already near freezing, and after riding for a few hours my feet were determined to remain ice cubes. By this time we had covered 50km and reached Whitewood. I suggested to Dave that we go for a hot lunch at the Can-Am Truck Stop Restaurant, since the cold beans just didn't cut it! He agreed, and we were finally able to get out of the cold.</p>
+<p><picture><source type="image/webp" srcset="can_bike_trip_124-400w.webp 400w, can_bike_trip_124-800w.webp 800w" sizes="(max-width: 768px) 100vw, 50vw"><img src="can_bike_trip_124-400w.jpeg" alt="" loading="lazy" decoding="async" width="800" height="533" srcset="can_bike_trip_124-400w.jpeg 400w, can_bike_trip_124-800w.jpeg 800w" sizes="(max-width: 768px) 100vw, 50vw"></picture></p>
+<p>After lunch, we were much warmer and refreshed allowing us to continue on for quite some time without much discomfort, thanks in part again to the seemingly ever present tail winds. Our next stop was for a quick snack and bathroom break in Moosomin, "Saskatchewan's Growingest Community".</p>
+<p>We then proceeded to the Manitoba border for the mandatory border pictures. A quick stop at the Manitoba information booth for maps and campground information followed. With all of that out of the way, we decided to find a place to camp for the night.</p>
+<p><picture><source type="image/webp" srcset="can_bike_trip_127-400w.webp 400w, can_bike_trip_127-800w.webp 800w" sizes="(max-width: 768px) 100vw, 50vw"><img src="can_bike_trip_127-400w.jpeg" alt="" loading="lazy" decoding="async" width="800" height="533" srcset="can_bike_trip_127-400w.jpeg 400w, can_bike_trip_127-800w.jpeg 800w" sizes="(max-width: 768px) 100vw, 50vw"></picture></p>
+<p>As it turned out, the closest campground was in Virden, Manitoba, which was 40km away. Thanks to the wind, we were able to cover this ground quickly and reach our final destination for the day.</p>
+<p>Shortly after reaching Virden, the sun made its first appearance of the day as the sky cleared, signalling that tomorrow should be a nice day. Right now it is still very cold with temperatures expected to drop to -1C tonight, but the forecast is predicting for temperatures above 20C for tomorrow.</p>
+<p>Also, as we are a mere 275km from Winnipeg, it is almost a certainty that we will be at dad's place on Wednesday night, which is great! The only thing I fear is that since we have been so spoiled with tail winds going through the prairies, we will pay for it in the future... all I can say though is that I am very thankful for the weather we have had over the past week, even with the thunderstorm and freezing temperatures... great tail winds make up for all of that!</p>
+
+</article>
+<nav class="mt-12 pt-6 border-t border-terminal-accent border-opacity-30 font-mono flex flex-col sm:flex-row sm:justify-between gap-2">
+  
+    <a id="prev-post" href="/blog/2003/05/so-long-regina/" class="text-terminal-accent hover:tui-inverse px-1 transition-colors duration-200 flex max-w-full sm:max-w-[45%]">
+      <span class="shrink-0">[←&nbsp;</span><span class="truncate">So Long Regina</span><span class="shrink-0">]</span>
+    </a>
+  
+
+  
+    <a id="next-post" href="/blog/2003/05/manitoba-highway-fund/" class="text-terminal-accent hover:tui-inverse px-1 transition-colors duration-200 flex max-w-full sm:max-w-[45%] sm:justify-end">
+      <span class="shrink-0">[</span><span class="truncate">Manitoba Highway Fund</span><span class="shrink-0">&nbsp;→]</span>
+    </a>
+  
+</nav>
+
+
+<script>
+  document.addEventListener('keydown', (e) => {
+    // Don't trigger if user is typing in an input/textarea
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+
+    const prevLink = document.getElementById('prev-post');
+    const nextLink = document.getElementById('next-post');
+
+    if (e.key === 'h' && prevLink) {
+      prevLink.click();
+    } else if (e.key === 'l' && nextLink) {
+      nextLink.click();
+    }
+  });
+</script>
+
+    </main>
+  </div>
+
+  <script>
+    const menuTrigger = document.getElementById('menu-trigger');
+    const mainMenu = document.getElementById('main-menu');
+    const themeItems = document.querySelectorAll('.theme-item');
+    const themeNameDisplays = document.querySelectorAll('.current-theme-name');
+
+    const themeNames = {
+      'terminal': 'tokyo-night',
+      'light': 'light',
+      'everforest': 'everforest',
+      'catppuccin': 'catppuccin',
+      'gruvbox': 'gruvbox'
+    };
+
+    const updateThemeUI = (activeTheme) => {
+      themeItems.forEach(item => {
+        const themeValue = item.getAttribute('data-value');
+        const themeName = themeNames[themeValue];
+        if (themeValue === activeTheme) {
+          item.textContent = `[${themeName}]`;
+          item.classList.add('text-terminal-accent');
+        } else {
+          item.textContent = themeName;
+          item.classList.remove('text-terminal-accent');
+        }
+      });
+    };
+
+    // Initialize display name
+    const currentTheme = getTheme();
+    themeNameDisplays.forEach(el => el.textContent = themeNames[currentTheme] || currentTheme);
+    updateThemeUI(currentTheme);
+
+    // Toggle menu
+    if(menuTrigger) {
+      menuTrigger.addEventListener('click', (e) => {
+        e.stopPropagation();
+        mainMenu.classList.toggle('hidden');
+      });
+    }
+
+    // Handle theme selection
+    themeItems.forEach(item => {
+      item.addEventListener('click', () => {
+        const theme = item.getAttribute('data-value');
+        applyTheme(theme);
+        themeNameDisplays.forEach(el => el.textContent = themeNames[theme]);
+        updateThemeUI(theme);
+        
+        // Close menu
+        if(mainMenu) mainMenu.classList.add('hidden');
+      });
+    });
+
+    // Close on click outside
+    document.addEventListener('click', (e) => {
+      if (mainMenu && !mainMenu.contains(e.target) && !menuTrigger.contains(e.target)) {
+        mainMenu.classList.add('hidden');
+      }
+    });
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        if(mainMenu) mainMenu.classList.add('hidden');
+      }
+    });
+  </script>
+
+
+</body></html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>It Just Wasn't Meant to Be | Mark Northcott</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script>
+    // Check for saved theme preference, otherwise use system preference
+    const getTheme = () => {
+      if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+        return localStorage.getItem('theme');
+      }
+      if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+        return 'light';
+      }
+      return 'terminal'; // Default
+    };
+
+    const applyTheme = (theme) => {
+      const html = document.documentElement;
+      const themes = ['light-mode', 'everforest-mode', 'catppuccin-mode', 'gruvbox-mode'];
+      themes.forEach(t => html.classList.remove(t));
+      
+      if (theme !== 'terminal') {
+        html.classList.add(`${theme}-mode`);
+      }
+      localStorage.setItem('theme', theme);
+    };
+
+    applyTheme(getTheme());
+  </script>
+</head>
+<body class="flex flex-col items-center min-h-screen p-4 sm:p-8 transition-colors duration-300">
+  <div class="w-full max-w-5xl mx-auto border-2 border-terminal-accent p-6 sm:p-10 relative">
+    <div class="absolute -top-3 left-6 px-2 bg-terminal-bg text-terminal-accent font-mono font-bold"><a href="/" text="home">mark@northcott.io</a></div>
+    <header class="mb-8 font-mono flex justify-between items-center relative">
+      <div class="flex items-center">
+        <span class="text-terminal-prompt sm:hidden">~/blog$</span>
+        <span class="text-terminal-prompt hidden sm:inline">~/blog/2003/04/it-just-wasnt-meant-to-be$</span>
+      </div>
+
+      <div class="flex items-center space-x-4">
+        <!-- Menu Trigger -->
+        <button id="menu-trigger" class="hover:tui-inverse focus:tui-inverse outline-none px-1 transition-colors duration-200">
+          [menu]
+        </button>
+      </div>
+
+      <!-- Main Dropdown Menu -->
+      <div id="main-menu" class="hidden absolute top-full right-0 mt-2 z-50 tui-dropdown-menu min-w-[200px]">
+        <div class="flex flex-col p-4 space-y-4">
+          <nav class="flex flex-col space-y-2">
+            <a href="/" class="text-terminal-accent hover:underline">home</a>
+            <a href="/blog/" class="text-terminal-accent hover:underline">blog</a>
+            <a href="/experience/" class="text-terminal-accent hover:underline">experience</a>
+          </nav>
+          <div class="border-t border-terminal-accent opacity-30"></div>
+          <div class="flex flex-col space-y-2 font-mono text-terminal-text">
+            <span class="text-xs opacity-50 px-1">Theme</span>
+            <button class="theme-item text-left hover:tui-inverse px-1" data-value="terminal">tokyo-night</button>
+            <button class="theme-item text-left hover:tui-inverse px-1" data-value="light">light</button>
+            <button class="theme-item text-left hover:tui-inverse px-1" data-value="everforest">everforest</button>
+            <button class="theme-item text-left hover:tui-inverse px-1" data-value="catppuccin">catppuccin</button>
+            <button class="theme-item text-left hover:tui-inverse px-1" data-value="gruvbox">gruvbox</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <article class="prose prose-invert max-w-none font-mono">
+  <div class="mb-2 text-terminal-accent">
+    <span class="text-terminal-prompt">$</span> cat it-just-wasnt-meant-to-be.md
+  </div>
+  <h1 class="font-bold mb-2 text-terminal-text">It Just Wasn't Meant to Be</h1>
+  <div class="text-terminal-text opacity-70 mb-4 flex flex-col sm:flex-row sm:gap-4">
+    <span>Date: 2003-04-30</span>
+    <span class="hidden sm:inline">|</span><span>Location: Savona, BC</span>
+    <span class="hidden sm:inline">|</span><span>Distance: 123.3km</span>
+  </div>
+
+  
+  <div class="mb-8">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10096.921020835123!2d-120.8525237563502!3d50.75276407229006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54802f53081e1f41%3A0x6911970fbf5ab044!2sSavona%2C%20BC%20V0K%202J0!5e0!3m2!1sen!2sca!4v1609169701575!5m2!1sen!2sca" width="100%" height="300" style="border: 1px solid var(--text-color); box-shadow: 4px 4px 0 var(--accent-color);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+  
+
+  <p>Well we finally managed to drag ourselves out of bed on time this morning, and following a much better night of sleep (aside from the crazy neighbours!) we managed to have eaten and packed everything up by 9:30am.</p>
+<p>Following yesterdays rough day of cycling, I was prepared for a much better day, and I wasn't disappointed. We had a bit of a tail wind which really helped, and on top of that, we were going downhill for much of the morning. As a result, we arrived in Spences Bridge (approx. 35km) after biking for only an hour and a half. We grabbed a quick snack and then set out for Cache Creek.</p>
+<p>Shortly after leaving Spences Bridge we were faced with a rather large climb that seemed to go on forever, but it didn't seem as taxing physically as some of the hills encountered yesterday. Once we finished the climb, the terrain flattened out, and we managed to maintain a decent speed.</p>
+<p><picture><source type="image/webp" srcset="can_bike_trip_039-400w.webp 400w, can_bike_trip_039-800w.webp 800w" sizes="(max-width: 768px) 100vw, 50vw"><img src="can_bike_trip_039-400w.jpeg" alt="" loading="lazy" decoding="async" width="800" height="533" srcset="can_bike_trip_039-400w.jpeg 400w, can_bike_trip_039-800w.jpeg 800w" sizes="(max-width: 768px) 100vw, 50vw"></picture></p>
+<p>As we approached Ashcroft, I saw a rest area up ahead and pulled in as my back teeth were floating! As a I slowly peddled around the lot looking for the washroom, I spotted the outhouse and tried to turn in its direction... unfortunately, in my haste I forgot that my shoes were still clipped in, and as I hit the curb I once again fell flat on my face... chalk up another one on the ol' "cut count"!</p>
+<p>We arrived in Cache Creek shortly after the pit stop, and stopped in Subway for a hearty lunch. It had been a successful morning as we rode approximately 85km by 3pm. While eating lunch we discussed going all the way to Kamloops today, which was another 85km away. We figured we would simply ride til it looked like the sun was ready to set and then find a place to pull in, but deep down we both wanted to reach Kamloops.</p>
+<p>A mere five minutes after leaving Cache Creek we encountered our first obstacle. As I was changing gears, my chain fell off, which doesn't sound like a big deal, but somehow it managed to get stuck between the frame and the gear ring, and it didn't seem like it was ever going to move! Finally, after about 15 minutes of jiggling the chain back and forth (and after I was covered in grease!) the chain became dislodged and was quickly put back on.</p>
+<p>At first it seemed that this delay would severely hamper our chances of getting to Kamloops as every minute was vital, but it turned out that the riding conditions were perfect allowing us to maintain a steady, brisk pace. This lasted for quite a while, and as we saw the "Kamloops - 64km" sign with the sun still high in the sky, our hopes were replenished! However, our hopes were once again crushed as I heard a pop while riding and then realized my tire was losing pressure quick... the first flat tire of the trip!</p>
+<p><picture><source type="image/webp" srcset="can_bike_trip_040-400w.webp 400w, can_bike_trip_040-800w.webp 800w" sizes="(max-width: 768px) 100vw, 50vw"><img src="can_bike_trip_040-400w.jpeg" alt="" loading="lazy" decoding="async" width="800" height="533" srcset="can_bike_trip_040-400w.jpeg 400w, can_bike_trip_040-800w.jpeg 800w" sizes="(max-width: 768px) 100vw, 50vw"></picture></p>
+<p>So, I stopped the bike, took off the wheel and then removed the tire. As I was replacing the tube I was hurrying in order to get back on the road... big mistake! In my haste I had managed to puncture the new tube and thus had to repeat the process one more time.</p>
+<p>By this time it became clear that Dave, now known as "The Claw" has pretty much become useless when it comes to anything requiring had strength. It seems that he either grips the handlebars too tightly and thus cramps his muscles, or he has somehow injured his hand... either was he is having severe problems with his hand!</p>
+<p><picture><source type="image/webp" srcset="can_bike_trip_041-400w.webp 400w, can_bike_trip_041-800w.webp 800w" sizes="(max-width: 768px) 100vw, 50vw"><img src="can_bike_trip_041-400w.jpeg" alt="" loading="lazy" decoding="async" width="800" height="533" srcset="can_bike_trip_041-400w.jpeg 400w, can_bike_trip_041-800w.jpeg 800w" sizes="(max-width: 768px) 100vw, 50vw"></picture></p>
+<p>Thus, he we are in Steelhead Provincial Park, which was our original destination for the day. We have decided to ride to Kamloops tomorrow (approx. 50km) and then find a place to stay and use the rest of the day as a rest day before heading into the next set of mountains. In hindsight, this is probably for the best as we probably would have stayed in a hotel for two nights had we made it to Kamloops today as tomorrow was to be a rest day anyway.</p>
+<p>All in all, today was a tremendous success. It was our first (of many, hopefully) day over 100km, and on the whole I felt great. Had it not been for the end of the day, I believe I could have continued for much longer.</p>
+
+</article>
+<nav class="mt-12 pt-6 border-t border-terminal-accent border-opacity-30 font-mono flex flex-col sm:flex-row sm:justify-between gap-2">
+  
+    <a id="prev-post" href="/blog/2003/04/mountains-mountains-and-more-mountains/" class="text-terminal-accent hover:tui-inverse px-1 transition-colors duration-200 flex max-w-full sm:max-w-[45%]">
+      <span class="shrink-0">[←&nbsp;</span><span class="truncate">Mountains, Mountains and More Mountains</span><span class="shrink-0">]</span>
+    </a>
+  
+
+  
+    <a id="next-post" href="/blog/2003/05/rollin-into-kamloops/" class="text-terminal-accent hover:tui-inverse px-1 transition-colors duration-200 flex max-w-full sm:max-w-[45%] sm:justify-end">
+      <span class="shrink-0">[</span><span class="truncate">Rollin' into Kamloops</span><span class="shrink-0">&nbsp;→]</span>
+    </a>
+  
+</nav>
+
+
+<script>
+  document.addEventListener('keydown', (e) => {
+    // Don't trigger if user is typing in an input/textarea
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+
+    const prevLink = document.getElementById('prev-post');
+    const nextLink = document.getElementById('next-post');
+
+    if (e.key === 'h' && prevLink) {
+      prevLink.click();
+    } else if (e.key === 'l' && nextLink) {
+      nextLink.click();
+    }
+  });
+</script>
+
+    </main>
+  </div>
+
+  <script>
+    const menuTrigger = document.getElementById('menu-trigger');
+    const mainMenu = document.getElementById('main-menu');
+    const themeItems = document.querySelectorAll('.theme-item');
+    const themeNameDisplays = document.querySelectorAll('.current-theme-name');
+
+    const themeNames = {
+      'terminal': 'tokyo-night',
+      'light': 'light',
+      'everforest': 'everforest',
+      'catppuccin': 'catppuccin',
+      'gruvbox': 'gruvbox'
+    };
+
+    const updateThemeUI = (activeTheme) => {
+      themeItems.forEach(item => {
+        const themeValue = item.getAttribute('data-value');
+        const themeName = themeNames[themeValue];
+        if (themeValue === activeTheme) {
+          item.textContent = `[${themeName}]`;
+          item.classList.add('text-terminal-accent');
+        } else {
+          item.textContent = themeName;
+          item.classList.remove('text-terminal-accent');
+        }
+      });
+    };
+
+    // Initialize display name
+    const currentTheme = getTheme();
+    themeNameDisplays.forEach(el => el.textContent = themeNames[currentTheme] || currentTheme);
+    updateThemeUI(currentTheme);
+
+    // Toggle menu
+    if(menuTrigger) {
+      menuTrigger.addEventListener('click', (e) => {
+        e.stopPropagation();
+        mainMenu.classList.toggle('hidden');
+      });
+    }
+
+    // Handle theme selection
+    themeItems.forEach(item => {
+      item.addEventListener('click', () => {
+        const theme = item.getAttribute('data-value');
+        applyTheme(theme);
+        themeNameDisplays.forEach(el => el.textContent = themeNames[theme]);
+        updateThemeUI(theme);
+        
+        // Close menu
+        if(mainMenu) mainMenu.classList.add('hidden');
+      });
+    });
+
+    // Close on click outside
+    document.addEventListener('click', (e) => {
+      if (mainMenu && !mainMenu.contains(e.target) && !menuTrigger.contains(e.target)) {
+        mainMenu.classList.add('hidden');
+      }
+    });
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        if(mainMenu) mainMenu.classList.add('hidden');
+      }
+    });
+  </script>
+
+
+</body></html>
